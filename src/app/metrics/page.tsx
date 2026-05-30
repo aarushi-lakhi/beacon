@@ -258,7 +258,7 @@ export default function MetricsPage() {
 
             <div className="mt-5 pt-4 border-t border-surface-100 flex items-center gap-2 text-xs text-gray-400">
               <Clock className="w-3.5 h-3.5" />
-              Analysis completed in {metrics.runDurationSeconds?.toFixed(1) ?? "47.3"}s · {metrics.agentsUsed ?? 4} agents
+              4-agent pipeline · Schedule → Readiness → Coordination → Briefing
             </div>
           </div>
         </div>
