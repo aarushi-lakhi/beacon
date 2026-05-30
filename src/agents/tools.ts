@@ -1,6 +1,7 @@
 import { tool } from "@openai/agents";
 import { z } from "zod";
 import { db } from "@/lib/db";
+import { getScheduleSnapshot } from "@/lib/scheduler";
 
 export const getScheduleTool = tool({
   name: "get_or_schedule",
@@ -8,19 +9,25 @@ export const getScheduleTool = tool({
   parameters: z.object({
     date: z.string().describe("Date in YYYY-MM-DD format, or 'tomorrow'"),
   }),
-  execute: async () => {
-    const cases = db.getTomorrowSchedule();
+  execute: async ({ date }) => {
+    const snapshot = getScheduleSnapshot(date);
     return JSON.stringify(
-      cases.map((c) => ({
-        caseId: c.id,
-        patientId: c.patientId,
-        procedure: c.procedure,
-        surgeon: c.surgeon,
-        orRoom: c.orRoom,
-        startTime: c.startTime,
-        estimatedDuration: c.estimatedDuration,
-        priority: c.priority,
-      }))
+      {
+        date: snapshot.date,
+        surgeryCalendar: snapshot.surgeryCalendar.map((c) => ({
+          caseId: c.id,
+          patientId: c.patientId,
+          procedure: c.procedure,
+          surgeon: c.surgeon,
+          anesthesiologist: c.anesthesiologist,
+          orRoom: c.orRoom,
+          startTime: c.startTime,
+          estimatedDuration: c.estimatedDuration,
+          priority: c.priority,
+        })),
+        hospitalCalendar: snapshot.hospitalCalendar,
+        conflicts: snapshot.conflicts,
+      }
     );
   },
 });
