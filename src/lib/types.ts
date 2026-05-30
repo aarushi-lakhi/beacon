@@ -96,6 +96,12 @@ export interface ImagingResult {
   findings: string | null;
 }
 
+export interface ImagingSourceMap {
+  beaconPatientId: string;
+  sourcePatientId: string;
+  sourceDataset: string;
+}
+
 export interface Clearance {
   id: string;
   patientId: string;

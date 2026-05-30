@@ -2,6 +2,8 @@ import patientsData from "@/data/patients.json";
 import scheduleData from "@/data/schedule.json";
 import labsData from "@/data/labs.json";
 import imagingData from "@/data/imaging.json";
+import glisRtImagingData from "@/data/glis-rt-imaging.json";
+import glisRtPatientMapData from "@/data/glis-rt-patient-map.json";
 import clearancesData from "@/data/clearances.json";
 import consentData from "@/data/consent.json";
 import hospitalCalendarData from "@/data/hospital-calendar.json";
@@ -11,6 +13,7 @@ import {
   SurgicalCase,
   LabResult,
   ImagingResult,
+  ImagingSourceMap,
   Clearance,
   ConsentForm,
   HospitalCalendarEvent,
@@ -33,15 +36,20 @@ const normalizedSchedule = (scheduleData as SurgicalCase[]).map(normalizeCase);
 const normalizedHospitalCalendar = (hospitalCalendarData as HospitalCalendarEvent[]).map(
   normalizeHospitalEvent
 );
+const defaultImagingRecords = imagingData as ImagingResult[];
+const glisRtImagingRecords = glisRtImagingData as ImagingResult[];
+const glisRtPatientMap = glisRtPatientMapData as ImagingSourceMap[];
 
 export const db = {
   patients: patientsData as Patient[],
   schedule: normalizedSchedule,
   labs: labsData as LabResult[],
-  imaging: imagingData as ImagingResult[],
+  imaging: defaultImagingRecords,
+  externalImaging: glisRtImagingRecords,
   clearances: clearancesData as Clearance[],
   consent: consentData as ConsentForm[],
   hospitalCalendar: normalizedHospitalCalendar,
+  imagingSourceMap: glisRtPatientMap,
 
   getPatient: (id: string): Patient | undefined =>
     (patientsData as Patient[]).find((p) => p.id === id),
@@ -57,8 +65,20 @@ export const db = {
   getLabsForPatient: (patientId: string): LabResult[] =>
     (labsData as LabResult[]).filter((l) => l.patientId === patientId),
 
-  getImagingForPatient: (patientId: string): ImagingResult[] =>
-    (imagingData as ImagingResult[]).filter((i) => i.patientId === patientId),
+  getImagingForPatient: (patientId: string): ImagingResult[] => {
+    const baseline = defaultImagingRecords.filter((item) => item.patientId === patientId);
+    const external = glisRtImagingRecords.filter((item) => item.patientId === patientId);
+
+    return [...baseline, ...external].sort((left, right) => {
+      const leftDate = left.date ?? "";
+      const rightDate = right.date ?? "";
+      if (leftDate === rightDate) return left.id.localeCompare(right.id);
+      return rightDate.localeCompare(leftDate);
+    });
+  },
+
+  getImagingSourceForPatient: (patientId: string): ImagingSourceMap | undefined =>
+    glisRtPatientMap.find((item) => item.beaconPatientId === patientId),
 
   getClearancesForPatient: (patientId: string): Clearance[] =>
     (clearancesData as Clearance[]).filter((c) => c.patientId === patientId),

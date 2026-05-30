@@ -1,0 +1,252 @@
+[
+  {
+    "beaconPatientId": "PT-001",
+    "sourcePatientId": "GLI_001_GBM",
+    "sourceDataset": "GLIS-RT NBIA Manifest"
+  },
+  {
+    "beaconPatientId": "PT-002",
+    "sourcePatientId": "GLI_002_GBM",
+    "sourceDataset": "GLIS-RT NBIA Manifest"
+  },
+  {
+    "beaconPatientId": "PT-003",
+    "sourcePatientId": "GLI_003_AAC",
+    "sourceDataset": "GLIS-RT NBIA Manifest"
+  },
+  {
+    "beaconPatientId": "PT-004",
+    "sourcePatientId": "GLI_004_GBM",
+    "sourceDataset": "GLIS-RT NBIA Manifest"
+  },
+  {
+    "beaconPatientId": "PT-005",
+    "sourcePatientId": "GLI_005_GBM",
+    "sourceDataset": "GLIS-RT NBIA Manifest"
+  },
+  {
+    "beaconPatientId": "PT-006",
+    "sourcePatientId": "GLI_006_ODG",
+    "sourceDataset": "GLIS-RT NBIA Manifest"
+  },
+  {
+    "beaconPatientId": "PT-007",
+    "sourcePatientId": "GLI_007_GBM",
+    "sourceDataset": "GLIS-RT NBIA Manifest"
+  },
+  {
+    "beaconPatientId": "PT-008",
+    "sourcePatientId": "GLI_008_GBM",
+    "sourceDataset": "GLIS-RT NBIA Manifest"
+  },
+  {
+    "beaconPatientId": "PT-009",
+    "sourcePatientId": "GLI_009_GBM",
+    "sourceDataset": "GLIS-RT NBIA Manifest"
+  },
+  {
+    "beaconPatientId": "PT-010",
+    "sourcePatientId": "GLI_010_GBM",
+    "sourceDataset": "GLIS-RT NBIA Manifest"
+  },
+  {
+    "beaconPatientId": "PT-011",
+    "sourcePatientId": "GLI_011_GBM",
+    "sourceDataset": "GLIS-RT NBIA Manifest"
+  },
+  {
+    "beaconPatientId": "PT-012",
+    "sourcePatientId": "GLI_012_GBM",
+    "sourceDataset": "GLIS-RT NBIA Manifest"
+  },
+  {
+    "beaconPatientId": "PT-013",
+    "sourcePatientId": "GLI_013_GBM",
+    "sourceDataset": "GLIS-RT NBIA Manifest"
+  },
+  {
+    "beaconPatientId": "PT-014",
+    "sourcePatientId": "GLI_014_GBM",
+    "sourceDataset": "GLIS-RT NBIA Manifest"
+  },
+  {
+    "beaconPatientId": "PT-015",
+    "sourcePatientId": "GLI_015_GBM",
+    "sourceDataset": "GLIS-RT NBIA Manifest"
+  },
+  {
+    "beaconPatientId": "PT-016",
+    "sourcePatientId": "GLI_016_GBM",
+    "sourceDataset": "GLIS-RT NBIA Manifest"
+  },
+  {
+    "beaconPatientId": "PT-017",
+    "sourcePatientId": "GLI_017_AAC",
+    "sourceDataset": "GLIS-RT NBIA Manifest"
+  },
+  {
+    "beaconPatientId": "PT-018",
+    "sourcePatientId": "GLI_018_GBM",
+    "sourceDataset": "GLIS-RT NBIA Manifest"
+  },
+  {
+    "beaconPatientId": "PT-019",
+    "sourcePatientId": "GLI_019_GBM",
+    "sourceDataset": "GLIS-RT NBIA Manifest"
+  },
+  {
+    "beaconPatientId": "PT-020",
+    "sourcePatientId": "GLI_020_GBM",
+    "sourceDataset": "GLIS-RT NBIA Manifest"
+  },
+  {
+    "beaconPatientId": "PT-021",
+    "sourcePatientId": "GLI_021_GBM",
+    "sourceDataset": "GLIS-RT NBIA Manifest"
+  },
+  {
+    "beaconPatientId": "PT-022",
+    "sourcePatientId": "GLI_022_GBM",
+    "sourceDataset": "GLIS-RT NBIA Manifest"
+  },
+  {
+    "beaconPatientId": "PT-023",
+    "sourcePatientId": "GLI_023_GBM",
+    "sourceDataset": "GLIS-RT NBIA Manifest"
+  },
+  {
+    "beaconPatientId": "PT-024",
+    "sourcePatientId": "GLI_024_GBM",
+    "sourceDataset": "GLIS-RT NBIA Manifest"
+  },
+  {
+    "beaconPatientId": "PT-025",
+    "sourcePatientId": "GLI_025_GBM",
+    "sourceDataset": "GLIS-RT NBIA Manifest"
+  },
+  {
+    "beaconPatientId": "PT-026",
+    "sourcePatientId": "GLI_026_GBM",
+    "sourceDataset": "GLIS-RT NBIA Manifest"
+  },
+  {
+    "beaconPatientId": "PT-027",
+    "sourcePatientId": "GLI_027_GBM",
+    "sourceDataset": "GLIS-RT NBIA Manifest"
+  },
+  {
+    "beaconPatientId": "PT-028",
+    "sourcePatientId": "GLI_028_GBM",
+    "sourceDataset": "GLIS-RT NBIA Manifest"
+  },
+  {
+    "beaconPatientId": "PT-029",
+    "sourcePatientId": "GLI_029_GBM",
+    "sourceDataset": "GLIS-RT NBIA Manifest"
+  },
+  {
+    "beaconPatientId": "PT-030",
+    "sourcePatientId": "GLI_030_GBM",
+    "sourceDataset": "GLIS-RT NBIA Manifest"
+  },
+  {
+    "beaconPatientId": "PT-031",
+    "sourcePatientId": "GLI_031_GBM",
+    "sourceDataset": "GLIS-RT NBIA Manifest"
+  },
+  {
+    "beaconPatientId": "PT-032",
+    "sourcePatientId": "GLI_032_GBM",
+    "sourceDataset": "GLIS-RT NBIA Manifest"
+  },
+  {
+    "beaconPatientId": "PT-033",
+    "sourcePatientId": "GLI_033_GBM",
+    "sourceDataset": "GLIS-RT NBIA Manifest"
+  },
+  {
+    "beaconPatientId": "PT-034",
+    "sourcePatientId": "GLI_034_GBM",
+    "sourceDataset": "GLIS-RT NBIA Manifest"
+  },
+  {
+    "beaconPatientId": "PT-035",
+    "sourcePatientId": "GLI_035_GBM",
+    "sourceDataset": "GLIS-RT NBIA Manifest"
+  },
+  {
+    "beaconPatientId": "PT-036",
+    "sourcePatientId": "GLI_036_GBM",
+    "sourceDataset": "GLIS-RT NBIA Manifest"
+  },
+  {
+    "beaconPatientId": "PT-037",
+    "sourcePatientId": "GLI_037_GBM",
+    "sourceDataset": "GLIS-RT NBIA Manifest"
+  },
+  {
+    "beaconPatientId": "PT-038",
+    "sourcePatientId": "GLI_038_GBM",
+    "sourceDataset": "GLIS-RT NBIA Manifest"
+  },
+  {
+    "beaconPatientId": "PT-039",
+    "sourcePatientId": "GLI_039_GBM",
+    "sourceDataset": "GLIS-RT NBIA Manifest"
+  },
+  {
+    "beaconPatientId": "PT-040",
+    "sourcePatientId": "GLI_040_GBM",
+    "sourceDataset": "GLIS-RT NBIA Manifest"
+  },
+  {
+    "beaconPatientId": "PT-041",
+    "sourcePatientId": "GLI_041_GBM",
+    "sourceDataset": "GLIS-RT NBIA Manifest"
+  },
+  {
+    "beaconPatientId": "PT-042",
+    "sourcePatientId": "GLI_042_AAC",
+    "sourceDataset": "GLIS-RT NBIA Manifest"
+  },
+  {
+    "beaconPatientId": "PT-043",
+    "sourcePatientId": "GLI_043_GBM",
+    "sourceDataset": "GLIS-RT NBIA Manifest"
+  },
+  {
+    "beaconPatientId": "PT-044",
+    "sourcePatientId": "GLI_044_AC",
+    "sourceDataset": "GLIS-RT NBIA Manifest"
+  },
+  {
+    "beaconPatientId": "PT-045",
+    "sourcePatientId": "GLI_045_AAC",
+    "sourceDataset": "GLIS-RT NBIA Manifest"
+  },
+  {
+    "beaconPatientId": "PT-046",
+    "sourcePatientId": "GLI_046_AC",
+    "sourceDataset": "GLIS-RT NBIA Manifest"
+  },
+  {
+    "beaconPatientId": "PT-047",
+    "sourcePatientId": "GLI_047_GBM",
+    "sourceDataset": "GLIS-RT NBIA Manifest"
+  },
+  {
+    "beaconPatientId": "PT-048",
+    "sourcePatientId": "GLI_048_GBM",
+    "sourceDataset": "GLIS-RT NBIA Manifest"
+  },
+  {
+    "beaconPatientId": "PT-049",
+    "sourcePatientId": "GLI_049_GBM",
+    "sourceDataset": "GLIS-RT NBIA Manifest"
+  },
+  {
+    "beaconPatientId": "PT-050",
+    "sourcePatientId": "GLI_050_GBM",
+    "sourceDataset": "GLIS-RT NBIA Manifest"
+  }
+]
