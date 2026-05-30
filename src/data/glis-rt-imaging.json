@@ -1,0 +1,4502 @@
+[
+  {
+    "id": "GLIS-PT-001-007",
+    "patientId": "PT-001",
+    "type": "REG - REG CT/T1",
+    "status": "expired",
+    "date": "2026-03-03",
+    "expirationDate": "2026-04-02",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_001_GBM). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-07-28."
+  },
+  {
+    "id": "GLIS-PT-001-009",
+    "patientId": "PT-001",
+    "type": "RTSTRUCT - Barriers",
+    "status": "expired",
+    "date": "2026-03-05",
+    "expirationDate": "2026-04-04",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_001_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-05."
+  },
+  {
+    "id": "GLIS-PT-001-004",
+    "patientId": "PT-001",
+    "type": "CT - 2.5/5mm",
+    "status": "completed",
+    "date": "2026-03-20",
+    "expirationDate": "2026-06-18",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_001_GBM). Study: BRAIN. Series modality CT, body part HEAD. Manufacturer: GE MEDICAL SYSTEMS LightSpeed RT16. Source series date: 2008-04-05."
+  },
+  {
+    "id": "GLIS-PT-001-005",
+    "patientId": "PT-001",
+    "type": "REG - REG CT/T2",
+    "status": "expired",
+    "date": "2026-03-20",
+    "expirationDate": "2026-04-19",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_001_GBM). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-07-28."
+  },
+  {
+    "id": "GLIS-PT-001-008",
+    "patientId": "PT-001",
+    "type": "RTSTRUCT - Targets",
+    "status": "expired",
+    "date": "2026-03-21",
+    "expirationDate": "2026-04-20",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_001_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-01."
+  },
+  {
+    "id": "GLIS-PT-001-003",
+    "patientId": "PT-001",
+    "type": "REG - REG T1/T2",
+    "status": "expired",
+    "date": "2026-03-29",
+    "expirationDate": "2026-04-28",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_001_GBM). Study: MRI BRAIN (TUMOR) WITH AND WITHOUT CONTRAST. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-07-28."
+  },
+  {
+    "id": "GLIS-PT-001-001",
+    "patientId": "PT-001",
+    "type": "MR - Ax FLAIR T2",
+    "status": "completed",
+    "date": "2026-04-21",
+    "expirationDate": "2026-07-20",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_001_GBM). Study: MRI BRAIN (TUMOR) WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: SIEMENS Skyra. Source series date: 2008-04-05."
+  },
+  {
+    "id": "GLIS-PT-001-006",
+    "patientId": "PT-001",
+    "type": "RTSTRUCT - OARs",
+    "status": "expired",
+    "date": "2026-04-22",
+    "expirationDate": "2026-05-22",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_001_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-04."
+  },
+  {
+    "id": "GLIS-PT-001-002",
+    "patientId": "PT-001",
+    "type": "MR - axial mprage post reformat",
+    "status": "completed",
+    "date": "2026-05-08",
+    "expirationDate": "2026-08-06",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_001_GBM). Study: MRI BRAIN (TUMOR) WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: SIEMENS Skyra. Source series date: 2008-04-05."
+  },
+  {
+    "id": "GLIS-PT-002-007",
+    "patientId": "PT-002",
+    "type": "MR - ax flair mpr",
+    "status": "completed",
+    "date": "2026-03-06",
+    "expirationDate": "2026-06-04",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_002_GBM). Study: MRI BRAIN INTRAOP WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: SIEMENS Verio. Source series date: 2008-07-09."
+  },
+  {
+    "id": "GLIS-PT-002-004",
+    "patientId": "PT-002",
+    "type": "RTSTRUCT - Targets",
+    "status": "expired",
+    "date": "2026-03-13",
+    "expirationDate": "2026-04-12",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_002_GBM). Study: IMRT BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-01."
+  },
+  {
+    "id": "GLIS-PT-002-001",
+    "patientId": "PT-002",
+    "type": "CT - BRAIN IMRT",
+    "status": "completed",
+    "date": "2026-03-24",
+    "expirationDate": "2026-06-22",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_002_GBM). Study: IMRT BRAIN. Series modality CT, body part HEAD. Manufacturer: GE MEDICAL SYSTEMS Discovery CT590 RT. Source series date: 2008-07-09."
+  },
+  {
+    "id": "GLIS-PT-002-002",
+    "patientId": "PT-002",
+    "type": "REG - REG CT/T1",
+    "status": "expired",
+    "date": "2026-03-26",
+    "expirationDate": "2026-04-25",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_002_GBM). Study: IMRT BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-07-28."
+  },
+  {
+    "id": "GLIS-PT-002-003",
+    "patientId": "PT-002",
+    "type": "REG - REG CT/T2",
+    "status": "expired",
+    "date": "2026-04-21",
+    "expirationDate": "2026-05-21",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_002_GBM). Study: IMRT BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-07-28."
+  },
+  {
+    "id": "GLIS-PT-002-009",
+    "patientId": "PT-002",
+    "type": "REG - REG T1/T2",
+    "status": "expired",
+    "date": "2026-04-24",
+    "expirationDate": "2026-05-24",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_002_GBM). Study: MRI BRAIN INTRAOP WITH AND WITHOUT CONTRAST. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-07-24."
+  },
+  {
+    "id": "GLIS-PT-002-005",
+    "patientId": "PT-002",
+    "type": "RTSTRUCT - Barriers",
+    "status": "completed",
+    "date": "2026-04-30",
+    "expirationDate": "2026-05-30",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_002_GBM). Study: IMRT BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-05."
+  },
+  {
+    "id": "GLIS-PT-002-008",
+    "patientId": "PT-002",
+    "type": "MR - AX POST MPRAGE MPR",
+    "status": "completed",
+    "date": "2026-05-06",
+    "expirationDate": "2026-08-04",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_002_GBM). Study: MRI BRAIN INTRAOP WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: SIEMENS Verio. Source series date: 2008-07-09."
+  },
+  {
+    "id": "GLIS-PT-002-006",
+    "patientId": "PT-002",
+    "type": "RTSTRUCT - OARs",
+    "status": "completed",
+    "date": "2026-05-25",
+    "expirationDate": "2026-06-24",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_002_GBM). Study: IMRT BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-04."
+  },
+  {
+    "id": "GLIS-PT-003-004",
+    "patientId": "PT-003",
+    "type": "CT - BRAIN",
+    "status": "completed",
+    "date": "2026-03-07",
+    "expirationDate": "2026-06-05",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_003_AAC). Study: BRAIN. Series modality CT, body part HEAD. Manufacturer: GE MEDICAL SYSTEMS Discovery CT590 RT. Source series date: 2008-08-12."
+  },
+  {
+    "id": "GLIS-PT-003-009",
+    "patientId": "PT-003",
+    "type": "RTSTRUCT - Barriers",
+    "status": "expired",
+    "date": "2026-03-13",
+    "expirationDate": "2026-04-12",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_003_AAC). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-06."
+  },
+  {
+    "id": "GLIS-PT-003-001",
+    "patientId": "PT-003",
+    "type": "MR - AX MPRAGE RMT POST",
+    "status": "completed",
+    "date": "2026-03-22",
+    "expirationDate": "2026-06-20",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_003_AAC). Study: MRI BRAIN WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: SIEMENS Skyra. Source series date: 2008-08-12."
+  },
+  {
+    "id": "GLIS-PT-003-005",
+    "patientId": "PT-003",
+    "type": "RTSTRUCT - OARs",
+    "status": "expired",
+    "date": "2026-03-22",
+    "expirationDate": "2026-04-21",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_003_AAC). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-04."
+  },
+  {
+    "id": "GLIS-PT-003-003",
+    "patientId": "PT-003",
+    "type": "REG - REG T1/T2",
+    "status": "expired",
+    "date": "2026-03-25",
+    "expirationDate": "2026-04-24",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_003_AAC). Study: MRI BRAIN WITH AND WITHOUT CONTRAST. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-07-28."
+  },
+  {
+    "id": "GLIS-PT-003-007",
+    "patientId": "PT-003",
+    "type": "REG - REG CT/T2",
+    "status": "expired",
+    "date": "2026-03-30",
+    "expirationDate": "2026-04-29",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_003_AAC). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-07-28."
+  },
+  {
+    "id": "GLIS-PT-003-006",
+    "patientId": "PT-003",
+    "type": "RTSTRUCT - Targets",
+    "status": "expired",
+    "date": "2026-04-04",
+    "expirationDate": "2026-05-04",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_003_AAC). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-01."
+  },
+  {
+    "id": "GLIS-PT-003-008",
+    "patientId": "PT-003",
+    "type": "REG - REG CT/T1",
+    "status": "completed",
+    "date": "2026-05-08",
+    "expirationDate": "2026-06-07",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_003_AAC). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-07-28."
+  },
+  {
+    "id": "GLIS-PT-003-002",
+    "patientId": "PT-003",
+    "type": "MR - Ax FLAIR T2",
+    "status": "completed",
+    "date": "2026-05-12",
+    "expirationDate": "2026-08-10",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_003_AAC). Study: MRI BRAIN WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: SIEMENS Skyra. Source series date: 2008-08-12."
+  },
+  {
+    "id": "GLIS-PT-004-003",
+    "patientId": "PT-004",
+    "type": "REG - REG T1/T2",
+    "status": "expired",
+    "date": "2026-03-20",
+    "expirationDate": "2026-04-19",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_004_GBM). Study: MRI BRAIN (TUMOR) WITH AND WITHOUT CONTRAST. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-04."
+  },
+  {
+    "id": "GLIS-PT-004-008",
+    "patientId": "PT-004",
+    "type": "REG - REG CT/T2",
+    "status": "expired",
+    "date": "2026-03-28",
+    "expirationDate": "2026-04-27",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_004_GBM). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-04."
+  },
+  {
+    "id": "GLIS-PT-004-005",
+    "patientId": "PT-004",
+    "type": "RTSTRUCT - OARs",
+    "status": "expired",
+    "date": "2026-04-11",
+    "expirationDate": "2026-05-11",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_004_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-04."
+  },
+  {
+    "id": "GLIS-PT-004-002",
+    "patientId": "PT-004",
+    "type": "MR - Ax FLAIR T2",
+    "status": "completed",
+    "date": "2026-04-12",
+    "expirationDate": "2026-07-11",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_004_GBM). Study: MRI BRAIN (TUMOR) WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: GE MEDICAL SYSTEMS Signa HDxt. Source series date: 2008-07-29."
+  },
+  {
+    "id": "GLIS-PT-004-007",
+    "patientId": "PT-004",
+    "type": "RTSTRUCT - Barriers",
+    "status": "expired",
+    "date": "2026-04-12",
+    "expirationDate": "2026-05-12",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_004_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-06."
+  },
+  {
+    "id": "GLIS-PT-004-004",
+    "patientId": "PT-004",
+    "type": "CT - BRAIN",
+    "status": "completed",
+    "date": "2026-05-12",
+    "expirationDate": "2026-08-10",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_004_GBM). Study: BRAIN. Series modality CT, body part HEAD. Manufacturer: GE MEDICAL SYSTEMS LightSpeed RT16. Source series date: 2008-07-29."
+  },
+  {
+    "id": "GLIS-PT-004-001",
+    "patientId": "PT-004",
+    "type": "MR - Ax 3D BRAVO Post",
+    "status": "completed",
+    "date": "2026-05-20",
+    "expirationDate": "2026-08-18",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_004_GBM). Study: MRI BRAIN (TUMOR) WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: GE MEDICAL SYSTEMS Signa HDxt. Source series date: 2008-07-29."
+  },
+  {
+    "id": "GLIS-PT-004-006",
+    "patientId": "PT-004",
+    "type": "REG - REG CT/T1",
+    "status": "completed",
+    "date": "2026-05-23",
+    "expirationDate": "2026-06-22",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_004_GBM). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-04."
+  },
+  {
+    "id": "GLIS-PT-004-009",
+    "patientId": "PT-004",
+    "type": "RTSTRUCT - Targets",
+    "status": "completed",
+    "date": "2026-05-24",
+    "expirationDate": "2026-06-23",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_004_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-04."
+  },
+  {
+    "id": "GLIS-PT-005-005",
+    "patientId": "PT-005",
+    "type": "REG - REG CT/T1",
+    "status": "expired",
+    "date": "2026-03-12",
+    "expirationDate": "2026-04-11",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_005_GBM). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-07-28."
+  },
+  {
+    "id": "GLIS-PT-005-003",
+    "patientId": "PT-005",
+    "type": "REG - REG T1/T2",
+    "status": "expired",
+    "date": "2026-03-18",
+    "expirationDate": "2026-04-17",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_005_GBM). Study: MRI BRAIN (TUMOR) WITH AND WITHOUT CONTRAST. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-07-28."
+  },
+  {
+    "id": "GLIS-PT-005-001",
+    "patientId": "PT-005",
+    "type": "MR - Ax FLAIR T2",
+    "status": "completed",
+    "date": "2026-03-20",
+    "expirationDate": "2026-06-18",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_005_GBM). Study: MRI BRAIN (TUMOR) WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: SIEMENS Skyra. Source series date: 2008-10-12."
+  },
+  {
+    "id": "GLIS-PT-005-009",
+    "patientId": "PT-005",
+    "type": "RTSTRUCT - OARs",
+    "status": "expired",
+    "date": "2026-03-21",
+    "expirationDate": "2026-04-20",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_005_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-04."
+  },
+  {
+    "id": "GLIS-PT-005-008",
+    "patientId": "PT-005",
+    "type": "REG - REG CT/T2",
+    "status": "expired",
+    "date": "2026-03-27",
+    "expirationDate": "2026-04-26",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_005_GBM). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-07-28."
+  },
+  {
+    "id": "GLIS-PT-005-007",
+    "patientId": "PT-005",
+    "type": "RTSTRUCT - Targets",
+    "status": "expired",
+    "date": "2026-03-28",
+    "expirationDate": "2026-04-27",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_005_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-01."
+  },
+  {
+    "id": "GLIS-PT-005-002",
+    "patientId": "PT-005",
+    "type": "MR - POST AXIAL MPRAGE RFMT",
+    "status": "completed",
+    "date": "2026-03-31",
+    "expirationDate": "2026-06-29",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_005_GBM). Study: MRI BRAIN (TUMOR) WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: SIEMENS Skyra. Source series date: 2008-10-12."
+  },
+  {
+    "id": "GLIS-PT-005-006",
+    "patientId": "PT-005",
+    "type": "RTSTRUCT - Barriers",
+    "status": "expired",
+    "date": "2026-04-05",
+    "expirationDate": "2026-05-05",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_005_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-06."
+  },
+  {
+    "id": "GLIS-PT-005-004",
+    "patientId": "PT-005",
+    "type": "CT - BRAIN",
+    "status": "completed",
+    "date": "2026-04-27",
+    "expirationDate": "2026-07-26",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_005_GBM). Study: BRAIN. Series modality CT, body part HEAD. Manufacturer: GE MEDICAL SYSTEMS Discovery CT590 RT. Source series date: 2008-10-12."
+  },
+  {
+    "id": "GLIS-PT-006-007",
+    "patientId": "PT-006",
+    "type": "MR - Ax 3D BRAVO Post",
+    "status": "completed",
+    "date": "2026-03-04",
+    "expirationDate": "2026-06-02",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_006_ODG). Study: MRI BRAIN (TUMOR) WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: GE MEDICAL SYSTEMS Signa HDxt. Source series date: 2008-10-26."
+  },
+  {
+    "id": "GLIS-PT-006-001",
+    "patientId": "PT-006",
+    "type": "CT - 2.5/5mm",
+    "status": "completed",
+    "date": "2026-03-14",
+    "expirationDate": "2026-06-12",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_006_ODG). Study: BRAIN. Series modality CT, body part HEAD. Manufacturer: GE MEDICAL SYSTEMS LightSpeed RT16. Source series date: 2008-10-26."
+  },
+  {
+    "id": "GLIS-PT-006-005",
+    "patientId": "PT-006",
+    "type": "REG - REG CT/T2",
+    "status": "expired",
+    "date": "2026-03-20",
+    "expirationDate": "2026-04-19",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_006_ODG). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-07-28."
+  },
+  {
+    "id": "GLIS-PT-006-009",
+    "patientId": "PT-006",
+    "type": "REG - REG T1/T2",
+    "status": "expired",
+    "date": "2026-03-27",
+    "expirationDate": "2026-04-26",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_006_ODG). Study: MRI BRAIN (TUMOR) WITH AND WITHOUT CONTRAST. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-07-28."
+  },
+  {
+    "id": "GLIS-PT-006-008",
+    "patientId": "PT-006",
+    "type": "MR - Ax FLAIR T2",
+    "status": "completed",
+    "date": "2026-04-18",
+    "expirationDate": "2026-07-17",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_006_ODG). Study: MRI BRAIN (TUMOR) WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: GE MEDICAL SYSTEMS Signa HDxt. Source series date: 2008-10-26."
+  },
+  {
+    "id": "GLIS-PT-006-006",
+    "patientId": "PT-006",
+    "type": "RTSTRUCT - OARs",
+    "status": "expired",
+    "date": "2026-04-27",
+    "expirationDate": "2026-05-27",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_006_ODG). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-04."
+  },
+  {
+    "id": "GLIS-PT-006-003",
+    "patientId": "PT-006",
+    "type": "REG - REG CT/T1",
+    "status": "completed",
+    "date": "2026-05-17",
+    "expirationDate": "2026-06-16",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_006_ODG). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-07-28."
+  },
+  {
+    "id": "GLIS-PT-006-002",
+    "patientId": "PT-006",
+    "type": "RTSTRUCT - Targets",
+    "status": "completed",
+    "date": "2026-05-23",
+    "expirationDate": "2026-06-22",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_006_ODG). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-01."
+  },
+  {
+    "id": "GLIS-PT-006-004",
+    "patientId": "PT-006",
+    "type": "RTSTRUCT - Barriers",
+    "status": "completed",
+    "date": "2026-05-24",
+    "expirationDate": "2026-06-23",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_006_ODG). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-06."
+  },
+  {
+    "id": "GLIS-PT-007-006",
+    "patientId": "PT-007",
+    "type": "REG - REG CT/T2",
+    "status": "expired",
+    "date": "2026-03-02",
+    "expirationDate": "2026-04-01",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_007_GBM). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-07-28."
+  },
+  {
+    "id": "GLIS-PT-007-003",
+    "patientId": "PT-007",
+    "type": "REG - REG T1/T2",
+    "status": "expired",
+    "date": "2026-03-07",
+    "expirationDate": "2026-04-06",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_007_GBM). Study: MRI BRAIN WITH AND WITHOUT CONTRAST. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-07-28."
+  },
+  {
+    "id": "GLIS-PT-007-002",
+    "patientId": "PT-007",
+    "type": "MR - AX POST MPRAGE RFMT",
+    "status": "completed",
+    "date": "2026-03-16",
+    "expirationDate": "2026-06-14",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_007_GBM). Study: MRI BRAIN WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: SIEMENS Skyra. Source series date: 2009-07-20."
+  },
+  {
+    "id": "GLIS-PT-007-008",
+    "patientId": "PT-007",
+    "type": "RTSTRUCT - OARs",
+    "status": "expired",
+    "date": "2026-03-30",
+    "expirationDate": "2026-04-29",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_007_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-04."
+  },
+  {
+    "id": "GLIS-PT-007-001",
+    "patientId": "PT-007",
+    "type": "MR - Ax FLAIR T2",
+    "status": "completed",
+    "date": "2026-04-10",
+    "expirationDate": "2026-07-09",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_007_GBM). Study: MRI BRAIN WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: SIEMENS Skyra. Source series date: 2009-07-20."
+  },
+  {
+    "id": "GLIS-PT-007-009",
+    "patientId": "PT-007",
+    "type": "RTSTRUCT - Barriers",
+    "status": "expired",
+    "date": "2026-04-14",
+    "expirationDate": "2026-05-14",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_007_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-07."
+  },
+  {
+    "id": "GLIS-PT-007-007",
+    "patientId": "PT-007",
+    "type": "REG - REG CT/T1",
+    "status": "expired",
+    "date": "2026-04-29",
+    "expirationDate": "2026-05-29",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_007_GBM). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-07."
+  },
+  {
+    "id": "GLIS-PT-007-005",
+    "patientId": "PT-007",
+    "type": "RTSTRUCT - Targets",
+    "status": "completed",
+    "date": "2026-05-14",
+    "expirationDate": "2026-06-13",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_007_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-01."
+  },
+  {
+    "id": "GLIS-PT-007-004",
+    "patientId": "PT-007",
+    "type": "CT - BRAIN",
+    "status": "completed",
+    "date": "2026-05-24",
+    "expirationDate": "2026-08-22",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_007_GBM). Study: BRAIN. Series modality CT, body part HEAD. Manufacturer: GE MEDICAL SYSTEMS LightSpeed RT16. Source series date: 2009-07-20."
+  },
+  {
+    "id": "GLIS-PT-008-008",
+    "patientId": "PT-008",
+    "type": "MR - Ax FLAIR T2",
+    "status": "completed",
+    "date": "2026-03-06",
+    "expirationDate": "2026-06-04",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_008_GBM). Study: MRI BRAIN (TUMOR) WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: SIEMENS Skyra. Source series date: 2009-07-19."
+  },
+  {
+    "id": "GLIS-PT-008-004",
+    "patientId": "PT-008",
+    "type": "RTSTRUCT - Barriers",
+    "status": "expired",
+    "date": "2026-03-07",
+    "expirationDate": "2026-04-06",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_008_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-07."
+  },
+  {
+    "id": "GLIS-PT-008-006",
+    "patientId": "PT-008",
+    "type": "RTSTRUCT - Targets",
+    "status": "expired",
+    "date": "2026-03-18",
+    "expirationDate": "2026-04-17",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_008_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-01."
+  },
+  {
+    "id": "GLIS-PT-008-001",
+    "patientId": "PT-008",
+    "type": "CT - 2.5/5mm",
+    "status": "completed",
+    "date": "2026-03-22",
+    "expirationDate": "2026-06-20",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_008_GBM). Study: BRAIN. Series modality CT, body part HEAD. Manufacturer: GE MEDICAL SYSTEMS Discovery CT590 RT. Source series date: 2009-07-19."
+  },
+  {
+    "id": "GLIS-PT-008-005",
+    "patientId": "PT-008",
+    "type": "REG - REG CT/T1",
+    "status": "expired",
+    "date": "2026-04-03",
+    "expirationDate": "2026-05-03",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_008_GBM). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-07."
+  },
+  {
+    "id": "GLIS-PT-008-002",
+    "patientId": "PT-008",
+    "type": "RTSTRUCT - OARs",
+    "status": "expired",
+    "date": "2026-04-10",
+    "expirationDate": "2026-05-10",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_008_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-04."
+  },
+  {
+    "id": "GLIS-PT-008-003",
+    "patientId": "PT-008",
+    "type": "REG - REG CT/T2",
+    "status": "expired",
+    "date": "2026-04-24",
+    "expirationDate": "2026-05-24",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_008_GBM). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-07."
+  },
+  {
+    "id": "GLIS-PT-008-009",
+    "patientId": "PT-008",
+    "type": "REG - REG T1/T2",
+    "status": "completed",
+    "date": "2026-04-30",
+    "expirationDate": "2026-05-30",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_008_GBM). Study: MRI BRAIN (TUMOR) WITH AND WITHOUT CONTRAST. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-07."
+  },
+  {
+    "id": "GLIS-PT-008-007",
+    "patientId": "PT-008",
+    "type": "MR - AXIAL RFMT POST MPRGE",
+    "status": "completed",
+    "date": "2026-05-05",
+    "expirationDate": "2026-08-03",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_008_GBM). Study: MRI BRAIN (TUMOR) WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: SIEMENS Skyra. Source series date: 2009-07-19."
+  },
+  {
+    "id": "GLIS-PT-009-006",
+    "patientId": "PT-009",
+    "type": "REG - REG CT/T2",
+    "status": "expired",
+    "date": "2026-03-08",
+    "expirationDate": "2026-04-07",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_009_GBM). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-07."
+  },
+  {
+    "id": "GLIS-PT-009-003",
+    "patientId": "PT-009",
+    "type": "RTSTRUCT - Targets",
+    "status": "expired",
+    "date": "2026-03-30",
+    "expirationDate": "2026-04-29",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_009_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-01."
+  },
+  {
+    "id": "GLIS-PT-009-001",
+    "patientId": "PT-009",
+    "type": "CT - 2.5/5mm",
+    "status": "completed",
+    "date": "2026-03-31",
+    "expirationDate": "2026-06-29",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_009_GBM). Study: BRAIN. Series modality CT, body part HEAD. Manufacturer: GE MEDICAL SYSTEMS LightSpeed RT16. Source series date: 2009-08-05."
+  },
+  {
+    "id": "GLIS-PT-009-005",
+    "patientId": "PT-009",
+    "type": "REG - REG CT/T1",
+    "status": "expired",
+    "date": "2026-04-06",
+    "expirationDate": "2026-05-06",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_009_GBM). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-07."
+  },
+  {
+    "id": "GLIS-PT-009-004",
+    "patientId": "PT-009",
+    "type": "RTSTRUCT - Barriers",
+    "status": "expired",
+    "date": "2026-04-10",
+    "expirationDate": "2026-05-10",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_009_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-07."
+  },
+  {
+    "id": "GLIS-PT-009-009",
+    "patientId": "PT-009",
+    "type": "REG - REG T1/T2",
+    "status": "expired",
+    "date": "2026-04-15",
+    "expirationDate": "2026-05-15",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_009_GBM). Study: MRI BRAIN WITH AND WITHOUT CONTRAST. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-07."
+  },
+  {
+    "id": "GLIS-PT-009-007",
+    "patientId": "PT-009",
+    "type": "MR - Ax FLAIR",
+    "status": "completed",
+    "date": "2026-05-01",
+    "expirationDate": "2026-07-30",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_009_GBM). Study: MRI BRAIN WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: SIEMENS Skyra. Source series date: 2009-08-05."
+  },
+  {
+    "id": "GLIS-PT-009-002",
+    "patientId": "PT-009",
+    "type": "RTSTRUCT - OARs",
+    "status": "completed",
+    "date": "2026-05-04",
+    "expirationDate": "2026-06-03",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_009_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-04."
+  },
+  {
+    "id": "GLIS-PT-009-008",
+    "patientId": "PT-009",
+    "type": "MR - Ax MPRAGE POST RFMT",
+    "status": "completed",
+    "date": "2026-05-24",
+    "expirationDate": "2026-08-22",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_009_GBM). Study: MRI BRAIN WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: SIEMENS Skyra. Source series date: 2009-08-05."
+  },
+  {
+    "id": "GLIS-PT-010-008",
+    "patientId": "PT-010",
+    "type": "RTSTRUCT - OARs",
+    "status": "expired",
+    "date": "2026-03-06",
+    "expirationDate": "2026-04-05",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_010_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-04."
+  },
+  {
+    "id": "GLIS-PT-010-007",
+    "patientId": "PT-010",
+    "type": "RTSTRUCT - Barriers",
+    "status": "expired",
+    "date": "2026-03-10",
+    "expirationDate": "2026-04-09",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_010_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-07."
+  },
+  {
+    "id": "GLIS-PT-010-006",
+    "patientId": "PT-010",
+    "type": "REG - REG CT/T2",
+    "status": "expired",
+    "date": "2026-03-29",
+    "expirationDate": "2026-04-28",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_010_GBM). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-07-28."
+  },
+  {
+    "id": "GLIS-PT-010-001",
+    "patientId": "PT-010",
+    "type": "MR - AX FLAIR SPACE REFORM",
+    "status": "completed",
+    "date": "2026-04-03",
+    "expirationDate": "2026-07-02",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_010_GBM). Study: MRI BRAIN (STEALTH) WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: SIEMENS Aera. Source series date: 2009-07-01."
+  },
+  {
+    "id": "GLIS-PT-010-004",
+    "patientId": "PT-010",
+    "type": "CT - BRAIN",
+    "status": "completed",
+    "date": "2026-04-19",
+    "expirationDate": "2026-07-18",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_010_GBM). Study: BRAIN. Series modality CT, body part HEAD. Manufacturer: GE MEDICAL SYSTEMS LightSpeed RT16. Source series date: 2009-07-01."
+  },
+  {
+    "id": "GLIS-PT-010-002",
+    "patientId": "PT-010",
+    "type": "MR - AX MPRAGE POST REFORM",
+    "status": "completed",
+    "date": "2026-05-10",
+    "expirationDate": "2026-08-08",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_010_GBM). Study: MRI BRAIN (STEALTH) WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: SIEMENS Aera. Source series date: 2009-07-01."
+  },
+  {
+    "id": "GLIS-PT-010-005",
+    "patientId": "PT-010",
+    "type": "REG - REG CT/T1",
+    "status": "completed",
+    "date": "2026-05-13",
+    "expirationDate": "2026-06-12",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_010_GBM). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-07-28."
+  },
+  {
+    "id": "GLIS-PT-010-009",
+    "patientId": "PT-010",
+    "type": "RTSTRUCT - Targets",
+    "status": "completed",
+    "date": "2026-05-14",
+    "expirationDate": "2026-06-13",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_010_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-01."
+  },
+  {
+    "id": "GLIS-PT-010-003",
+    "patientId": "PT-010",
+    "type": "REG - REG T1/T2",
+    "status": "completed",
+    "date": "2026-05-24",
+    "expirationDate": "2026-06-23",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_010_GBM). Study: MRI BRAIN (STEALTH) WITH AND WITHOUT CONTRAST. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-07-28."
+  },
+  {
+    "id": "GLIS-PT-011-003",
+    "patientId": "PT-011",
+    "type": "REG - REG T1/T2",
+    "status": "expired",
+    "date": "2026-03-15",
+    "expirationDate": "2026-04-14",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_011_GBM). Study: MRI BRAIN (TUMOR) WITH AND WITHOUT CONTRAST. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-07."
+  },
+  {
+    "id": "GLIS-PT-011-005",
+    "patientId": "PT-011",
+    "type": "RTSTRUCT - Targets",
+    "status": "expired",
+    "date": "2026-03-22",
+    "expirationDate": "2026-04-21",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_011_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-01."
+  },
+  {
+    "id": "GLIS-PT-011-007",
+    "patientId": "PT-011",
+    "type": "RTSTRUCT - OARs",
+    "status": "expired",
+    "date": "2026-04-07",
+    "expirationDate": "2026-05-07",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_011_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-04."
+  },
+  {
+    "id": "GLIS-PT-011-009",
+    "patientId": "PT-011",
+    "type": "REG - REG CT/T2",
+    "status": "expired",
+    "date": "2026-04-08",
+    "expirationDate": "2026-05-08",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_011_GBM). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-07."
+  },
+  {
+    "id": "GLIS-PT-011-008",
+    "patientId": "PT-011",
+    "type": "REG - REG CT/T1",
+    "status": "expired",
+    "date": "2026-04-20",
+    "expirationDate": "2026-05-20",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_011_GBM). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-07."
+  },
+  {
+    "id": "GLIS-PT-011-006",
+    "patientId": "PT-011",
+    "type": "RTSTRUCT - Barriers",
+    "status": "expired",
+    "date": "2026-04-24",
+    "expirationDate": "2026-05-24",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_011_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-07."
+  },
+  {
+    "id": "GLIS-PT-011-001",
+    "patientId": "PT-011",
+    "type": "MR - Ax 3D BRAVO Post",
+    "status": "completed",
+    "date": "2026-04-27",
+    "expirationDate": "2026-07-26",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_011_GBM). Study: MRI BRAIN (TUMOR) WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: GE MEDICAL SYSTEMS Signa HDxt. Source series date: 2009-07-27."
+  },
+  {
+    "id": "GLIS-PT-011-004",
+    "patientId": "PT-011",
+    "type": "CT - BRAIN",
+    "status": "completed",
+    "date": "2026-04-30",
+    "expirationDate": "2026-07-29",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_011_GBM). Study: BRAIN. Series modality CT, body part HEAD. Manufacturer: GE MEDICAL SYSTEMS LightSpeed RT16. Source series date: 2009-07-27."
+  },
+  {
+    "id": "GLIS-PT-011-002",
+    "patientId": "PT-011",
+    "type": "MR - Ax FLAIR T2",
+    "status": "completed",
+    "date": "2026-05-02",
+    "expirationDate": "2026-07-31",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_011_GBM). Study: MRI BRAIN (TUMOR) WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: GE MEDICAL SYSTEMS Signa HDxt. Source series date: 2009-07-27."
+  },
+  {
+    "id": "GLIS-PT-012-009",
+    "patientId": "PT-012",
+    "type": "REG - REG T1/T2",
+    "status": "expired",
+    "date": "2026-03-13",
+    "expirationDate": "2026-04-12",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_012_GBM). Study: MRI BRAIN OUTSIDE (NO INTERPRETATION). Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-07-28."
+  },
+  {
+    "id": "GLIS-PT-012-007",
+    "patientId": "PT-012",
+    "type": "MR - AXIAL FLAIR",
+    "status": "completed",
+    "date": "2026-04-01",
+    "expirationDate": "2026-06-30",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_012_GBM). Study: MRI BRAIN OUTSIDE (NO INTERPRETATION). Series modality MR, body part HEAD. Manufacturer: SIEMENS Avanto. Source series date: 2009-07-15."
+  },
+  {
+    "id": "GLIS-PT-012-006",
+    "patientId": "PT-012",
+    "type": "REG - REG CT/T2",
+    "status": "expired",
+    "date": "2026-04-06",
+    "expirationDate": "2026-05-06",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_012_GBM). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-07-28."
+  },
+  {
+    "id": "GLIS-PT-012-001",
+    "patientId": "PT-012",
+    "type": "CT - 2.5/5mm",
+    "status": "completed",
+    "date": "2026-04-18",
+    "expirationDate": "2026-07-17",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_012_GBM). Study: BRAIN. Series modality CT, body part HEAD. Manufacturer: GE MEDICAL SYSTEMS LightSpeed RT16. Source series date: 2009-07-15."
+  },
+  {
+    "id": "GLIS-PT-012-005",
+    "patientId": "PT-012",
+    "type": "RTSTRUCT - Targets",
+    "status": "expired",
+    "date": "2026-04-23",
+    "expirationDate": "2026-05-23",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_012_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-01."
+  },
+  {
+    "id": "GLIS-PT-012-008",
+    "patientId": "PT-012",
+    "type": "MR - 3DT1 POST",
+    "status": "completed",
+    "date": "2026-04-24",
+    "expirationDate": "2026-07-23",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_012_GBM). Study: MRI BRAIN OUTSIDE (NO INTERPRETATION). Series modality MR, body part HEAD. Manufacturer: SIEMENS Avanto. Source series date: 2009-07-15."
+  },
+  {
+    "id": "GLIS-PT-012-002",
+    "patientId": "PT-012",
+    "type": "RTSTRUCT - OARs",
+    "status": "completed",
+    "date": "2026-05-06",
+    "expirationDate": "2026-06-05",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_012_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-04."
+  },
+  {
+    "id": "GLIS-PT-012-004",
+    "patientId": "PT-012",
+    "type": "REG - REG CT/T1",
+    "status": "completed",
+    "date": "2026-05-13",
+    "expirationDate": "2026-06-12",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_012_GBM). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-07-28."
+  },
+  {
+    "id": "GLIS-PT-012-003",
+    "patientId": "PT-012",
+    "type": "RTSTRUCT - Barriers",
+    "status": "completed",
+    "date": "2026-05-18",
+    "expirationDate": "2026-06-17",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_012_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-07."
+  },
+  {
+    "id": "GLIS-PT-013-003",
+    "patientId": "PT-013",
+    "type": "RTSTRUCT - Targets",
+    "status": "expired",
+    "date": "2026-03-14",
+    "expirationDate": "2026-04-13",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_013_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-01."
+  },
+  {
+    "id": "GLIS-PT-013-008",
+    "patientId": "PT-013",
+    "type": "MR - Ax FLAIR T2",
+    "status": "completed",
+    "date": "2026-03-16",
+    "expirationDate": "2026-06-14",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_013_GBM). Study: MRI BRAIN WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: SIEMENS Skyra. Source series date: 2009-07-06."
+  },
+  {
+    "id": "GLIS-PT-013-005",
+    "patientId": "PT-013",
+    "type": "REG - REG CT/T2",
+    "status": "expired",
+    "date": "2026-04-01",
+    "expirationDate": "2026-05-01",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_013_GBM). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-07."
+  },
+  {
+    "id": "GLIS-PT-013-009",
+    "patientId": "PT-013",
+    "type": "REG - REG T1/T2",
+    "status": "expired",
+    "date": "2026-04-03",
+    "expirationDate": "2026-05-03",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_013_GBM). Study: MRI BRAIN WITH AND WITHOUT CONTRAST. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-07."
+  },
+  {
+    "id": "GLIS-PT-013-002",
+    "patientId": "PT-013",
+    "type": "RTSTRUCT - Barriers",
+    "status": "expired",
+    "date": "2026-04-09",
+    "expirationDate": "2026-05-09",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_013_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-07."
+  },
+  {
+    "id": "GLIS-PT-013-004",
+    "patientId": "PT-013",
+    "type": "RTSTRUCT - OARs",
+    "status": "completed",
+    "date": "2026-05-01",
+    "expirationDate": "2026-05-31",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_013_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-04."
+  },
+  {
+    "id": "GLIS-PT-013-007",
+    "patientId": "PT-013",
+    "type": "MR - Ax T1 Post",
+    "status": "completed",
+    "date": "2026-05-02",
+    "expirationDate": "2026-07-31",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_013_GBM). Study: MRI BRAIN WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: SIEMENS Skyra. Source series date: 2009-07-06."
+  },
+  {
+    "id": "GLIS-PT-013-001",
+    "patientId": "PT-013",
+    "type": "CT - 2.5/5mm",
+    "status": "completed",
+    "date": "2026-05-11",
+    "expirationDate": "2026-08-09",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_013_GBM). Study: BRAIN. Series modality CT, body part HEAD. Manufacturer: GE MEDICAL SYSTEMS LightSpeed RT16. Source series date: 2009-07-06."
+  },
+  {
+    "id": "GLIS-PT-013-006",
+    "patientId": "PT-013",
+    "type": "REG - REG CT/T1",
+    "status": "completed",
+    "date": "2026-05-18",
+    "expirationDate": "2026-06-17",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_013_GBM). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-07."
+  },
+  {
+    "id": "GLIS-PT-014-009",
+    "patientId": "PT-014",
+    "type": "RTSTRUCT - Barriers",
+    "status": "expired",
+    "date": "2026-03-02",
+    "expirationDate": "2026-04-01",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_014_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-07."
+  },
+  {
+    "id": "GLIS-PT-014-006",
+    "patientId": "PT-014",
+    "type": "REG - REG CT/T2",
+    "status": "expired",
+    "date": "2026-03-11",
+    "expirationDate": "2026-04-10",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_014_GBM). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-07-28."
+  },
+  {
+    "id": "GLIS-PT-014-004",
+    "patientId": "PT-014",
+    "type": "CT - MARS",
+    "status": "completed",
+    "date": "2026-03-26",
+    "expirationDate": "2026-06-24",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_014_GBM). Study: BRAIN. Series modality CT, body part HEAD. Manufacturer: GE MEDICAL SYSTEMS Discovery CT590 RT. Source series date: 2008-06-04."
+  },
+  {
+    "id": "GLIS-PT-014-003",
+    "patientId": "PT-014",
+    "type": "REG - REG T1/T2",
+    "status": "expired",
+    "date": "2026-04-02",
+    "expirationDate": "2026-05-02",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_014_GBM). Study: MRI BRAIN (TUMOR) WITH AND WITHOUT CONTRAST. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-07-28."
+  },
+  {
+    "id": "GLIS-PT-014-005",
+    "patientId": "PT-014",
+    "type": "RTSTRUCT - OARs",
+    "status": "expired",
+    "date": "2026-04-12",
+    "expirationDate": "2026-05-12",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_014_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-04."
+  },
+  {
+    "id": "GLIS-PT-014-002",
+    "patientId": "PT-014",
+    "type": "MR - Ax FLAIR T2",
+    "status": "completed",
+    "date": "2026-05-06",
+    "expirationDate": "2026-08-04",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_014_GBM). Study: MRI BRAIN (TUMOR) WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: GE MEDICAL SYSTEMS Signa HDxt. Source series date: 2008-06-04."
+  },
+  {
+    "id": "GLIS-PT-014-001",
+    "patientId": "PT-014",
+    "type": "MR - Ax 3D BRAVO Post",
+    "status": "completed",
+    "date": "2026-05-16",
+    "expirationDate": "2026-08-14",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_014_GBM). Study: MRI BRAIN (TUMOR) WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: GE MEDICAL SYSTEMS Signa HDxt. Source series date: 2008-06-04."
+  },
+  {
+    "id": "GLIS-PT-014-007",
+    "patientId": "PT-014",
+    "type": "REG - REG CT/T1",
+    "status": "completed",
+    "date": "2026-05-22",
+    "expirationDate": "2026-06-21",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_014_GBM). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-07-28."
+  },
+  {
+    "id": "GLIS-PT-014-008",
+    "patientId": "PT-014",
+    "type": "RTSTRUCT - Targets",
+    "status": "completed",
+    "date": "2026-05-23",
+    "expirationDate": "2026-06-22",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_014_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-01."
+  },
+  {
+    "id": "GLIS-PT-015-001",
+    "patientId": "PT-015",
+    "type": "CT - BRAIN",
+    "status": "completed",
+    "date": "2026-03-13",
+    "expirationDate": "2026-06-11",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_015_GBM). Study: BRAIN. Series modality CT, body part HEAD. Manufacturer: GE MEDICAL SYSTEMS LightSpeed RT16. Source series date: 2009-06-27."
+  },
+  {
+    "id": "GLIS-PT-015-004",
+    "patientId": "PT-015",
+    "type": "REG - REG CT/T2",
+    "status": "expired",
+    "date": "2026-03-18",
+    "expirationDate": "2026-04-17",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_015_GBM). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-07."
+  },
+  {
+    "id": "GLIS-PT-015-008",
+    "patientId": "PT-015",
+    "type": "MR - Ax FLAIR T2",
+    "status": "completed",
+    "date": "2026-03-21",
+    "expirationDate": "2026-06-19",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_015_GBM). Study: MRI BRAIN WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: SIEMENS Skyra. Source series date: 2009-06-27."
+  },
+  {
+    "id": "GLIS-PT-015-002",
+    "patientId": "PT-015",
+    "type": "REG - REG CT/T1",
+    "status": "expired",
+    "date": "2026-03-28",
+    "expirationDate": "2026-04-27",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_015_GBM). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-07."
+  },
+  {
+    "id": "GLIS-PT-015-006",
+    "patientId": "PT-015",
+    "type": "RTSTRUCT - OARs",
+    "status": "expired",
+    "date": "2026-04-03",
+    "expirationDate": "2026-05-03",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_015_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-04."
+  },
+  {
+    "id": "GLIS-PT-015-005",
+    "patientId": "PT-015",
+    "type": "RTSTRUCT - Barriers",
+    "status": "expired",
+    "date": "2026-04-10",
+    "expirationDate": "2026-05-10",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_015_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-07."
+  },
+  {
+    "id": "GLIS-PT-015-007",
+    "patientId": "PT-015",
+    "type": "MR - AX MPRAGE RFMT POST",
+    "status": "completed",
+    "date": "2026-04-19",
+    "expirationDate": "2026-07-18",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_015_GBM). Study: MRI BRAIN WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: SIEMENS Skyra. Source series date: 2009-06-27."
+  },
+  {
+    "id": "GLIS-PT-015-003",
+    "patientId": "PT-015",
+    "type": "RTSTRUCT - Targets",
+    "status": "completed",
+    "date": "2026-05-12",
+    "expirationDate": "2026-06-11",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_015_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-01."
+  },
+  {
+    "id": "GLIS-PT-015-009",
+    "patientId": "PT-015",
+    "type": "REG - REG T1/T2",
+    "status": "completed",
+    "date": "2026-05-13",
+    "expirationDate": "2026-06-12",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_015_GBM). Study: MRI BRAIN WITH AND WITHOUT CONTRAST. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-07."
+  },
+  {
+    "id": "GLIS-PT-016-002",
+    "patientId": "PT-016",
+    "type": "REG - REG CT/T1",
+    "status": "expired",
+    "date": "2026-03-12",
+    "expirationDate": "2026-04-11",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_016_GBM). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-08."
+  },
+  {
+    "id": "GLIS-PT-016-005",
+    "patientId": "PT-016",
+    "type": "RTSTRUCT - Barriers",
+    "status": "expired",
+    "date": "2026-03-31",
+    "expirationDate": "2026-04-30",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_016_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-08."
+  },
+  {
+    "id": "GLIS-PT-016-009",
+    "patientId": "PT-016",
+    "type": "REG - REG T1/T2",
+    "status": "expired",
+    "date": "2026-04-16",
+    "expirationDate": "2026-05-16",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_016_GBM). Study: MRI BRAIN WITH AND WITHOUT CONTRAST. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-08."
+  },
+  {
+    "id": "GLIS-PT-016-001",
+    "patientId": "PT-016",
+    "type": "CT - 2.5/5mm",
+    "status": "completed",
+    "date": "2026-04-24",
+    "expirationDate": "2026-07-23",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_016_GBM). Study: BRAIN. Series modality CT, body part HEAD. Manufacturer: GE MEDICAL SYSTEMS LightSpeed RT16. Source series date: 2009-06-02."
+  },
+  {
+    "id": "GLIS-PT-016-008",
+    "patientId": "PT-016",
+    "type": "MR - Ax FLAIR T2",
+    "status": "completed",
+    "date": "2026-04-29",
+    "expirationDate": "2026-07-28",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_016_GBM). Study: MRI BRAIN WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: SIEMENS Skyra. Source series date: 2009-06-02."
+  },
+  {
+    "id": "GLIS-PT-016-004",
+    "patientId": "PT-016",
+    "type": "REG - REG CT/T2",
+    "status": "completed",
+    "date": "2026-05-03",
+    "expirationDate": "2026-06-02",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_016_GBM). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-08."
+  },
+  {
+    "id": "GLIS-PT-016-007",
+    "patientId": "PT-016",
+    "type": "MR - AX POST MPRAGE RFMT",
+    "status": "completed",
+    "date": "2026-05-05",
+    "expirationDate": "2026-08-03",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_016_GBM). Study: MRI BRAIN WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: SIEMENS Skyra. Source series date: 2009-06-02."
+  },
+  {
+    "id": "GLIS-PT-016-003",
+    "patientId": "PT-016",
+    "type": "RTSTRUCT - OARs",
+    "status": "completed",
+    "date": "2026-05-11",
+    "expirationDate": "2026-06-10",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_016_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-04."
+  },
+  {
+    "id": "GLIS-PT-016-006",
+    "patientId": "PT-016",
+    "type": "RTSTRUCT - Targets",
+    "status": "completed",
+    "date": "2026-05-15",
+    "expirationDate": "2026-06-14",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_016_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-01."
+  },
+  {
+    "id": "GLIS-PT-017-003",
+    "patientId": "PT-017",
+    "type": "RTSTRUCT - Barriers",
+    "status": "expired",
+    "date": "2026-03-27",
+    "expirationDate": "2026-04-26",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_017_AAC). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-08."
+  },
+  {
+    "id": "GLIS-PT-017-008",
+    "patientId": "PT-017",
+    "type": "MR - AX MPRAGE POST RFMT",
+    "status": "completed",
+    "date": "2026-04-03",
+    "expirationDate": "2026-07-02",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_017_AAC). Study: MRI BRAIN WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: SIEMENS Avanto_fit. Source series date: 2008-11-12."
+  },
+  {
+    "id": "GLIS-PT-017-005",
+    "patientId": "PT-017",
+    "type": "REG - REG CT/T2",
+    "status": "expired",
+    "date": "2026-04-06",
+    "expirationDate": "2026-05-06",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_017_AAC). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-08."
+  },
+  {
+    "id": "GLIS-PT-017-006",
+    "patientId": "PT-017",
+    "type": "REG - REG CT/T1",
+    "status": "expired",
+    "date": "2026-04-07",
+    "expirationDate": "2026-05-07",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_017_AAC). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-08."
+  },
+  {
+    "id": "GLIS-PT-017-004",
+    "patientId": "PT-017",
+    "type": "RTSTRUCT - OARs",
+    "status": "expired",
+    "date": "2026-04-08",
+    "expirationDate": "2026-05-08",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_017_AAC). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-04."
+  },
+  {
+    "id": "GLIS-PT-017-009",
+    "patientId": "PT-017",
+    "type": "REG - REG T1/T2",
+    "status": "expired",
+    "date": "2026-04-18",
+    "expirationDate": "2026-05-18",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_017_AAC). Study: MRI BRAIN WITH AND WITHOUT CONTRAST. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-08."
+  },
+  {
+    "id": "GLIS-PT-017-002",
+    "patientId": "PT-017",
+    "type": "RTSTRUCT - Targets",
+    "status": "completed",
+    "date": "2026-05-04",
+    "expirationDate": "2026-06-03",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_017_AAC). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-01."
+  },
+  {
+    "id": "GLIS-PT-017-001",
+    "patientId": "PT-017",
+    "type": "CT - BRAIN",
+    "status": "completed",
+    "date": "2026-05-14",
+    "expirationDate": "2026-08-12",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_017_AAC). Study: BRAIN. Series modality CT, body part HEAD. Manufacturer: GE MEDICAL SYSTEMS LightSpeed RT16. Source series date: 2008-11-12."
+  },
+  {
+    "id": "GLIS-PT-017-007",
+    "patientId": "PT-017",
+    "type": "MR - Ax Flair",
+    "status": "completed",
+    "date": "2026-05-17",
+    "expirationDate": "2026-08-15",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_017_AAC). Study: MRI BRAIN WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: SIEMENS Avanto_fit. Source series date: 2008-11-12."
+  },
+  {
+    "id": "GLIS-PT-018-002",
+    "patientId": "PT-018",
+    "type": "RTSTRUCT - OARs",
+    "status": "expired",
+    "date": "2026-03-12",
+    "expirationDate": "2026-04-11",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_018_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-04."
+  },
+  {
+    "id": "GLIS-PT-018-003",
+    "patientId": "PT-018",
+    "type": "RTSTRUCT - Targets",
+    "status": "expired",
+    "date": "2026-03-23",
+    "expirationDate": "2026-04-22",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_018_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-01."
+  },
+  {
+    "id": "GLIS-PT-018-005",
+    "patientId": "PT-018",
+    "type": "REG - REG CT/T1",
+    "status": "expired",
+    "date": "2026-03-24",
+    "expirationDate": "2026-04-23",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_018_GBM). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-08."
+  },
+  {
+    "id": "GLIS-PT-018-007",
+    "patientId": "PT-018",
+    "type": "MR - Ax FLAIR T2",
+    "status": "completed",
+    "date": "2026-04-03",
+    "expirationDate": "2026-07-02",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_018_GBM). Study: MRI BRAIN (TUMOR) WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: SIEMENS Skyra. Source series date: 2008-12-13."
+  },
+  {
+    "id": "GLIS-PT-018-004",
+    "patientId": "PT-018",
+    "type": "RTSTRUCT - Barriers",
+    "status": "expired",
+    "date": "2026-04-24",
+    "expirationDate": "2026-05-24",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_018_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-08."
+  },
+  {
+    "id": "GLIS-PT-018-009",
+    "patientId": "PT-018",
+    "type": "REG - REG T1/T2",
+    "status": "completed",
+    "date": "2026-05-06",
+    "expirationDate": "2026-06-05",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_018_GBM). Study: MRI BRAIN (TUMOR) WITH AND WITHOUT CONTRAST. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-08."
+  },
+  {
+    "id": "GLIS-PT-018-006",
+    "patientId": "PT-018",
+    "type": "REG - REG CT/T2",
+    "status": "completed",
+    "date": "2026-05-12",
+    "expirationDate": "2026-06-11",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_018_GBM). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-08."
+  },
+  {
+    "id": "GLIS-PT-018-008",
+    "patientId": "PT-018",
+    "type": "MR - AX REFMT MPR POST",
+    "status": "completed",
+    "date": "2026-05-14",
+    "expirationDate": "2026-08-12",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_018_GBM). Study: MRI BRAIN (TUMOR) WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: SIEMENS Skyra. Source series date: 2008-12-13."
+  },
+  {
+    "id": "GLIS-PT-018-001",
+    "patientId": "PT-018",
+    "type": "CT - BRAIN",
+    "status": "completed",
+    "date": "2026-05-16",
+    "expirationDate": "2026-08-14",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_018_GBM). Study: BRAIN. Series modality CT, body part HEAD. Manufacturer: GE MEDICAL SYSTEMS Discovery CT590 RT. Source series date: 2008-12-13."
+  },
+  {
+    "id": "GLIS-PT-019-002",
+    "patientId": "PT-019",
+    "type": "MR - AX REFORMAT SPGR POST",
+    "status": "completed",
+    "date": "2026-03-04",
+    "expirationDate": "2026-06-02",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_019_GBM). Study: MRI BRAIN (TUMOR) WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: SIEMENS Skyra. Source series date: 2008-11-26."
+  },
+  {
+    "id": "GLIS-PT-019-001",
+    "patientId": "PT-019",
+    "type": "MR - Ax FLAIR T2",
+    "status": "completed",
+    "date": "2026-03-24",
+    "expirationDate": "2026-06-22",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_019_GBM). Study: MRI BRAIN (TUMOR) WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: SIEMENS Skyra. Source series date: 2008-11-26."
+  },
+  {
+    "id": "GLIS-PT-019-009",
+    "patientId": "PT-019",
+    "type": "RTSTRUCT - Targets",
+    "status": "expired",
+    "date": "2026-03-28",
+    "expirationDate": "2026-04-27",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_019_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-01."
+  },
+  {
+    "id": "GLIS-PT-019-003",
+    "patientId": "PT-019",
+    "type": "REG - REG T1/T2",
+    "status": "expired",
+    "date": "2026-04-02",
+    "expirationDate": "2026-05-02",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_019_GBM). Study: MRI BRAIN (TUMOR) WITH AND WITHOUT CONTRAST. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-07-28."
+  },
+  {
+    "id": "GLIS-PT-019-005",
+    "patientId": "PT-019",
+    "type": "REG - REG CT/T1",
+    "status": "expired",
+    "date": "2026-04-06",
+    "expirationDate": "2026-05-06",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_019_GBM). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-07-28."
+  },
+  {
+    "id": "GLIS-PT-019-006",
+    "patientId": "PT-019",
+    "type": "RTSTRUCT - OARs",
+    "status": "expired",
+    "date": "2026-04-21",
+    "expirationDate": "2026-05-21",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_019_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-04."
+  },
+  {
+    "id": "GLIS-PT-019-008",
+    "patientId": "PT-019",
+    "type": "REG - REG CT/T2",
+    "status": "expired",
+    "date": "2026-04-29",
+    "expirationDate": "2026-05-29",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_019_GBM). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-07-28."
+  },
+  {
+    "id": "GLIS-PT-019-007",
+    "patientId": "PT-019",
+    "type": "RTSTRUCT - Barriers",
+    "status": "completed",
+    "date": "2026-05-04",
+    "expirationDate": "2026-06-03",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_019_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-08."
+  },
+  {
+    "id": "GLIS-PT-019-004",
+    "patientId": "PT-019",
+    "type": "CT - 2.5/5mm",
+    "status": "completed",
+    "date": "2026-05-18",
+    "expirationDate": "2026-08-16",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_019_GBM). Study: BRAIN. Series modality CT, body part HEAD. Manufacturer: GE MEDICAL SYSTEMS LightSpeed RT16. Source series date: 2008-11-26."
+  },
+  {
+    "id": "GLIS-PT-020-006",
+    "patientId": "PT-020",
+    "type": "REG - REG CT/T2",
+    "status": "expired",
+    "date": "2026-03-05",
+    "expirationDate": "2026-04-04",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_020_GBM). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-08."
+  },
+  {
+    "id": "GLIS-PT-020-002",
+    "patientId": "PT-020",
+    "type": "REG - REG CT/T1",
+    "status": "expired",
+    "date": "2026-03-16",
+    "expirationDate": "2026-04-15",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_020_GBM). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-08."
+  },
+  {
+    "id": "GLIS-PT-020-007",
+    "patientId": "PT-020",
+    "type": "MR - MPRAGE AX RFT POST",
+    "status": "completed",
+    "date": "2026-03-18",
+    "expirationDate": "2026-06-16",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_020_GBM). Study: MRI BRAIN (TUMOR) WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: SIEMENS Skyra. Source series date: 2009-02-07."
+  },
+  {
+    "id": "GLIS-PT-020-003",
+    "patientId": "PT-020",
+    "type": "RTSTRUCT - OARs",
+    "status": "expired",
+    "date": "2026-03-31",
+    "expirationDate": "2026-04-30",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_020_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-04."
+  },
+  {
+    "id": "GLIS-PT-020-005",
+    "patientId": "PT-020",
+    "type": "RTSTRUCT - Barriers",
+    "status": "expired",
+    "date": "2026-04-10",
+    "expirationDate": "2026-05-10",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_020_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-08."
+  },
+  {
+    "id": "GLIS-PT-020-001",
+    "patientId": "PT-020",
+    "type": "CT - 2.5/5mm",
+    "status": "completed",
+    "date": "2026-05-17",
+    "expirationDate": "2026-08-15",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_020_GBM). Study: BRAIN. Series modality CT, body part HEAD. Manufacturer: GE MEDICAL SYSTEMS LightSpeed RT16. Source series date: 2009-02-07."
+  },
+  {
+    "id": "GLIS-PT-020-004",
+    "patientId": "PT-020",
+    "type": "RTSTRUCT - Targets",
+    "status": "completed",
+    "date": "2026-05-19",
+    "expirationDate": "2026-06-18",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_020_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-01."
+  },
+  {
+    "id": "GLIS-PT-020-009",
+    "patientId": "PT-020",
+    "type": "REG - REG T1/T2",
+    "status": "completed",
+    "date": "2026-05-22",
+    "expirationDate": "2026-06-21",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_020_GBM). Study: MRI BRAIN (TUMOR) WITH AND WITHOUT CONTRAST. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-08."
+  },
+  {
+    "id": "GLIS-PT-020-008",
+    "patientId": "PT-020",
+    "type": "MR - Ax FLAIR T2",
+    "status": "completed",
+    "date": "2026-05-23",
+    "expirationDate": "2026-08-21",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_020_GBM). Study: MRI BRAIN (TUMOR) WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: SIEMENS Skyra. Source series date: 2009-02-07."
+  },
+  {
+    "id": "GLIS-PT-021-001",
+    "patientId": "PT-021",
+    "type": "CT - 2.5/5mm",
+    "status": "completed",
+    "date": "2026-03-10",
+    "expirationDate": "2026-06-08",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_021_GBM). Study: BRAIN. Series modality CT, body part HEAD. Manufacturer: GE MEDICAL SYSTEMS Discovery CT590 RT. Source series date: 2008-10-19."
+  },
+  {
+    "id": "GLIS-PT-021-009",
+    "patientId": "PT-021",
+    "type": "REG - REG T1/T2",
+    "status": "expired",
+    "date": "2026-04-03",
+    "expirationDate": "2026-05-03",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_021_GBM). Study: MRI BRAIN TUMOR WITH AND WITHOUT CONTRAST. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-07-28."
+  },
+  {
+    "id": "GLIS-PT-021-007",
+    "patientId": "PT-021",
+    "type": "MR - AX FLAIR",
+    "status": "completed",
+    "date": "2026-04-09",
+    "expirationDate": "2026-07-08",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_021_GBM). Study: MRI BRAIN TUMOR WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: SIEMENS Prisma. Source series date: 2008-10-19."
+  },
+  {
+    "id": "GLIS-PT-021-005",
+    "patientId": "PT-021",
+    "type": "REG - REG CT/T2",
+    "status": "expired",
+    "date": "2026-04-11",
+    "expirationDate": "2026-05-11",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_021_GBM). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-07-28."
+  },
+  {
+    "id": "GLIS-PT-021-003",
+    "patientId": "PT-021",
+    "type": "RTSTRUCT - OARs",
+    "status": "expired",
+    "date": "2026-04-15",
+    "expirationDate": "2026-05-15",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_021_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-04."
+  },
+  {
+    "id": "GLIS-PT-021-004",
+    "patientId": "PT-021",
+    "type": "RTSTRUCT - Targets",
+    "status": "expired",
+    "date": "2026-04-27",
+    "expirationDate": "2026-05-27",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_021_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-01."
+  },
+  {
+    "id": "GLIS-PT-021-008",
+    "patientId": "PT-021",
+    "type": "MR - 3D AX T1 Nav",
+    "status": "completed",
+    "date": "2026-05-15",
+    "expirationDate": "2026-08-13",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_021_GBM). Study: MRI BRAIN TUMOR WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: SIEMENS Prisma. Source series date: 2008-10-19."
+  },
+  {
+    "id": "GLIS-PT-021-002",
+    "patientId": "PT-021",
+    "type": "RTSTRUCT - Barriers",
+    "status": "completed",
+    "date": "2026-05-18",
+    "expirationDate": "2026-06-17",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_021_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-08."
+  },
+  {
+    "id": "GLIS-PT-021-006",
+    "patientId": "PT-021",
+    "type": "REG - REG CT/T1",
+    "status": "completed",
+    "date": "2026-05-18",
+    "expirationDate": "2026-06-17",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_021_GBM). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-07-28."
+  },
+  {
+    "id": "GLIS-PT-022-009",
+    "patientId": "PT-022",
+    "type": "REG - REG CT/T1",
+    "status": "expired",
+    "date": "2026-03-11",
+    "expirationDate": "2026-04-10",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_022_GBM). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-07-28."
+  },
+  {
+    "id": "GLIS-PT-022-007",
+    "patientId": "PT-022",
+    "type": "RTSTRUCT - OARs",
+    "status": "expired",
+    "date": "2026-04-12",
+    "expirationDate": "2026-05-12",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_022_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-04."
+  },
+  {
+    "id": "GLIS-PT-022-001",
+    "patientId": "PT-022",
+    "type": "MR - AXIAL MPRAGE POST REFORMAT",
+    "status": "completed",
+    "date": "2026-04-19",
+    "expirationDate": "2026-07-18",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_022_GBM). Study: MRI BRAIN WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: SIEMENS Skyra. Source series date: 2008-10-29."
+  },
+  {
+    "id": "GLIS-PT-022-002",
+    "patientId": "PT-022",
+    "type": "MR - 5M Ax FLAIR T2",
+    "status": "completed",
+    "date": "2026-04-20",
+    "expirationDate": "2026-07-19",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_022_GBM). Study: MRI BRAIN WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: SIEMENS Skyra. Source series date: 2008-10-29."
+  },
+  {
+    "id": "GLIS-PT-022-008",
+    "patientId": "PT-022",
+    "type": "RTSTRUCT - Barriers",
+    "status": "completed",
+    "date": "2026-05-04",
+    "expirationDate": "2026-06-03",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_022_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-08."
+  },
+  {
+    "id": "GLIS-PT-022-005",
+    "patientId": "PT-022",
+    "type": "RTSTRUCT - Targets",
+    "status": "completed",
+    "date": "2026-05-11",
+    "expirationDate": "2026-06-10",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_022_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-01."
+  },
+  {
+    "id": "GLIS-PT-022-004",
+    "patientId": "PT-022",
+    "type": "CT - 2.5/5mm",
+    "status": "completed",
+    "date": "2026-05-13",
+    "expirationDate": "2026-08-11",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_022_GBM). Study: BRAIN. Series modality CT, body part HEAD. Manufacturer: GE MEDICAL SYSTEMS Discovery CT590 RT. Source series date: 2008-10-29."
+  },
+  {
+    "id": "GLIS-PT-022-003",
+    "patientId": "PT-022",
+    "type": "REG - REG T1/T2",
+    "status": "completed",
+    "date": "2026-05-17",
+    "expirationDate": "2026-06-16",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_022_GBM). Study: MRI BRAIN WITH AND WITHOUT CONTRAST. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-07-28."
+  },
+  {
+    "id": "GLIS-PT-022-006",
+    "patientId": "PT-022",
+    "type": "REG - REG CT/T2",
+    "status": "completed",
+    "date": "2026-05-17",
+    "expirationDate": "2026-06-16",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_022_GBM). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-07-28."
+  },
+  {
+    "id": "GLIS-PT-023-005",
+    "patientId": "PT-023",
+    "type": "RTSTRUCT - Barriers",
+    "status": "expired",
+    "date": "2026-03-04",
+    "expirationDate": "2026-04-03",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_023_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-08."
+  },
+  {
+    "id": "GLIS-PT-023-008",
+    "patientId": "PT-023",
+    "type": "RTSTRUCT - OARs",
+    "status": "expired",
+    "date": "2026-03-05",
+    "expirationDate": "2026-04-04",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_023_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-04."
+  },
+  {
+    "id": "GLIS-PT-023-001",
+    "patientId": "PT-023",
+    "type": "MR - AX MPRAGE POST RFMT",
+    "status": "completed",
+    "date": "2026-03-07",
+    "expirationDate": "2026-06-05",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_023_GBM). Study: MRI BRAIN (TUMOR) WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: SIEMENS Skyra. Source series date: 2008-10-05."
+  },
+  {
+    "id": "GLIS-PT-023-004",
+    "patientId": "PT-023",
+    "type": "CT - BRAIN",
+    "status": "completed",
+    "date": "2026-03-13",
+    "expirationDate": "2026-06-11",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_023_GBM). Study: BRAIN. Series modality CT, body part HEAD. Manufacturer: GE MEDICAL SYSTEMS Discovery CT590 RT. Source series date: 2008-10-05."
+  },
+  {
+    "id": "GLIS-PT-023-002",
+    "patientId": "PT-023",
+    "type": "MR - Ax FLAIR T2",
+    "status": "completed",
+    "date": "2026-03-18",
+    "expirationDate": "2026-06-16",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_023_GBM). Study: MRI BRAIN (TUMOR) WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: SIEMENS Skyra. Source series date: 2008-10-05."
+  },
+  {
+    "id": "GLIS-PT-023-009",
+    "patientId": "PT-023",
+    "type": "RTSTRUCT - Targets",
+    "status": "expired",
+    "date": "2026-03-22",
+    "expirationDate": "2026-04-21",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_023_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-04."
+  },
+  {
+    "id": "GLIS-PT-023-003",
+    "patientId": "PT-023",
+    "type": "REG - REG T1/T2",
+    "status": "expired",
+    "date": "2026-03-31",
+    "expirationDate": "2026-04-30",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_023_GBM). Study: MRI BRAIN (TUMOR) WITH AND WITHOUT CONTRAST. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-08."
+  },
+  {
+    "id": "GLIS-PT-023-006",
+    "patientId": "PT-023",
+    "type": "REG - REG CT/T1",
+    "status": "completed",
+    "date": "2026-05-06",
+    "expirationDate": "2026-06-05",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_023_GBM). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-08."
+  },
+  {
+    "id": "GLIS-PT-023-007",
+    "patientId": "PT-023",
+    "type": "REG - REG CT/T2",
+    "status": "completed",
+    "date": "2026-05-16",
+    "expirationDate": "2026-06-15",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_023_GBM). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-08."
+  },
+  {
+    "id": "GLIS-PT-024-003",
+    "patientId": "PT-024",
+    "type": "REG - REG T1/T2",
+    "status": "expired",
+    "date": "2026-03-16",
+    "expirationDate": "2026-04-15",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_024_GBM). Study: MRI BRAIN (TUMOR) WITH AND WITHOUT CONTRAST. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-08."
+  },
+  {
+    "id": "GLIS-PT-024-001",
+    "patientId": "PT-024",
+    "type": "MR - AX POST MPRAGE RFMT",
+    "status": "completed",
+    "date": "2026-03-22",
+    "expirationDate": "2026-06-20",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_024_GBM). Study: MRI BRAIN (TUMOR) WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: SIEMENS Skyra. Source series date: 2008-09-16."
+  },
+  {
+    "id": "GLIS-PT-024-007",
+    "patientId": "PT-024",
+    "type": "REG - REG CT/T2",
+    "status": "expired",
+    "date": "2026-03-28",
+    "expirationDate": "2026-04-27",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_024_GBM). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-08."
+  },
+  {
+    "id": "GLIS-PT-024-005",
+    "patientId": "PT-024",
+    "type": "RTSTRUCT - Targets",
+    "status": "expired",
+    "date": "2026-04-03",
+    "expirationDate": "2026-05-03",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_024_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-01."
+  },
+  {
+    "id": "GLIS-PT-024-004",
+    "patientId": "PT-024",
+    "type": "CT - BRAIN",
+    "status": "completed",
+    "date": "2026-04-15",
+    "expirationDate": "2026-07-14",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_024_GBM). Study: BRAIN. Series modality CT, body part HEAD. Manufacturer: GE MEDICAL SYSTEMS Discovery CT590 RT. Source series date: 2008-09-16."
+  },
+  {
+    "id": "GLIS-PT-024-006",
+    "patientId": "PT-024",
+    "type": "RTSTRUCT - Barriers",
+    "status": "expired",
+    "date": "2026-04-24",
+    "expirationDate": "2026-05-24",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_024_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-08."
+  },
+  {
+    "id": "GLIS-PT-024-008",
+    "patientId": "PT-024",
+    "type": "RTSTRUCT - OARs",
+    "status": "completed",
+    "date": "2026-05-01",
+    "expirationDate": "2026-05-31",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_024_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-04."
+  },
+  {
+    "id": "GLIS-PT-024-009",
+    "patientId": "PT-024",
+    "type": "REG - REG CT/T1",
+    "status": "completed",
+    "date": "2026-05-10",
+    "expirationDate": "2026-06-09",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_024_GBM). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-08."
+  },
+  {
+    "id": "GLIS-PT-024-002",
+    "patientId": "PT-024",
+    "type": "MR - Ax FLAIR T2",
+    "status": "completed",
+    "date": "2026-05-25",
+    "expirationDate": "2026-08-23",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_024_GBM). Study: MRI BRAIN (TUMOR) WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: SIEMENS Skyra. Source series date: 2008-09-16."
+  },
+  {
+    "id": "GLIS-PT-025-003",
+    "patientId": "PT-025",
+    "type": "REG - REG T1/T2",
+    "status": "expired",
+    "date": "2026-03-11",
+    "expirationDate": "2026-04-10",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_025_GBM). Study: MRI BRAIN (TUMOR) WITH AND WITHOUT CONTRAST. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-07-28."
+  },
+  {
+    "id": "GLIS-PT-025-006",
+    "patientId": "PT-025",
+    "type": "RTSTRUCT - Barriers",
+    "status": "expired",
+    "date": "2026-03-20",
+    "expirationDate": "2026-04-19",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_025_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-08."
+  },
+  {
+    "id": "GLIS-PT-025-002",
+    "patientId": "PT-025",
+    "type": "MR - Flair Axial-S 5M",
+    "status": "completed",
+    "date": "2026-04-07",
+    "expirationDate": "2026-07-06",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_025_GBM). Study: MRI BRAIN (TUMOR) WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: SIEMENS Aera. Source series date: 2008-09-03."
+  },
+  {
+    "id": "GLIS-PT-025-007",
+    "patientId": "PT-025",
+    "type": "REG - REG CT/T2",
+    "status": "expired",
+    "date": "2026-04-07",
+    "expirationDate": "2026-05-07",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_025_GBM). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-07-28."
+  },
+  {
+    "id": "GLIS-PT-025-004",
+    "patientId": "PT-025",
+    "type": "CT - BRAIN",
+    "status": "completed",
+    "date": "2026-04-24",
+    "expirationDate": "2026-07-23",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_025_GBM). Study: BRAIN. Series modality CT, body part HEAD. Manufacturer: GE MEDICAL SYSTEMS Discovery CT590 RT. Source series date: 2008-09-03."
+  },
+  {
+    "id": "GLIS-PT-025-008",
+    "patientId": "PT-025",
+    "type": "RTSTRUCT - OARs",
+    "status": "completed",
+    "date": "2026-05-02",
+    "expirationDate": "2026-06-01",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_025_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-04."
+  },
+  {
+    "id": "GLIS-PT-025-005",
+    "patientId": "PT-025",
+    "type": "REG - REG CT/T1",
+    "status": "completed",
+    "date": "2026-05-13",
+    "expirationDate": "2026-06-12",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_025_GBM). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-07-28."
+  },
+  {
+    "id": "GLIS-PT-025-009",
+    "patientId": "PT-025",
+    "type": "RTSTRUCT - Targets",
+    "status": "completed",
+    "date": "2026-05-15",
+    "expirationDate": "2026-06-14",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_025_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-01."
+  },
+  {
+    "id": "GLIS-PT-025-001",
+    "patientId": "PT-025",
+    "type": "MR - Ax T1 MPRAGE reformat post",
+    "status": "completed",
+    "date": "2026-05-22",
+    "expirationDate": "2026-08-20",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_025_GBM). Study: MRI BRAIN (TUMOR) WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: SIEMENS Aera. Source series date: 2008-09-03."
+  },
+  {
+    "id": "GLIS-PT-026-004",
+    "patientId": "PT-026",
+    "type": "CT - BRAIN",
+    "status": "completed",
+    "date": "2026-03-11",
+    "expirationDate": "2026-06-09",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_026_GBM). Study: BRAIN. Series modality CT, body part HEAD. Manufacturer: GE MEDICAL SYSTEMS LightSpeed RT16. Source series date: 2008-09-13."
+  },
+  {
+    "id": "GLIS-PT-026-003",
+    "patientId": "PT-026",
+    "type": "REG - REG T1/T2",
+    "status": "expired",
+    "date": "2026-03-18",
+    "expirationDate": "2026-04-17",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_026_GBM). Study: MRI BRAIN (TUMOR) WITH AND WITHOUT CONTRAST. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-12."
+  },
+  {
+    "id": "GLIS-PT-026-007",
+    "patientId": "PT-026",
+    "type": "RTSTRUCT - OARs",
+    "status": "expired",
+    "date": "2026-03-23",
+    "expirationDate": "2026-04-22",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_026_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-04."
+  },
+  {
+    "id": "GLIS-PT-026-009",
+    "patientId": "PT-026",
+    "type": "REG - REG CT/T1",
+    "status": "expired",
+    "date": "2026-03-31",
+    "expirationDate": "2026-04-30",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_026_GBM). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-12."
+  },
+  {
+    "id": "GLIS-PT-026-005",
+    "patientId": "PT-026",
+    "type": "RTSTRUCT - Barriers",
+    "status": "expired",
+    "date": "2026-04-11",
+    "expirationDate": "2026-05-11",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_026_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-12."
+  },
+  {
+    "id": "GLIS-PT-026-006",
+    "patientId": "PT-026",
+    "type": "REG - REG CT/T2",
+    "status": "completed",
+    "date": "2026-05-10",
+    "expirationDate": "2026-06-09",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_026_GBM). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-12."
+  },
+  {
+    "id": "GLIS-PT-026-008",
+    "patientId": "PT-026",
+    "type": "RTSTRUCT - Targets",
+    "status": "completed",
+    "date": "2026-05-14",
+    "expirationDate": "2026-06-13",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_026_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-01."
+  },
+  {
+    "id": "GLIS-PT-026-001",
+    "patientId": "PT-026",
+    "type": "MR - AX POST MPRAGE RFMT",
+    "status": "completed",
+    "date": "2026-05-15",
+    "expirationDate": "2026-08-13",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_026_GBM). Study: MRI BRAIN (TUMOR) WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: SIEMENS Avanto. Source series date: 2008-09-13."
+  },
+  {
+    "id": "GLIS-PT-026-002",
+    "patientId": "PT-026",
+    "type": "MR - T2 FLAIR Ax",
+    "status": "completed",
+    "date": "2026-05-23",
+    "expirationDate": "2026-08-21",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_026_GBM). Study: MRI BRAIN (TUMOR) WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: SIEMENS Avanto. Source series date: 2008-09-13."
+  },
+  {
+    "id": "GLIS-PT-027-009",
+    "patientId": "PT-027",
+    "type": "RTSTRUCT - OARs",
+    "status": "expired",
+    "date": "2026-03-13",
+    "expirationDate": "2026-04-12",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_027_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-04."
+  },
+  {
+    "id": "GLIS-PT-027-001",
+    "patientId": "PT-027",
+    "type": "MR - MPRAGE AX RFT POST",
+    "status": "completed",
+    "date": "2026-03-15",
+    "expirationDate": "2026-06-13",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_027_GBM). Study: MRI BRAIN (TUMOR) WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: SIEMENS Skyra. Source series date: 2008-09-09."
+  },
+  {
+    "id": "GLIS-PT-027-006",
+    "patientId": "PT-027",
+    "type": "REG - REG CT/T1",
+    "status": "expired",
+    "date": "2026-03-18",
+    "expirationDate": "2026-04-17",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_027_GBM). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-12."
+  },
+  {
+    "id": "GLIS-PT-027-003",
+    "patientId": "PT-027",
+    "type": "REG - REG T1/T2",
+    "status": "expired",
+    "date": "2026-03-29",
+    "expirationDate": "2026-04-28",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_027_GBM). Study: MRI BRAIN (TUMOR) WITH AND WITHOUT CONTRAST. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-12."
+  },
+  {
+    "id": "GLIS-PT-027-004",
+    "patientId": "PT-027",
+    "type": "CT - BRAIN",
+    "status": "completed",
+    "date": "2026-03-30",
+    "expirationDate": "2026-06-28",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_027_GBM). Study: BRAIN. Series modality CT, body part HEAD. Manufacturer: GE MEDICAL SYSTEMS LightSpeed RT16. Source series date: 2008-09-09."
+  },
+  {
+    "id": "GLIS-PT-027-007",
+    "patientId": "PT-027",
+    "type": "REG - REG CT/T2",
+    "status": "expired",
+    "date": "2026-04-01",
+    "expirationDate": "2026-05-01",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_027_GBM). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-12."
+  },
+  {
+    "id": "GLIS-PT-027-008",
+    "patientId": "PT-027",
+    "type": "RTSTRUCT - Barriers",
+    "status": "expired",
+    "date": "2026-04-02",
+    "expirationDate": "2026-05-02",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_027_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-12."
+  },
+  {
+    "id": "GLIS-PT-027-002",
+    "patientId": "PT-027",
+    "type": "MR - 5M Ax FLAIR T2",
+    "status": "completed",
+    "date": "2026-05-02",
+    "expirationDate": "2026-07-31",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_027_GBM). Study: MRI BRAIN (TUMOR) WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: SIEMENS Skyra. Source series date: 2008-09-09."
+  },
+  {
+    "id": "GLIS-PT-027-005",
+    "patientId": "PT-027",
+    "type": "RTSTRUCT - Targets",
+    "status": "completed",
+    "date": "2026-05-21",
+    "expirationDate": "2026-06-20",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_027_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-01."
+  },
+  {
+    "id": "GLIS-PT-028-005",
+    "patientId": "PT-028",
+    "type": "REG - REG CT/T1",
+    "status": "expired",
+    "date": "2026-03-06",
+    "expirationDate": "2026-04-05",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_028_GBM). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-12."
+  },
+  {
+    "id": "GLIS-PT-028-002",
+    "patientId": "PT-028",
+    "type": "MR - 5M Ax FLAIR T2",
+    "status": "completed",
+    "date": "2026-03-09",
+    "expirationDate": "2026-06-07",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_028_GBM). Study: MRI BRAIN (TUMOR) WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: SIEMENS Skyra. Source series date: 2008-08-17."
+  },
+  {
+    "id": "GLIS-PT-028-003",
+    "patientId": "PT-028",
+    "type": "REG - REG T1/T2",
+    "status": "expired",
+    "date": "2026-03-29",
+    "expirationDate": "2026-04-28",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_028_GBM). Study: MRI BRAIN (TUMOR) WITH AND WITHOUT CONTRAST. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-12."
+  },
+  {
+    "id": "GLIS-PT-028-001",
+    "patientId": "PT-028",
+    "type": "MR - 10M ax mprage post rfmt",
+    "status": "completed",
+    "date": "2026-04-09",
+    "expirationDate": "2026-07-08",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_028_GBM). Study: MRI BRAIN (TUMOR) WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: SIEMENS Skyra. Source series date: 2008-08-17."
+  },
+  {
+    "id": "GLIS-PT-028-009",
+    "patientId": "PT-028",
+    "type": "REG - REG CT/T2",
+    "status": "expired",
+    "date": "2026-04-19",
+    "expirationDate": "2026-05-19",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_028_GBM). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-12."
+  },
+  {
+    "id": "GLIS-PT-028-008",
+    "patientId": "PT-028",
+    "type": "RTSTRUCT - Targets",
+    "status": "completed",
+    "date": "2026-04-30",
+    "expirationDate": "2026-05-30",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_028_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-01."
+  },
+  {
+    "id": "GLIS-PT-028-004",
+    "patientId": "PT-028",
+    "type": "CT - BRAIN",
+    "status": "completed",
+    "date": "2026-05-03",
+    "expirationDate": "2026-08-01",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_028_GBM). Study: BRAIN. Series modality CT, body part HEAD. Manufacturer: GE MEDICAL SYSTEMS Discovery CT590 RT. Source series date: 2008-08-17."
+  },
+  {
+    "id": "GLIS-PT-028-006",
+    "patientId": "PT-028",
+    "type": "RTSTRUCT - OARs",
+    "status": "completed",
+    "date": "2026-05-10",
+    "expirationDate": "2026-06-09",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_028_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-04."
+  },
+  {
+    "id": "GLIS-PT-028-007",
+    "patientId": "PT-028",
+    "type": "RTSTRUCT - Barriers",
+    "status": "completed",
+    "date": "2026-05-21",
+    "expirationDate": "2026-06-20",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_028_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-12."
+  },
+  {
+    "id": "GLIS-PT-029-003",
+    "patientId": "PT-029",
+    "type": "REG - REG T1/T2",
+    "status": "expired",
+    "date": "2026-04-01",
+    "expirationDate": "2026-05-01",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_029_GBM). Study: MRI BRAIN (TUMOR) WITH AND WITHOUT CONTRAST. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-12."
+  },
+  {
+    "id": "GLIS-PT-029-002",
+    "patientId": "PT-029",
+    "type": "MR - 5M Ax FLAIR T2",
+    "status": "completed",
+    "date": "2026-04-02",
+    "expirationDate": "2026-07-01",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_029_GBM). Study: MRI BRAIN (TUMOR) WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: SIEMENS Skyra. Source series date: 2008-10-05."
+  },
+  {
+    "id": "GLIS-PT-029-006",
+    "patientId": "PT-029",
+    "type": "REG - REG CT/T1",
+    "status": "expired",
+    "date": "2026-04-13",
+    "expirationDate": "2026-05-13",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_029_GBM). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-12."
+  },
+  {
+    "id": "GLIS-PT-029-007",
+    "patientId": "PT-029",
+    "type": "REG - REG CT/T2",
+    "status": "expired",
+    "date": "2026-04-22",
+    "expirationDate": "2026-05-22",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_029_GBM). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-12."
+  },
+  {
+    "id": "GLIS-PT-029-005",
+    "patientId": "PT-029",
+    "type": "RTSTRUCT - Targets",
+    "status": "expired",
+    "date": "2026-04-24",
+    "expirationDate": "2026-05-24",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_029_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-01."
+  },
+  {
+    "id": "GLIS-PT-029-004",
+    "patientId": "PT-029",
+    "type": "CT - 2.5/5mm",
+    "status": "completed",
+    "date": "2026-04-28",
+    "expirationDate": "2026-07-27",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_029_GBM). Study: BRAIN. Series modality CT, body part HEAD. Manufacturer: GE MEDICAL SYSTEMS LightSpeed RT16. Source series date: 2008-10-05."
+  },
+  {
+    "id": "GLIS-PT-029-001",
+    "patientId": "PT-029",
+    "type": "MR - AXIAL RFMT POST MPRAGE",
+    "status": "completed",
+    "date": "2026-05-04",
+    "expirationDate": "2026-08-02",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_029_GBM). Study: MRI BRAIN (TUMOR) WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: SIEMENS Skyra. Source series date: 2008-10-05."
+  },
+  {
+    "id": "GLIS-PT-029-009",
+    "patientId": "PT-029",
+    "type": "RTSTRUCT - Barriers",
+    "status": "completed",
+    "date": "2026-05-23",
+    "expirationDate": "2026-06-22",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_029_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-12."
+  },
+  {
+    "id": "GLIS-PT-029-008",
+    "patientId": "PT-029",
+    "type": "RTSTRUCT - OARs",
+    "status": "completed",
+    "date": "2026-05-25",
+    "expirationDate": "2026-06-24",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_029_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-04."
+  },
+  {
+    "id": "GLIS-PT-030-003",
+    "patientId": "PT-030",
+    "type": "RTSTRUCT - OARs",
+    "status": "expired",
+    "date": "2026-03-06",
+    "expirationDate": "2026-04-05",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_030_GBM). Study: IMRT BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-04."
+  },
+  {
+    "id": "GLIS-PT-030-007",
+    "patientId": "PT-030",
+    "type": "MR - MPRAGE AX RFT POST",
+    "status": "completed",
+    "date": "2026-03-14",
+    "expirationDate": "2026-06-12",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_030_GBM). Study: MRI BRAIN (TUMOR) WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: SIEMENS Skyra. Source series date: 2008-04-26."
+  },
+  {
+    "id": "GLIS-PT-030-004",
+    "patientId": "PT-030",
+    "type": "REG - REG CT/T2",
+    "status": "expired",
+    "date": "2026-03-16",
+    "expirationDate": "2026-04-15",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_030_GBM). Study: IMRT BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-12."
+  },
+  {
+    "id": "GLIS-PT-030-001",
+    "patientId": "PT-030",
+    "type": "CT - IMRT BRAIN",
+    "status": "completed",
+    "date": "2026-03-19",
+    "expirationDate": "2026-06-17",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_030_GBM). Study: IMRT BRAIN. Series modality CT, body part HEAD. Manufacturer: GE MEDICAL SYSTEMS LightSpeed RT16. Source series date: 2008-04-26."
+  },
+  {
+    "id": "GLIS-PT-030-002",
+    "patientId": "PT-030",
+    "type": "REG - REG CT/T1",
+    "status": "expired",
+    "date": "2026-03-20",
+    "expirationDate": "2026-04-19",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_030_GBM). Study: IMRT BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-12."
+  },
+  {
+    "id": "GLIS-PT-030-008",
+    "patientId": "PT-030",
+    "type": "MR - 5M Ax FLAIR T2",
+    "status": "completed",
+    "date": "2026-04-07",
+    "expirationDate": "2026-07-06",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_030_GBM). Study: MRI BRAIN (TUMOR) WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: SIEMENS Skyra. Source series date: 2008-04-26."
+  },
+  {
+    "id": "GLIS-PT-030-006",
+    "patientId": "PT-030",
+    "type": "RTSTRUCT - Targets",
+    "status": "expired",
+    "date": "2026-04-11",
+    "expirationDate": "2026-05-11",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_030_GBM). Study: IMRT BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-01."
+  },
+  {
+    "id": "GLIS-PT-030-009",
+    "patientId": "PT-030",
+    "type": "REG - REG T1/T2",
+    "status": "expired",
+    "date": "2026-04-14",
+    "expirationDate": "2026-05-14",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_030_GBM). Study: MRI BRAIN (TUMOR) WITH AND WITHOUT CONTRAST. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-12."
+  },
+  {
+    "id": "GLIS-PT-030-005",
+    "patientId": "PT-030",
+    "type": "RTSTRUCT - Barriers",
+    "status": "completed",
+    "date": "2026-05-13",
+    "expirationDate": "2026-06-12",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_030_GBM). Study: IMRT BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-12."
+  },
+  {
+    "id": "GLIS-PT-031-006",
+    "patientId": "PT-031",
+    "type": "RTSTRUCT - Targets",
+    "status": "expired",
+    "date": "2026-03-08",
+    "expirationDate": "2026-04-07",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_031_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-01."
+  },
+  {
+    "id": "GLIS-PT-031-001",
+    "patientId": "PT-031",
+    "type": "MR - 5M Ax FLAIR T2",
+    "status": "completed",
+    "date": "2026-03-10",
+    "expirationDate": "2026-06-08",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_031_GBM). Study: MRI BRAIN (TUMOR) WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: SIEMENS Skyra. Source series date: 2008-06-25."
+  },
+  {
+    "id": "GLIS-PT-031-004",
+    "patientId": "PT-031",
+    "type": "CT - BRAIN",
+    "status": "completed",
+    "date": "2026-03-12",
+    "expirationDate": "2026-06-10",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_031_GBM). Study: BRAIN. Series modality CT, body part HEAD. Manufacturer: GE MEDICAL SYSTEMS Discovery CT590 RT. Source series date: 2008-07-15."
+  },
+  {
+    "id": "GLIS-PT-031-009",
+    "patientId": "PT-031",
+    "type": "RTSTRUCT - OARs",
+    "status": "expired",
+    "date": "2026-03-18",
+    "expirationDate": "2026-04-17",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_031_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-04."
+  },
+  {
+    "id": "GLIS-PT-031-007",
+    "patientId": "PT-031",
+    "type": "REG - REG CT/T1",
+    "status": "expired",
+    "date": "2026-03-19",
+    "expirationDate": "2026-04-18",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_031_GBM). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-07-28."
+  },
+  {
+    "id": "GLIS-PT-031-005",
+    "patientId": "PT-031",
+    "type": "RTSTRUCT - Barriers",
+    "status": "expired",
+    "date": "2026-03-27",
+    "expirationDate": "2026-04-26",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_031_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-13."
+  },
+  {
+    "id": "GLIS-PT-031-003",
+    "patientId": "PT-031",
+    "type": "REG - REG T1/T2",
+    "status": "expired",
+    "date": "2026-04-21",
+    "expirationDate": "2026-05-21",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_031_GBM). Study: MRI BRAIN (TUMOR) WITH AND WITHOUT CONTRAST. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-07-28."
+  },
+  {
+    "id": "GLIS-PT-031-008",
+    "patientId": "PT-031",
+    "type": "REG - REG CT/T2",
+    "status": "expired",
+    "date": "2026-04-21",
+    "expirationDate": "2026-05-21",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_031_GBM). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-07-28."
+  },
+  {
+    "id": "GLIS-PT-031-002",
+    "patientId": "PT-031",
+    "type": "MR - AX MPRAGE RFMT",
+    "status": "completed",
+    "date": "2026-05-08",
+    "expirationDate": "2026-08-06",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_031_GBM). Study: MRI BRAIN (TUMOR) WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: SIEMENS Skyra. Source series date: 2008-06-25."
+  },
+  {
+    "id": "GLIS-PT-032-006",
+    "patientId": "PT-032",
+    "type": "RTSTRUCT - OARs",
+    "status": "expired",
+    "date": "2026-03-08",
+    "expirationDate": "2026-04-07",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_032_GBM). Study: BRAIN 3D. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-04."
+  },
+  {
+    "id": "GLIS-PT-032-003",
+    "patientId": "PT-032",
+    "type": "CT - 2.5/5mm",
+    "status": "completed",
+    "date": "2026-03-15",
+    "expirationDate": "2026-06-13",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_032_GBM). Study: BRAIN 3D. Series modality CT, body part HEAD. Manufacturer: GE MEDICAL SYSTEMS Discovery CT590 RT. Source series date: 2007-09-08."
+  },
+  {
+    "id": "GLIS-PT-032-005",
+    "patientId": "PT-032",
+    "type": "RTSTRUCT - Targets",
+    "status": "expired",
+    "date": "2026-03-23",
+    "expirationDate": "2026-04-22",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_032_GBM). Study: BRAIN 3D. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-01."
+  },
+  {
+    "id": "GLIS-PT-032-004",
+    "patientId": "PT-032",
+    "type": "REG - REG CT/T1",
+    "status": "expired",
+    "date": "2026-04-08",
+    "expirationDate": "2026-05-08",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_032_GBM). Study: BRAIN 3D. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-13."
+  },
+  {
+    "id": "GLIS-PT-032-002",
+    "patientId": "PT-032",
+    "type": "REG - REG T1/T2",
+    "status": "expired",
+    "date": "2026-04-26",
+    "expirationDate": "2026-05-26",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_032_GBM). Study: MRIBRNWWO. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-13."
+  },
+  {
+    "id": "GLIS-PT-032-007",
+    "patientId": "PT-032",
+    "type": "RTSTRUCT - Barriers",
+    "status": "completed",
+    "date": "2026-05-02",
+    "expirationDate": "2026-06-01",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_032_GBM). Study: BRAIN 3D. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-13."
+  },
+  {
+    "id": "GLIS-PT-032-009",
+    "patientId": "PT-032",
+    "type": "MR - 5M Ax FLAIR T2",
+    "status": "completed",
+    "date": "2026-05-05",
+    "expirationDate": "2026-08-03",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_032_GBM). Study: MRIBRNWWO. Series modality MR, body part HEAD. Manufacturer: SIEMENS Skyra. Source series date: 2007-09-08."
+  },
+  {
+    "id": "GLIS-PT-032-001",
+    "patientId": "PT-032",
+    "type": "MR - <MPR Range>",
+    "status": "completed",
+    "date": "2026-05-08",
+    "expirationDate": "2026-08-06",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_032_GBM). Study: MRIBRNWWO. Series modality MR, body part HEAD. Manufacturer: SIEMENS Skyra. Source series date: 2007-09-08."
+  },
+  {
+    "id": "GLIS-PT-032-008",
+    "patientId": "PT-032",
+    "type": "REG - REG CT/T2",
+    "status": "completed",
+    "date": "2026-05-08",
+    "expirationDate": "2026-06-07",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_032_GBM). Study: BRAIN 3D. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-13."
+  },
+  {
+    "id": "GLIS-PT-033-008",
+    "patientId": "PT-033",
+    "type": "MR - 5M Ax FLAIR T2",
+    "status": "completed",
+    "date": "2026-03-03",
+    "expirationDate": "2026-06-01",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_033_GBM). Study: MRIBRNWWO. Series modality MR, body part HEAD. Manufacturer: SIEMENS Skyra. Source series date: 2010-05-31."
+  },
+  {
+    "id": "GLIS-PT-033-009",
+    "patientId": "PT-033",
+    "type": "REG - REG T1/T2",
+    "status": "expired",
+    "date": "2026-03-07",
+    "expirationDate": "2026-04-06",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_033_GBM). Study: MRIBRNWWO. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-13."
+  },
+  {
+    "id": "GLIS-PT-033-001",
+    "patientId": "PT-033",
+    "type": "CT - MARS",
+    "status": "completed",
+    "date": "2026-03-10",
+    "expirationDate": "2026-06-08",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_033_GBM). Study: BRAIN. Series modality CT, body part HEAD. Manufacturer: Plastimatch Unknown. Source series date: 2010-05-31."
+  },
+  {
+    "id": "GLIS-PT-033-004",
+    "patientId": "PT-033",
+    "type": "REG - REG CT/T1",
+    "status": "expired",
+    "date": "2026-03-12",
+    "expirationDate": "2026-04-11",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_033_GBM). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-13."
+  },
+  {
+    "id": "GLIS-PT-033-002",
+    "patientId": "PT-033",
+    "type": "RTSTRUCT - Barriers",
+    "status": "expired",
+    "date": "2026-03-19",
+    "expirationDate": "2026-04-18",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_033_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-13."
+  },
+  {
+    "id": "GLIS-PT-033-003",
+    "patientId": "PT-033",
+    "type": "RTSTRUCT - OARs",
+    "status": "expired",
+    "date": "2026-03-22",
+    "expirationDate": "2026-04-21",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_033_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-04."
+  },
+  {
+    "id": "GLIS-PT-033-007",
+    "patientId": "PT-033",
+    "type": "MR - CON AX MPRAGE POST RFMT",
+    "status": "completed",
+    "date": "2026-03-26",
+    "expirationDate": "2026-06-24",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_033_GBM). Study: MRIBRNWWO. Series modality MR, body part HEAD. Manufacturer: SIEMENS Skyra. Source series date: 2010-05-31."
+  },
+  {
+    "id": "GLIS-PT-033-006",
+    "patientId": "PT-033",
+    "type": "RTSTRUCT - Targets",
+    "status": "expired",
+    "date": "2026-04-15",
+    "expirationDate": "2026-05-15",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_033_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-01."
+  },
+  {
+    "id": "GLIS-PT-033-005",
+    "patientId": "PT-033",
+    "type": "REG - REG CT/T2",
+    "status": "completed",
+    "date": "2026-05-20",
+    "expirationDate": "2026-06-19",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_033_GBM). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-13."
+  },
+  {
+    "id": "GLIS-PT-034-003",
+    "patientId": "PT-034",
+    "type": "RTSTRUCT - Barriers",
+    "status": "expired",
+    "date": "2026-03-07",
+    "expirationDate": "2026-04-06",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_034_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-13."
+  },
+  {
+    "id": "GLIS-PT-034-008",
+    "patientId": "PT-034",
+    "type": "MR - Axial Flair",
+    "status": "completed",
+    "date": "2026-03-17",
+    "expirationDate": "2026-06-15",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_034_GBM). Study: MRI BRAIN (TUMOR) WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: SIEMENS Avanto. Source series date: 2007-09-03."
+  },
+  {
+    "id": "GLIS-PT-034-007",
+    "patientId": "PT-034",
+    "type": "MR - AX MPRAGE POST RFMT",
+    "status": "completed",
+    "date": "2026-03-28",
+    "expirationDate": "2026-06-26",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_034_GBM). Study: MRI BRAIN (TUMOR) WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: SIEMENS Avanto. Source series date: 2007-09-03."
+  },
+  {
+    "id": "GLIS-PT-034-002",
+    "patientId": "PT-034",
+    "type": "REG - REG CT/T1",
+    "status": "expired",
+    "date": "2026-04-17",
+    "expirationDate": "2026-05-17",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_034_GBM). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-07-28."
+  },
+  {
+    "id": "GLIS-PT-034-001",
+    "patientId": "PT-034",
+    "type": "CT - 2.5/5mm",
+    "status": "completed",
+    "date": "2026-04-21",
+    "expirationDate": "2026-07-20",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_034_GBM). Study: BRAIN. Series modality CT, body part HEAD. Manufacturer: GE MEDICAL SYSTEMS LightSpeed RT16. Source series date: 2007-09-03."
+  },
+  {
+    "id": "GLIS-PT-034-004",
+    "patientId": "PT-034",
+    "type": "RTSTRUCT - OARs",
+    "status": "expired",
+    "date": "2026-04-23",
+    "expirationDate": "2026-05-23",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_034_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-04."
+  },
+  {
+    "id": "GLIS-PT-034-006",
+    "patientId": "PT-034",
+    "type": "REG - REG CT/T2",
+    "status": "completed",
+    "date": "2026-05-04",
+    "expirationDate": "2026-06-03",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_034_GBM). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-07-28."
+  },
+  {
+    "id": "GLIS-PT-034-009",
+    "patientId": "PT-034",
+    "type": "REG - REG T1/T2",
+    "status": "completed",
+    "date": "2026-05-06",
+    "expirationDate": "2026-06-05",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_034_GBM). Study: MRI BRAIN (TUMOR) WITH AND WITHOUT CONTRAST. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-07-28."
+  },
+  {
+    "id": "GLIS-PT-034-005",
+    "patientId": "PT-034",
+    "type": "RTSTRUCT - Targets",
+    "status": "completed",
+    "date": "2026-05-10",
+    "expirationDate": "2026-06-09",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_034_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-01."
+  },
+  {
+    "id": "GLIS-PT-035-005",
+    "patientId": "PT-035",
+    "type": "RTSTRUCT - Targets",
+    "status": "expired",
+    "date": "2026-03-08",
+    "expirationDate": "2026-04-07",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_035_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-01."
+  },
+  {
+    "id": "GLIS-PT-035-007",
+    "patientId": "PT-035",
+    "type": "MR - AX POST MPRAGE RFMT",
+    "status": "completed",
+    "date": "2026-03-11",
+    "expirationDate": "2026-06-09",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_035_GBM). Study: MRIBRNWWO. Series modality MR, body part HEAD. Manufacturer: SIEMENS Skyra. Source series date: 2007-07-11."
+  },
+  {
+    "id": "GLIS-PT-035-008",
+    "patientId": "PT-035",
+    "type": "MR - Ax FLAIR T2",
+    "status": "completed",
+    "date": "2026-03-13",
+    "expirationDate": "2026-06-11",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_035_GBM). Study: MRIBRNWWO. Series modality MR, body part HEAD. Manufacturer: SIEMENS Skyra. Source series date: 2007-07-11."
+  },
+  {
+    "id": "GLIS-PT-035-004",
+    "patientId": "PT-035",
+    "type": "RTSTRUCT - Barriers",
+    "status": "expired",
+    "date": "2026-03-29",
+    "expirationDate": "2026-04-28",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_035_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-13."
+  },
+  {
+    "id": "GLIS-PT-035-006",
+    "patientId": "PT-035",
+    "type": "REG - REG CT/T2",
+    "status": "expired",
+    "date": "2026-03-29",
+    "expirationDate": "2026-04-28",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_035_GBM). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-13."
+  },
+  {
+    "id": "GLIS-PT-035-003",
+    "patientId": "PT-035",
+    "type": "RTSTRUCT - OARs",
+    "status": "expired",
+    "date": "2026-04-17",
+    "expirationDate": "2026-05-17",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_035_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-04."
+  },
+  {
+    "id": "GLIS-PT-035-009",
+    "patientId": "PT-035",
+    "type": "REG - REG T1/T2",
+    "status": "expired",
+    "date": "2026-04-17",
+    "expirationDate": "2026-05-17",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_035_GBM). Study: MRIBRNWWO. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-13."
+  },
+  {
+    "id": "GLIS-PT-035-002",
+    "patientId": "PT-035",
+    "type": "REG - REG CT/T1",
+    "status": "expired",
+    "date": "2026-04-22",
+    "expirationDate": "2026-05-22",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_035_GBM). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-13."
+  },
+  {
+    "id": "GLIS-PT-035-001",
+    "patientId": "PT-035",
+    "type": "CT - BRAIN",
+    "status": "completed",
+    "date": "2026-04-28",
+    "expirationDate": "2026-07-27",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_035_GBM). Study: BRAIN. Series modality CT, body part HEAD. Manufacturer: GE MEDICAL SYSTEMS Discovery CT590 RT. Source series date: 2007-07-11."
+  },
+  {
+    "id": "GLIS-PT-036-005",
+    "patientId": "PT-036",
+    "type": "RTSTRUCT - OARs",
+    "status": "expired",
+    "date": "2026-03-03",
+    "expirationDate": "2026-04-02",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_036_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-04."
+  },
+  {
+    "id": "GLIS-PT-036-009",
+    "patientId": "PT-036",
+    "type": "RTSTRUCT - Barriers",
+    "status": "expired",
+    "date": "2026-03-03",
+    "expirationDate": "2026-04-02",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_036_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-13."
+  },
+  {
+    "id": "GLIS-PT-036-001",
+    "patientId": "PT-036",
+    "type": "MR - AX  FLAIR",
+    "status": "completed",
+    "date": "2026-03-22",
+    "expirationDate": "2026-06-20",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_036_GBM). Study: MRI BRAIN OUTSIDE (NO INTERPRETATION). Series modality MR, body part HEAD. Manufacturer: SIEMENS Espree. Source series date: 2009-11-01."
+  },
+  {
+    "id": "GLIS-PT-036-003",
+    "patientId": "PT-036",
+    "type": "REG - REG T1/T2",
+    "status": "expired",
+    "date": "2026-03-27",
+    "expirationDate": "2026-04-26",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_036_GBM). Study: MRI BRAIN OUTSIDE (NO INTERPRETATION). Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-07-28."
+  },
+  {
+    "id": "GLIS-PT-036-006",
+    "patientId": "PT-036",
+    "type": "REG - REG CT/T1",
+    "status": "expired",
+    "date": "2026-04-06",
+    "expirationDate": "2026-05-06",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_036_GBM). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-07-28."
+  },
+  {
+    "id": "GLIS-PT-036-008",
+    "patientId": "PT-036",
+    "type": "REG - REG CT/T2",
+    "status": "expired",
+    "date": "2026-04-09",
+    "expirationDate": "2026-05-09",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_036_GBM). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-07-28."
+  },
+  {
+    "id": "GLIS-PT-036-004",
+    "patientId": "PT-036",
+    "type": "CT - BRAIN NO CONTRAST",
+    "status": "completed",
+    "date": "2026-05-07",
+    "expirationDate": "2026-08-05",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_036_GBM). Study: BRAIN. Series modality CT, body part HEAD. Manufacturer: GE MEDICAL SYSTEMS LightSpeed RT16. Source series date: 2009-11-01."
+  },
+  {
+    "id": "GLIS-PT-036-007",
+    "patientId": "PT-036",
+    "type": "RTSTRUCT - Targets",
+    "status": "completed",
+    "date": "2026-05-13",
+    "expirationDate": "2026-06-12",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_036_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-01."
+  },
+  {
+    "id": "GLIS-PT-036-002",
+    "patientId": "PT-036",
+    "type": "MR - T1 MPRAGE 3D ISO",
+    "status": "completed",
+    "date": "2026-05-14",
+    "expirationDate": "2026-08-12",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_036_GBM). Study: MRI BRAIN OUTSIDE (NO INTERPRETATION). Series modality MR, body part HEAD. Manufacturer: SIEMENS Espree. Source series date: 2009-11-01."
+  },
+  {
+    "id": "GLIS-PT-037-007",
+    "patientId": "PT-037",
+    "type": "REG - REG CT/T1",
+    "status": "expired",
+    "date": "2026-03-02",
+    "expirationDate": "2026-04-01",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_037_GBM). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-13."
+  },
+  {
+    "id": "GLIS-PT-037-004",
+    "patientId": "PT-037",
+    "type": "CT - 2.5/5mm",
+    "status": "completed",
+    "date": "2026-03-09",
+    "expirationDate": "2026-06-07",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_037_GBM). Study: BRAIN. Series modality CT, body part HEAD. Manufacturer: GE MEDICAL SYSTEMS Discovery CT590 RT. Source series date: 2009-12-07."
+  },
+  {
+    "id": "GLIS-PT-037-002",
+    "patientId": "PT-037",
+    "type": "MR - Ax FLAIR T2",
+    "status": "completed",
+    "date": "2026-03-18",
+    "expirationDate": "2026-06-16",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_037_GBM). Study: MRI BRAIN WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: GE MEDICAL SYSTEMS DISCOVERY MR750. Source series date: 2009-12-07."
+  },
+  {
+    "id": "GLIS-PT-037-006",
+    "patientId": "PT-037",
+    "type": "REG - REG CT/T2",
+    "status": "expired",
+    "date": "2026-03-31",
+    "expirationDate": "2026-04-30",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_037_GBM). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-13."
+  },
+  {
+    "id": "GLIS-PT-037-005",
+    "patientId": "PT-037",
+    "type": "RTSTRUCT - Barriers",
+    "status": "expired",
+    "date": "2026-04-04",
+    "expirationDate": "2026-05-04",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_037_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-13."
+  },
+  {
+    "id": "GLIS-PT-037-008",
+    "patientId": "PT-037",
+    "type": "RTSTRUCT - Targets",
+    "status": "expired",
+    "date": "2026-04-04",
+    "expirationDate": "2026-05-04",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_037_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-01."
+  },
+  {
+    "id": "GLIS-PT-037-009",
+    "patientId": "PT-037",
+    "type": "RTSTRUCT - OARs",
+    "status": "expired",
+    "date": "2026-04-08",
+    "expirationDate": "2026-05-08",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_037_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-04."
+  },
+  {
+    "id": "GLIS-PT-037-003",
+    "patientId": "PT-037",
+    "type": "REG - REG T1/T2",
+    "status": "completed",
+    "date": "2026-05-04",
+    "expirationDate": "2026-06-03",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_037_GBM). Study: MRI BRAIN WITH AND WITHOUT CONTRAST. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-13."
+  },
+  {
+    "id": "GLIS-PT-037-001",
+    "patientId": "PT-037",
+    "type": "MR - POST Ax FSPGR BRAVO",
+    "status": "completed",
+    "date": "2026-05-08",
+    "expirationDate": "2026-08-06",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_037_GBM). Study: MRI BRAIN WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: GE MEDICAL SYSTEMS DISCOVERY MR750. Source series date: 2009-12-07."
+  },
+  {
+    "id": "GLIS-PT-038-004",
+    "patientId": "PT-038",
+    "type": "CT - 2.5/5mm",
+    "status": "completed",
+    "date": "2026-03-03",
+    "expirationDate": "2026-06-01",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_038_GBM). Study: BRAIN. Series modality CT, body part HEAD. Manufacturer: GE MEDICAL SYSTEMS Discovery RT. Source series date: 2010-03-08."
+  },
+  {
+    "id": "GLIS-PT-038-005",
+    "patientId": "PT-038",
+    "type": "RTSTRUCT - Barriers",
+    "status": "expired",
+    "date": "2026-03-08",
+    "expirationDate": "2026-04-07",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_038_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-13."
+  },
+  {
+    "id": "GLIS-PT-038-003",
+    "patientId": "PT-038",
+    "type": "REG - REG T1/T2",
+    "status": "expired",
+    "date": "2026-03-12",
+    "expirationDate": "2026-04-11",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_038_GBM). Study: MRI BRAIN (TUMOR) WITH AND WITHOUT CONTRAST. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-07-28."
+  },
+  {
+    "id": "GLIS-PT-038-008",
+    "patientId": "PT-038",
+    "type": "RTSTRUCT - OARs",
+    "status": "expired",
+    "date": "2026-03-31",
+    "expirationDate": "2026-04-30",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_038_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-04."
+  },
+  {
+    "id": "GLIS-PT-038-006",
+    "patientId": "PT-038",
+    "type": "REG - REG CT/T2",
+    "status": "expired",
+    "date": "2026-04-23",
+    "expirationDate": "2026-05-23",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_038_GBM). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-07-28."
+  },
+  {
+    "id": "GLIS-PT-038-002",
+    "patientId": "PT-038",
+    "type": "MR - Flair Axial-S 5M",
+    "status": "completed",
+    "date": "2026-05-09",
+    "expirationDate": "2026-08-07",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_038_GBM). Study: MRI BRAIN (TUMOR) WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: SIEMENS Aera. Source series date: 2010-03-08."
+  },
+  {
+    "id": "GLIS-PT-038-001",
+    "patientId": "PT-038",
+    "type": "MR - post axial mprage reformat",
+    "status": "completed",
+    "date": "2026-05-19",
+    "expirationDate": "2026-08-17",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_038_GBM). Study: MRI BRAIN (TUMOR) WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: SIEMENS Aera. Source series date: 2010-03-08."
+  },
+  {
+    "id": "GLIS-PT-038-007",
+    "patientId": "PT-038",
+    "type": "RTSTRUCT - Targets",
+    "status": "completed",
+    "date": "2026-05-19",
+    "expirationDate": "2026-06-18",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_038_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-01."
+  },
+  {
+    "id": "GLIS-PT-038-009",
+    "patientId": "PT-038",
+    "type": "REG - REG CT/T1",
+    "status": "completed",
+    "date": "2026-05-23",
+    "expirationDate": "2026-06-22",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_038_GBM). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-07-28."
+  },
+  {
+    "id": "GLIS-PT-039-003",
+    "patientId": "PT-039",
+    "type": "REG - REG T1/T2",
+    "status": "expired",
+    "date": "2026-03-11",
+    "expirationDate": "2026-04-10",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_039_GBM). Study: MRI BRAIN WITH AND WITHOUT CONTRAST. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-13."
+  },
+  {
+    "id": "GLIS-PT-039-001",
+    "patientId": "PT-039",
+    "type": "MR - ax mprage rfmt post",
+    "status": "completed",
+    "date": "2026-03-13",
+    "expirationDate": "2026-06-11",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_039_GBM). Study: MRI BRAIN WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: SIEMENS Skyra. Source series date: 2010-01-19."
+  },
+  {
+    "id": "GLIS-PT-039-007",
+    "patientId": "PT-039",
+    "type": "RTSTRUCT - Barriers",
+    "status": "expired",
+    "date": "2026-03-15",
+    "expirationDate": "2026-04-14",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_039_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-13."
+  },
+  {
+    "id": "GLIS-PT-039-008",
+    "patientId": "PT-039",
+    "type": "RTSTRUCT - Targets",
+    "status": "expired",
+    "date": "2026-04-02",
+    "expirationDate": "2026-05-02",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_039_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-01."
+  },
+  {
+    "id": "GLIS-PT-039-006",
+    "patientId": "PT-039",
+    "type": "REG - REG CT/T2",
+    "status": "expired",
+    "date": "2026-04-09",
+    "expirationDate": "2026-05-09",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_039_GBM). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-13."
+  },
+  {
+    "id": "GLIS-PT-039-005",
+    "patientId": "PT-039",
+    "type": "REG - REG CT/T1",
+    "status": "expired",
+    "date": "2026-04-21",
+    "expirationDate": "2026-05-21",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_039_GBM). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-13."
+  },
+  {
+    "id": "GLIS-PT-039-002",
+    "patientId": "PT-039",
+    "type": "MR - Ax FLAIR",
+    "status": "completed",
+    "date": "2026-04-25",
+    "expirationDate": "2026-07-24",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_039_GBM). Study: MRI BRAIN WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: SIEMENS Skyra. Source series date: 2010-01-19."
+  },
+  {
+    "id": "GLIS-PT-039-009",
+    "patientId": "PT-039",
+    "type": "RTSTRUCT - OARs",
+    "status": "completed",
+    "date": "2026-05-02",
+    "expirationDate": "2026-06-01",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_039_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-04."
+  },
+  {
+    "id": "GLIS-PT-039-004",
+    "patientId": "PT-039",
+    "type": "CT - 2.5/5mm",
+    "status": "completed",
+    "date": "2026-05-13",
+    "expirationDate": "2026-08-11",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_039_GBM). Study: BRAIN. Series modality CT, body part HEAD. Manufacturer: GE MEDICAL SYSTEMS LightSpeed RT16. Source series date: 2010-01-19."
+  },
+  {
+    "id": "GLIS-PT-040-006",
+    "patientId": "PT-040",
+    "type": "REG - REG CT/T1",
+    "status": "expired",
+    "date": "2026-03-08",
+    "expirationDate": "2026-04-07",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_040_GBM). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-13."
+  },
+  {
+    "id": "GLIS-PT-040-009",
+    "patientId": "PT-040",
+    "type": "RTSTRUCT - Targets",
+    "status": "expired",
+    "date": "2026-03-10",
+    "expirationDate": "2026-04-09",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_040_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-01."
+  },
+  {
+    "id": "GLIS-PT-040-007",
+    "patientId": "PT-040",
+    "type": "REG - REG CT/T2",
+    "status": "expired",
+    "date": "2026-03-21",
+    "expirationDate": "2026-04-20",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_040_GBM). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-13."
+  },
+  {
+    "id": "GLIS-PT-040-003",
+    "patientId": "PT-040",
+    "type": "REG - REG T1/T2",
+    "status": "expired",
+    "date": "2026-04-02",
+    "expirationDate": "2026-05-02",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_040_GBM). Study: MRI BRAIN WITH AND WITHOUT CONTRAST. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-13."
+  },
+  {
+    "id": "GLIS-PT-040-001",
+    "patientId": "PT-040",
+    "type": "MR - POST Ax FSPGR BRAVO",
+    "status": "completed",
+    "date": "2026-04-06",
+    "expirationDate": "2026-07-05",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_040_GBM). Study: MRI BRAIN WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: GE MEDICAL SYSTEMS DISCOVERY MR750. Source series date: 2010-01-27."
+  },
+  {
+    "id": "GLIS-PT-040-008",
+    "patientId": "PT-040",
+    "type": "RTSTRUCT - Barriers",
+    "status": "expired",
+    "date": "2026-04-19",
+    "expirationDate": "2026-05-19",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_040_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-13."
+  },
+  {
+    "id": "GLIS-PT-040-005",
+    "patientId": "PT-040",
+    "type": "RTSTRUCT - OARs",
+    "status": "expired",
+    "date": "2026-04-21",
+    "expirationDate": "2026-05-21",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_040_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-04."
+  },
+  {
+    "id": "GLIS-PT-040-004",
+    "patientId": "PT-040",
+    "type": "CT - 2.5/5mm",
+    "status": "completed",
+    "date": "2026-05-12",
+    "expirationDate": "2026-08-10",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_040_GBM). Study: BRAIN. Series modality CT, body part HEAD. Manufacturer: GE MEDICAL SYSTEMS Discovery RT. Source series date: 2010-01-27."
+  },
+  {
+    "id": "GLIS-PT-040-002",
+    "patientId": "PT-040",
+    "type": "MR - Ax FLAIR T2",
+    "status": "completed",
+    "date": "2026-05-20",
+    "expirationDate": "2026-08-18",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_040_GBM). Study: MRI BRAIN WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: GE MEDICAL SYSTEMS DISCOVERY MR750. Source series date: 2010-01-27."
+  },
+  {
+    "id": "GLIS-PT-041-004",
+    "patientId": "PT-041",
+    "type": "RTSTRUCT - Targets",
+    "status": "expired",
+    "date": "2026-03-08",
+    "expirationDate": "2026-04-07",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_041_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-01."
+  },
+  {
+    "id": "GLIS-PT-041-002",
+    "patientId": "PT-041",
+    "type": "CT - MARS",
+    "status": "completed",
+    "date": "2026-04-18",
+    "expirationDate": "2026-07-17",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_041_GBM). Study: BRAIN. Series modality CT, body part HEAD. Manufacturer: GE MEDICAL SYSTEMS Discovery CT590 RT. Source series date: 2009-12-14."
+  },
+  {
+    "id": "GLIS-PT-041-006",
+    "patientId": "PT-041",
+    "type": "REG - REG CT/T1",
+    "status": "expired",
+    "date": "2026-04-29",
+    "expirationDate": "2026-05-29",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_041_GBM). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-14."
+  },
+  {
+    "id": "GLIS-PT-041-009",
+    "patientId": "PT-041",
+    "type": "REG - REG T1/T2",
+    "status": "completed",
+    "date": "2026-05-03",
+    "expirationDate": "2026-06-02",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_041_GBM). Study: MRI BRAIN WITH AND WITHOUT CONTRAST. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-14."
+  },
+  {
+    "id": "GLIS-PT-041-005",
+    "patientId": "PT-041",
+    "type": "REG - REG CT/T2",
+    "status": "completed",
+    "date": "2026-05-05",
+    "expirationDate": "2026-06-04",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_041_GBM). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-14."
+  },
+  {
+    "id": "GLIS-PT-041-001",
+    "patientId": "PT-041",
+    "type": "RTSTRUCT - Barriers",
+    "status": "completed",
+    "date": "2026-05-19",
+    "expirationDate": "2026-06-18",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_041_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-14."
+  },
+  {
+    "id": "GLIS-PT-041-007",
+    "patientId": "PT-041",
+    "type": "MR - AXIAL MPRAGE POST REFORMAT",
+    "status": "completed",
+    "date": "2026-05-20",
+    "expirationDate": "2026-08-18",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_041_GBM). Study: MRI BRAIN WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: SIEMENS Skyra. Source series date: 2009-12-14."
+  },
+  {
+    "id": "GLIS-PT-041-003",
+    "patientId": "PT-041",
+    "type": "RTSTRUCT - OARs",
+    "status": "completed",
+    "date": "2026-05-21",
+    "expirationDate": "2026-06-20",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_041_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-04."
+  },
+  {
+    "id": "GLIS-PT-041-008",
+    "patientId": "PT-041",
+    "type": "MR - Ax FLAIR",
+    "status": "completed",
+    "date": "2026-05-23",
+    "expirationDate": "2026-08-21",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_041_GBM). Study: MRI BRAIN WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: SIEMENS Skyra. Source series date: 2009-12-14."
+  },
+  {
+    "id": "GLIS-PT-042-001",
+    "patientId": "PT-042",
+    "type": "MR - POST AX RFMT MPRA",
+    "status": "completed",
+    "date": "2026-03-29",
+    "expirationDate": "2026-06-27",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_042_AAC). Study: MRI BRAIN (TUMOR) WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: SIEMENS Skyra. Source series date: 2009-12-16."
+  },
+  {
+    "id": "GLIS-PT-042-004",
+    "patientId": "PT-042",
+    "type": "CT - BRAIN",
+    "status": "completed",
+    "date": "2026-04-16",
+    "expirationDate": "2026-07-15",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_042_AAC). Study: BRAIN. Series modality CT, body part HEAD. Manufacturer: GE MEDICAL SYSTEMS Discovery CT590 RT. Source series date: 2009-12-16."
+  },
+  {
+    "id": "GLIS-PT-042-005",
+    "patientId": "PT-042",
+    "type": "RTSTRUCT - Barriers",
+    "status": "expired",
+    "date": "2026-04-18",
+    "expirationDate": "2026-05-18",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_042_AAC). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-14."
+  },
+  {
+    "id": "GLIS-PT-042-002",
+    "patientId": "PT-042",
+    "type": "MR - Ax FLAIR",
+    "status": "completed",
+    "date": "2026-04-22",
+    "expirationDate": "2026-07-21",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_042_AAC). Study: MRI BRAIN (TUMOR) WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: SIEMENS Skyra. Source series date: 2009-12-16."
+  },
+  {
+    "id": "GLIS-PT-042-008",
+    "patientId": "PT-042",
+    "type": "RTSTRUCT - OARs",
+    "status": "expired",
+    "date": "2026-04-24",
+    "expirationDate": "2026-05-24",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_042_AAC). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-04."
+  },
+  {
+    "id": "GLIS-PT-042-007",
+    "patientId": "PT-042",
+    "type": "REG - REG CT/T2",
+    "status": "expired",
+    "date": "2026-04-26",
+    "expirationDate": "2026-05-26",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_042_AAC). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-14."
+  },
+  {
+    "id": "GLIS-PT-042-006",
+    "patientId": "PT-042",
+    "type": "RTSTRUCT - Targets",
+    "status": "expired",
+    "date": "2026-04-29",
+    "expirationDate": "2026-05-29",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_042_AAC). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-01."
+  },
+  {
+    "id": "GLIS-PT-042-003",
+    "patientId": "PT-042",
+    "type": "REG - REG T1/T2",
+    "status": "completed",
+    "date": "2026-04-30",
+    "expirationDate": "2026-05-30",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_042_AAC). Study: MRI BRAIN (TUMOR) WITH AND WITHOUT CONTRAST. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-14."
+  },
+  {
+    "id": "GLIS-PT-042-009",
+    "patientId": "PT-042",
+    "type": "REG - REG CT/T1",
+    "status": "completed",
+    "date": "2026-05-26",
+    "expirationDate": "2026-06-25",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_042_AAC). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-14."
+  },
+  {
+    "id": "GLIS-PT-043-001",
+    "patientId": "PT-043",
+    "type": "MR - AXIAL MPRAGE RFMT POST",
+    "status": "completed",
+    "date": "2026-03-06",
+    "expirationDate": "2026-06-04",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_043_GBM). Study: MRI BRAIN (TUMOR) WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: SIEMENS Skyra. Source series date: 2009-12-30."
+  },
+  {
+    "id": "GLIS-PT-043-002",
+    "patientId": "PT-043",
+    "type": "MR - Ax FLAIR",
+    "status": "completed",
+    "date": "2026-03-09",
+    "expirationDate": "2026-06-07",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_043_GBM). Study: MRI BRAIN (TUMOR) WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: SIEMENS Skyra. Source series date: 2009-12-30."
+  },
+  {
+    "id": "GLIS-PT-043-009",
+    "patientId": "PT-043",
+    "type": "REG - REG CT/T2",
+    "status": "expired",
+    "date": "2026-03-19",
+    "expirationDate": "2026-04-18",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_043_GBM). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-14."
+  },
+  {
+    "id": "GLIS-PT-043-003",
+    "patientId": "PT-043",
+    "type": "REG - REG T1/T2",
+    "status": "expired",
+    "date": "2026-03-21",
+    "expirationDate": "2026-04-20",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_043_GBM). Study: MRI BRAIN (TUMOR) WITH AND WITHOUT CONTRAST. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-14."
+  },
+  {
+    "id": "GLIS-PT-043-008",
+    "patientId": "PT-043",
+    "type": "RTSTRUCT - OARs",
+    "status": "expired",
+    "date": "2026-03-29",
+    "expirationDate": "2026-04-28",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_043_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-04."
+  },
+  {
+    "id": "GLIS-PT-043-004",
+    "patientId": "PT-043",
+    "type": "CT - BRAIN",
+    "status": "completed",
+    "date": "2026-04-26",
+    "expirationDate": "2026-07-25",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_043_GBM). Study: BRAIN. Series modality CT, body part HEAD. Manufacturer: GE MEDICAL SYSTEMS LightSpeed RT16. Source series date: 2009-12-30."
+  },
+  {
+    "id": "GLIS-PT-043-006",
+    "patientId": "PT-043",
+    "type": "RTSTRUCT - Targets",
+    "status": "completed",
+    "date": "2026-04-30",
+    "expirationDate": "2026-05-30",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_043_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-01."
+  },
+  {
+    "id": "GLIS-PT-043-007",
+    "patientId": "PT-043",
+    "type": "REG - REG CT/T1",
+    "status": "completed",
+    "date": "2026-05-14",
+    "expirationDate": "2026-06-13",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_043_GBM). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-14."
+  },
+  {
+    "id": "GLIS-PT-043-005",
+    "patientId": "PT-043",
+    "type": "RTSTRUCT - Barriers",
+    "status": "completed",
+    "date": "2026-05-18",
+    "expirationDate": "2026-06-17",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_043_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-14."
+  },
+  {
+    "id": "GLIS-PT-044-008",
+    "patientId": "PT-044",
+    "type": "MR - T2 FLAIR Ax",
+    "status": "completed",
+    "date": "2026-03-02",
+    "expirationDate": "2026-05-31",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_044_AC). Study: MRI BRAIN (TUMOR) WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: SIEMENS Avanto. Source series date: 2009-11-11."
+  },
+  {
+    "id": "GLIS-PT-044-001",
+    "patientId": "PT-044",
+    "type": "CT - 2.5/5mm",
+    "status": "completed",
+    "date": "2026-03-11",
+    "expirationDate": "2026-06-09",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_044_AC). Study: BRAIN. Series modality CT, body part HEAD. Manufacturer: GE MEDICAL SYSTEMS Discovery CT590 RT. Source series date: 2009-11-11."
+  },
+  {
+    "id": "GLIS-PT-044-003",
+    "patientId": "PT-044",
+    "type": "REG - REG CT/T2",
+    "status": "expired",
+    "date": "2026-03-25",
+    "expirationDate": "2026-04-24",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_044_AC). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-07-28."
+  },
+  {
+    "id": "GLIS-PT-044-007",
+    "patientId": "PT-044",
+    "type": "MR - AX MPRAGE POST RFMT",
+    "status": "completed",
+    "date": "2026-03-29",
+    "expirationDate": "2026-06-27",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_044_AC). Study: MRI BRAIN (TUMOR) WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: SIEMENS Avanto. Source series date: 2009-11-11."
+  },
+  {
+    "id": "GLIS-PT-044-002",
+    "patientId": "PT-044",
+    "type": "REG - REG CT/T1",
+    "status": "expired",
+    "date": "2026-04-23",
+    "expirationDate": "2026-05-23",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_044_AC). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-07-28."
+  },
+  {
+    "id": "GLIS-PT-044-004",
+    "patientId": "PT-044",
+    "type": "RTSTRUCT - OARs",
+    "status": "completed",
+    "date": "2026-04-30",
+    "expirationDate": "2026-05-30",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_044_AC). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-04."
+  },
+  {
+    "id": "GLIS-PT-044-006",
+    "patientId": "PT-044",
+    "type": "RTSTRUCT - Targets",
+    "status": "completed",
+    "date": "2026-05-03",
+    "expirationDate": "2026-06-02",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_044_AC). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-01."
+  },
+  {
+    "id": "GLIS-PT-044-005",
+    "patientId": "PT-044",
+    "type": "RTSTRUCT - Barriers",
+    "status": "completed",
+    "date": "2026-05-12",
+    "expirationDate": "2026-06-11",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_044_AC). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-14."
+  },
+  {
+    "id": "GLIS-PT-044-009",
+    "patientId": "PT-044",
+    "type": "REG - REG T1/T2",
+    "status": "completed",
+    "date": "2026-05-20",
+    "expirationDate": "2026-06-19",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_044_AC). Study: MRI BRAIN (TUMOR) WITH AND WITHOUT CONTRAST. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-07-28."
+  },
+  {
+    "id": "GLIS-PT-045-008",
+    "patientId": "PT-045",
+    "type": "RTSTRUCT - Barriers",
+    "status": "expired",
+    "date": "2026-03-12",
+    "expirationDate": "2026-04-11",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_045_AAC). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-14."
+  },
+  {
+    "id": "GLIS-PT-045-006",
+    "patientId": "PT-045",
+    "type": "REG - REG CT/T2",
+    "status": "expired",
+    "date": "2026-03-22",
+    "expirationDate": "2026-04-21",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_045_AAC). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-14."
+  },
+  {
+    "id": "GLIS-PT-045-002",
+    "patientId": "PT-045",
+    "type": "MR - Ax T2 FLAIR",
+    "status": "completed",
+    "date": "2026-03-27",
+    "expirationDate": "2026-06-25",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_045_AAC). Study: MRI BRAIN WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: GE MEDICAL SYSTEMS SIGNA Artist. Source series date: 2009-12-16."
+  },
+  {
+    "id": "GLIS-PT-045-009",
+    "patientId": "PT-045",
+    "type": "REG - REG CT/T1",
+    "status": "expired",
+    "date": "2026-03-30",
+    "expirationDate": "2026-04-29",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_045_AAC). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-14."
+  },
+  {
+    "id": "GLIS-PT-045-007",
+    "patientId": "PT-045",
+    "type": "RTSTRUCT - OARs",
+    "status": "expired",
+    "date": "2026-04-19",
+    "expirationDate": "2026-05-19",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_045_AAC). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-04."
+  },
+  {
+    "id": "GLIS-PT-045-001",
+    "patientId": "PT-045",
+    "type": "MR - Ax FSPGR BRAVO POST",
+    "status": "completed",
+    "date": "2026-05-07",
+    "expirationDate": "2026-08-05",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_045_AAC). Study: MRI BRAIN WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: GE MEDICAL SYSTEMS SIGNA Artist. Source series date: 2009-12-16."
+  },
+  {
+    "id": "GLIS-PT-045-003",
+    "patientId": "PT-045",
+    "type": "REG - REG T1/T2",
+    "status": "completed",
+    "date": "2026-05-07",
+    "expirationDate": "2026-06-06",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_045_AAC). Study: MRI BRAIN WITH AND WITHOUT CONTRAST. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-14."
+  },
+  {
+    "id": "GLIS-PT-045-005",
+    "patientId": "PT-045",
+    "type": "RTSTRUCT - Targets",
+    "status": "completed",
+    "date": "2026-05-12",
+    "expirationDate": "2026-06-11",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_045_AAC). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-01."
+  },
+  {
+    "id": "GLIS-PT-045-004",
+    "patientId": "PT-045",
+    "type": "CT - BRAIN",
+    "status": "completed",
+    "date": "2026-05-24",
+    "expirationDate": "2026-08-22",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_045_AAC). Study: BRAIN. Series modality CT, body part HEAD. Manufacturer: GE MEDICAL SYSTEMS LightSpeed RT16. Source series date: 2009-12-16."
+  },
+  {
+    "id": "GLIS-PT-046-008",
+    "patientId": "PT-046",
+    "type": "REG - REG CT/T1",
+    "status": "expired",
+    "date": "2026-03-04",
+    "expirationDate": "2026-04-03",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_046_AC). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-14."
+  },
+  {
+    "id": "GLIS-PT-046-006",
+    "patientId": "PT-046",
+    "type": "RTSTRUCT - Targets",
+    "status": "expired",
+    "date": "2026-03-11",
+    "expirationDate": "2026-04-10",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_046_AC). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-01."
+  },
+  {
+    "id": "GLIS-PT-046-002",
+    "patientId": "PT-046",
+    "type": "MR - Ax FLAIR",
+    "status": "completed",
+    "date": "2026-03-28",
+    "expirationDate": "2026-06-26",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_046_AC). Study: MRI BRAIN WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: SIEMENS Skyra. Source series date: 2009-12-22."
+  },
+  {
+    "id": "GLIS-PT-046-004",
+    "patientId": "PT-046",
+    "type": "CT - 2.5/5mm",
+    "status": "completed",
+    "date": "2026-04-14",
+    "expirationDate": "2026-07-13",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_046_AC). Study: BRAIN. Series modality CT, body part HEAD. Manufacturer: GE MEDICAL SYSTEMS Discovery CT590 RT. Source series date: 2009-12-22."
+  },
+  {
+    "id": "GLIS-PT-046-009",
+    "patientId": "PT-046",
+    "type": "RTSTRUCT - OARs",
+    "status": "expired",
+    "date": "2026-04-20",
+    "expirationDate": "2026-05-20",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_046_AC). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-04."
+  },
+  {
+    "id": "GLIS-PT-046-001",
+    "patientId": "PT-046",
+    "type": "MR - ax mprge rfmt post",
+    "status": "completed",
+    "date": "2026-05-09",
+    "expirationDate": "2026-08-07",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_046_AC). Study: MRI BRAIN WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: SIEMENS Skyra. Source series date: 2009-12-22."
+  },
+  {
+    "id": "GLIS-PT-046-005",
+    "patientId": "PT-046",
+    "type": "REG - REG CT/T2",
+    "status": "completed",
+    "date": "2026-05-16",
+    "expirationDate": "2026-06-15",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_046_AC). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-14."
+  },
+  {
+    "id": "GLIS-PT-046-007",
+    "patientId": "PT-046",
+    "type": "RTSTRUCT - Barriers",
+    "status": "completed",
+    "date": "2026-05-18",
+    "expirationDate": "2026-06-17",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_046_AC). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-14."
+  },
+  {
+    "id": "GLIS-PT-046-003",
+    "patientId": "PT-046",
+    "type": "REG - REG T1/T2",
+    "status": "completed",
+    "date": "2026-05-21",
+    "expirationDate": "2026-06-20",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_046_AC). Study: MRI BRAIN WITH AND WITHOUT CONTRAST. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-14."
+  },
+  {
+    "id": "GLIS-PT-047-007",
+    "patientId": "PT-047",
+    "type": "RTSTRUCT - Barriers",
+    "status": "expired",
+    "date": "2026-03-06",
+    "expirationDate": "2026-04-05",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_047_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-14."
+  },
+  {
+    "id": "GLIS-PT-047-005",
+    "patientId": "PT-047",
+    "type": "RTSTRUCT - Targets",
+    "status": "expired",
+    "date": "2026-03-07",
+    "expirationDate": "2026-04-06",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_047_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-01."
+  },
+  {
+    "id": "GLIS-PT-047-008",
+    "patientId": "PT-047",
+    "type": "REG - REG CT/T1",
+    "status": "expired",
+    "date": "2026-03-09",
+    "expirationDate": "2026-04-08",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_047_GBM). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-14."
+  },
+  {
+    "id": "GLIS-PT-047-009",
+    "patientId": "PT-047",
+    "type": "REG - REG CT/T2",
+    "status": "expired",
+    "date": "2026-03-17",
+    "expirationDate": "2026-04-16",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_047_GBM). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-14."
+  },
+  {
+    "id": "GLIS-PT-047-001",
+    "patientId": "PT-047",
+    "type": "MR - AX MPRAGE RFMT POST",
+    "status": "completed",
+    "date": "2026-04-10",
+    "expirationDate": "2026-07-09",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_047_GBM). Study: MRI BRAIN (TUMOR) WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: SIEMENS Skyra. Source series date: 2009-11-07."
+  },
+  {
+    "id": "GLIS-PT-047-002",
+    "patientId": "PT-047",
+    "type": "MR - Ax FLAIR",
+    "status": "completed",
+    "date": "2026-04-27",
+    "expirationDate": "2026-07-26",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_047_GBM). Study: MRI BRAIN (TUMOR) WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: SIEMENS Skyra. Source series date: 2009-11-07."
+  },
+  {
+    "id": "GLIS-PT-047-003",
+    "patientId": "PT-047",
+    "type": "REG - REG T1/T2",
+    "status": "expired",
+    "date": "2026-04-28",
+    "expirationDate": "2026-05-28",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_047_GBM). Study: MRI BRAIN (TUMOR) WITH AND WITHOUT CONTRAST. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-14."
+  },
+  {
+    "id": "GLIS-PT-047-004",
+    "patientId": "PT-047",
+    "type": "CT - BRAIN",
+    "status": "completed",
+    "date": "2026-04-30",
+    "expirationDate": "2026-07-29",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_047_GBM). Study: BRAIN. Series modality CT, body part HEAD. Manufacturer: GE MEDICAL SYSTEMS LightSpeed RT16. Source series date: 2009-11-07."
+  },
+  {
+    "id": "GLIS-PT-047-006",
+    "patientId": "PT-047",
+    "type": "RTSTRUCT - OARs",
+    "status": "completed",
+    "date": "2026-05-01",
+    "expirationDate": "2026-05-31",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_047_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-04."
+  },
+  {
+    "id": "GLIS-PT-048-004",
+    "patientId": "PT-048",
+    "type": "RTSTRUCT - Barriers",
+    "status": "expired",
+    "date": "2026-03-14",
+    "expirationDate": "2026-04-13",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_048_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-14."
+  },
+  {
+    "id": "GLIS-PT-048-009",
+    "patientId": "PT-048",
+    "type": "REG - REG T1/T2",
+    "status": "expired",
+    "date": "2026-03-14",
+    "expirationDate": "2026-04-13",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_048_GBM). Study: MRI BRAIN (TUMOR) WITH AND WITHOUT CONTRAST. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-07-28."
+  },
+  {
+    "id": "GLIS-PT-048-003",
+    "patientId": "PT-048",
+    "type": "RTSTRUCT - OARs",
+    "status": "expired",
+    "date": "2026-03-17",
+    "expirationDate": "2026-04-16",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_048_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-04."
+  },
+  {
+    "id": "GLIS-PT-048-002",
+    "patientId": "PT-048",
+    "type": "REG - REG CT/T1",
+    "status": "expired",
+    "date": "2026-03-21",
+    "expirationDate": "2026-04-20",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_048_GBM). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-07-28."
+  },
+  {
+    "id": "GLIS-PT-048-006",
+    "patientId": "PT-048",
+    "type": "REG - REG CT/T2",
+    "status": "expired",
+    "date": "2026-04-07",
+    "expirationDate": "2026-05-07",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_048_GBM). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-07-28."
+  },
+  {
+    "id": "GLIS-PT-048-008",
+    "patientId": "PT-048",
+    "type": "MR - Ax FLAIR T2",
+    "status": "completed",
+    "date": "2026-04-10",
+    "expirationDate": "2026-07-09",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_048_GBM). Study: MRI BRAIN (TUMOR) WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: GE MEDICAL SYSTEMS Signa HDxt. Source series date: 2009-12-23."
+  },
+  {
+    "id": "GLIS-PT-048-007",
+    "patientId": "PT-048",
+    "type": "MR - Ax 3D BRAVO Post",
+    "status": "completed",
+    "date": "2026-04-13",
+    "expirationDate": "2026-07-12",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_048_GBM). Study: MRI BRAIN (TUMOR) WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: GE MEDICAL SYSTEMS Signa HDxt. Source series date: 2009-12-23."
+  },
+  {
+    "id": "GLIS-PT-048-001",
+    "patientId": "PT-048",
+    "type": "CT - 2.5/5mm",
+    "status": "completed",
+    "date": "2026-04-16",
+    "expirationDate": "2026-07-15",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_048_GBM). Study: BRAIN. Series modality CT, body part HEAD. Manufacturer: GE MEDICAL SYSTEMS Discovery CT590 RT. Source series date: 2009-12-23."
+  },
+  {
+    "id": "GLIS-PT-048-005",
+    "patientId": "PT-048",
+    "type": "RTSTRUCT - Targets",
+    "status": "completed",
+    "date": "2026-05-11",
+    "expirationDate": "2026-06-10",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_048_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-01."
+  },
+  {
+    "id": "GLIS-PT-049-001",
+    "patientId": "PT-049",
+    "type": "MR - Ax 3D BRAVO Post",
+    "status": "completed",
+    "date": "2026-03-02",
+    "expirationDate": "2026-05-31",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_049_GBM). Study: MRI BRAIN (TUMOR) WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: GE MEDICAL SYSTEMS Signa HDxt. Source series date: 2008-01-22."
+  },
+  {
+    "id": "GLIS-PT-049-006",
+    "patientId": "PT-049",
+    "type": "RTSTRUCT - Barriers",
+    "status": "expired",
+    "date": "2026-03-05",
+    "expirationDate": "2026-04-04",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_049_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-14."
+  },
+  {
+    "id": "GLIS-PT-049-003",
+    "patientId": "PT-049",
+    "type": "REG - REG T1/T2",
+    "status": "expired",
+    "date": "2026-03-06",
+    "expirationDate": "2026-04-05",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_049_GBM). Study: MRI BRAIN (TUMOR) WITH AND WITHOUT CONTRAST. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-14."
+  },
+  {
+    "id": "GLIS-PT-049-005",
+    "patientId": "PT-049",
+    "type": "REG - REG CT/T1",
+    "status": "expired",
+    "date": "2026-03-12",
+    "expirationDate": "2026-04-11",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_049_GBM). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-14."
+  },
+  {
+    "id": "GLIS-PT-049-009",
+    "patientId": "PT-049",
+    "type": "REG - REG CT/T2",
+    "status": "expired",
+    "date": "2026-03-17",
+    "expirationDate": "2026-04-16",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_049_GBM). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-14."
+  },
+  {
+    "id": "GLIS-PT-049-008",
+    "patientId": "PT-049",
+    "type": "RTSTRUCT - Targets",
+    "status": "expired",
+    "date": "2026-04-01",
+    "expirationDate": "2026-05-01",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_049_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-01."
+  },
+  {
+    "id": "GLIS-PT-049-007",
+    "patientId": "PT-049",
+    "type": "RTSTRUCT - OARs",
+    "status": "expired",
+    "date": "2026-04-21",
+    "expirationDate": "2026-05-21",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_049_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-04."
+  },
+  {
+    "id": "GLIS-PT-049-004",
+    "patientId": "PT-049",
+    "type": "CT - 2.5/5mm",
+    "status": "completed",
+    "date": "2026-05-07",
+    "expirationDate": "2026-08-05",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_049_GBM). Study: BRAIN. Series modality CT, body part HEAD. Manufacturer: GE MEDICAL SYSTEMS Discovery CT590 RT. Source series date: 2008-01-22."
+  },
+  {
+    "id": "GLIS-PT-049-002",
+    "patientId": "PT-049",
+    "type": "MR - Ax FLAIR T2",
+    "status": "completed",
+    "date": "2026-05-20",
+    "expirationDate": "2026-08-18",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_049_GBM). Study: MRI BRAIN (TUMOR) WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: GE MEDICAL SYSTEMS Signa HDxt. Source series date: 2008-01-22."
+  },
+  {
+    "id": "GLIS-PT-050-002",
+    "patientId": "PT-050",
+    "type": "MR - 5M Ax FLAIR T2",
+    "status": "completed",
+    "date": "2026-03-04",
+    "expirationDate": "2026-06-02",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_050_GBM). Study: MRI BRAIN (TUMOR) WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: SIEMENS Skyra. Source series date: 2008-02-16."
+  },
+  {
+    "id": "GLIS-PT-050-008",
+    "patientId": "PT-050",
+    "type": "RTSTRUCT - OARs",
+    "status": "expired",
+    "date": "2026-03-06",
+    "expirationDate": "2026-04-05",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_050_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-04."
+  },
+  {
+    "id": "GLIS-PT-050-009",
+    "patientId": "PT-050",
+    "type": "REG - REG CT/T2",
+    "status": "expired",
+    "date": "2026-03-10",
+    "expirationDate": "2026-04-09",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_050_GBM). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-07-28."
+  },
+  {
+    "id": "GLIS-PT-050-007",
+    "patientId": "PT-050",
+    "type": "RTSTRUCT - Targets",
+    "status": "expired",
+    "date": "2026-04-08",
+    "expirationDate": "2026-05-08",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_050_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-01."
+  },
+  {
+    "id": "GLIS-PT-050-003",
+    "patientId": "PT-050",
+    "type": "REG - REG T1/T2",
+    "status": "expired",
+    "date": "2026-04-15",
+    "expirationDate": "2026-05-15",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_050_GBM). Study: MRI BRAIN (TUMOR) WITH AND WITHOUT CONTRAST. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-07-28."
+  },
+  {
+    "id": "GLIS-PT-050-005",
+    "patientId": "PT-050",
+    "type": "REG - REG CT/T1",
+    "status": "expired",
+    "date": "2026-04-16",
+    "expirationDate": "2026-05-16",
+    "isExpired": true,
+    "findings": "GLIS-RT import (GLI_050_GBM). Study: BRAIN. Series modality REG, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-07-28."
+  },
+  {
+    "id": "GLIS-PT-050-001",
+    "patientId": "PT-050",
+    "type": "MR - MPRAGE AX RFT POST",
+    "status": "completed",
+    "date": "2026-05-07",
+    "expirationDate": "2026-08-05",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_050_GBM). Study: MRI BRAIN (TUMOR) WITH AND WITHOUT CONTRAST. Series modality MR, body part HEAD. Manufacturer: SIEMENS Skyra. Source series date: 2008-02-16."
+  },
+  {
+    "id": "GLIS-PT-050-004",
+    "patientId": "PT-050",
+    "type": "CT - 2.5/5mm",
+    "status": "completed",
+    "date": "2026-05-09",
+    "expirationDate": "2026-08-07",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_050_GBM). Study: BRAIN. Series modality CT, body part HEAD. Manufacturer: GE MEDICAL SYSTEMS LightSpeed RT16. Source series date: 2008-02-16."
+  },
+  {
+    "id": "GLIS-PT-050-006",
+    "patientId": "PT-050",
+    "type": "RTSTRUCT - Barriers",
+    "status": "completed",
+    "date": "2026-05-09",
+    "expirationDate": "2026-06-08",
+    "isExpired": false,
+    "findings": "GLIS-RT import (GLI_050_GBM). Study: BRAIN. Series modality RTSTRUCT, body part HEAD. Manufacturer: MIM Software Inc. MIM. Source series date: 2012-08-14."
+  }
+]

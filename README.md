@@ -146,9 +146,21 @@ src/
 - **50 synthetic patients** with realistic demographics, comorbidities, and allergies
 - **15 OR cases** for tomorrow's schedule
 - **Labs, imaging, clearances, consent** records per case
+- **GLIS-RT imaging adapter** mapped into Beacon patient IDs (`PT-001`..`PT-050`) for richer imaging context
 - **Pre-computed agent results** with full readiness analysis, coordination actions, briefings, and agent traces
 
 All data is synthetic — no real patient information.
+
+### Optional: Rebuild GLIS-RT Derived Imaging Data
+
+If you have an updated GLIS-RT NBIA manifest workbook, regenerate the derived imaging files with:
+
+```bash
+python3 scripts/build_glis_imaging_dataset.py \
+  --input "/path/to/GLIS-RT-manifes-nbia-digest.xlsx" \
+  --out-imaging src/data/glis-rt-imaging.json \
+  --out-map src/data/glis-rt-patient-map.json
+```
 
 ---
 
