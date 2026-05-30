@@ -8,7 +8,7 @@ import {
 } from "lucide-react";
 import StatusBadge from "@/components/StatusBadge";
 import ReadinessScore from "@/components/ReadinessScore";
-import { SurgicalCase, Patient, BeaconRunResult } from "@/lib/types";
+import { SurgicalCase, Patient, BeaconRunResult, ScheduleConflict } from "@/lib/types";
 import { formatDate, formatTime, formatDuration, getTomorrowDate } from "@/lib/utils";
 import demoResults from "@/data/demo-results.json";
 
@@ -39,6 +39,7 @@ function useCountUp(target: number, duration = 800, trigger = true) {
 
 export default function ORSchedulePage() {
   const [cases, setCases] = useState<EnrichedCase[]>([]);
+  const [conflicts, setConflicts] = useState<ScheduleConflict[]>([]);
   const [results, setResults] = useState<BeaconRunResult | null>(null);
   const [running, setRunning] = useState(false);
   const [ran, setRan] = useState(true);
@@ -47,7 +48,10 @@ export default function ORSchedulePage() {
   const timerRef = useRef<NodeJS.Timeout | null>(null);
 
   useEffect(() => {
-    fetch("/api/schedule").then(r => r.json()).then(d => setCases(d.cases));
+    fetch("/api/schedule").then(r => r.json()).then(d => {
+      setCases(d.cases ?? d.surgeryCalendar ?? []);
+      setConflicts(d.conflicts ?? []);
+    });
     setResults(demoResults as unknown as BeaconRunResult);
   }, []);
 
@@ -177,6 +181,37 @@ export default function ORSchedulePage() {
             <div className="text-sm text-gray-400 mt-1.5">{blockedPct}% — cannot proceed</div>
           </div>
         </div>
+
+        {/* ── Schedule Conflicts ────────────────────────── */}
+        {conflicts.length > 0 && (
+          <div className="card p-5 mb-7 border-l-4 border-amber-500 animate-fade-in">
+            <div className="flex items-center gap-2 mb-3">
+              <AlertTriangle className="w-4 h-4 text-amber-600" />
+              <h3 className="font-display font-bold text-gray-900">Schedule Conflicts</h3>
+              <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full ml-1 ${
+                conflicts.some(c => c.severity === "critical")
+                  ? "bg-red-600 text-white"
+                  : "bg-amber-500 text-white"
+              }`}>
+                {conflicts.length} detected
+              </span>
+            </div>
+            <div className="space-y-2">
+              {conflicts.map(conflict => (
+                <div key={conflict.id} className="flex items-start gap-2.5">
+                  <div className={`w-1.5 h-1.5 rounded-full mt-1.5 flex-shrink-0 ${
+                    conflict.severity === "critical" ? "bg-red-500" : "bg-amber-500"
+                  }`} />
+                  <span className={`text-sm ${
+                    conflict.severity === "critical" ? "text-red-700 font-medium" : "text-amber-700"
+                  }`}>
+                    {conflict.message}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
 
         {/* ── OR Day Timeline ────────────────────────────── */}
         {cases.length > 0 && (
