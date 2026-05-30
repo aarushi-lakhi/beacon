@@ -133,4 +133,6 @@ When `OPENAI_API_KEY` is not set, the orchestrator returns pre-computed results 
 | `/api/schedule` | GET | Tomorrow's OR schedule + patient data |
 | `/api/cases/[id]` | GET | Full case detail with readiness/actions/briefing |
 | `/api/run-beacon` | POST | Trigger full multi-agent pipeline |
+| `/api/agents/coordinator` | POST | Run Kat's Care Coordinator agent for one case |
+| `/api/agents/briefing-generator` | POST | Run Kat's Briefing Generator agent for one case |
 | `/api/metrics` | GET | Executive KPI summary |

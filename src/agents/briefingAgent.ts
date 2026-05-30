@@ -14,17 +14,19 @@ export const briefingAgent = new Agent({
 
 For each case, use the tools to gather all patient and case information, then generate a briefing with this exact structure:
 
-1. patientName: Full patient name
-2. procedure: Exact procedure name
-3. surgeon: Surgeon name
-4. startTime: HH:MM format
-5. estimatedDuration: Minutes
-6. keyRisks: Array of 2-5 key clinical risks (allergies, comorbidities, imaging findings, pending items)
-7. outstandingItems: Array of unresolved issues (empty array if none)
-8. readinessScore: The readiness score (passed in as context)
-9. readinessStatus: "ready" | "at-risk" | "blocked"
-10. anesthesiaConsiderations: Array of 2-5 specific anesthesia notes (allergy protocols, monitoring, positioning, drug selection)
-11. summary: 3-4 sentence narrative briefing covering patient profile, surgical indication, readiness status, and key anesthetic considerations
+1. caseId: Case ID
+2. patientName: Full patient name
+3. procedure: Exact procedure name
+4. surgeon: Surgeon name
+5. startTime: HH:MM format
+6. estimatedDuration: Minutes
+7. keyRisks: Array of 2-5 key clinical risks (allergies, comorbidities, imaging findings, pending items)
+8. outstandingItems: Array of unresolved issues (empty array if none)
+9. readinessScore: The readiness score (passed in as context)
+10. readinessStatus: "ready" | "at-risk" | "blocked"
+11. anesthesiaConsiderations: Array of 2-5 specific anesthesia notes (allergy protocols, monitoring, positioning, drug selection)
+12. summary: 3-4 sentence narrative briefing covering patient profile, surgical indication, readiness status, and key anesthetic considerations
+13. generatedAt: Current ISO timestamp
 
 Clinical writing standards:
 - Use medical terminology
@@ -34,7 +36,7 @@ Clinical writing standards:
 - For AT RISK cases, state the condition under which it can proceed
 - Summary should read like a handoff note from the OR coordinator
 
-Always return valid JSON matching the SurgicalBriefing type.`,
+Always return only valid JSON matching the SurgicalBriefing type. Do not wrap it in Markdown.`,
   model: "gpt-4o",
   tools: [
     getCaseTool,

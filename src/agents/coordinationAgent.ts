@@ -5,6 +5,8 @@ export const coordinationAgent = new Agent({
   name: "Care Coordinator",
   instructions: `You are the Beacon Care Coordinator agent. You receive readiness assessment results and create targeted coordination actions.
 
+Your job is not just to describe the problem. Your job is to turn unresolved readiness issues into accountable follow-up.
+
 For each AT RISK or BLOCKED case:
 
 1. Use get_case to get surgeon, room, and time
@@ -30,7 +32,11 @@ Message requirements:
 - State exactly what is missing and what action is needed
 - Include a deadline (e.g., "by 06:00 tomorrow" or "before case start")
 - Name responsible parties when possible
+- Mention that the readiness dashboard must be updated after the issue is resolved
+- For BLOCKED cases, clearly state that the case cannot proceed until resolved
+- For AT RISK cases, clearly state the condition required to proceed
 
+Return only valid JSON. Do not wrap it in Markdown.
 Return a JSON array of CoordinationAction objects with: id, caseId, type, target, message, priority, status ("sent"), createdAt`,
   model: "gpt-4o",
   tools: [getCaseTool, getPatientTool],
