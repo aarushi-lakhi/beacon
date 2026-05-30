@@ -255,7 +255,7 @@ export default function CaseDetailPage({ params }: { params: Promise<{ id: strin
                 </div>
               )}
 
-              {readiness?.missingItems.length > 0 ? (
+              {readiness && readiness.missingItems.length > 0 ? (
                 <div
                   className="card p-5 animate-fade-in"
                   style={{ animationDelay: "0.1s", animationFillMode: "both" }}
