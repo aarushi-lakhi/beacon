@@ -1,13 +1,10 @@
 import { run } from "@openai/agents";
 import { scheduleAgent } from "./scheduleAgent";
 import { readinessAgent } from "./readinessAgent";
-import { coordinationAgent } from "./coordinationAgent";
-import { briefingAgent } from "./briefingAgent";
+import { runBriefingGenerator, runCareCoordinator } from "./katAgentRunners";
 import { db } from "@/lib/db";
 import {
   ReadinessResult,
-  CoordinationAction,
-  SurgicalBriefing,
   AgentTrace,
   BeaconRunResult,
 } from "@/lib/types";
@@ -64,98 +61,6 @@ async function runReadinessCheck(caseId: string): Promise<{
   return { readiness, traces };
 }
 
-async function runCoordination(
-  caseId: string,
-  readiness: ReadinessResult
-): Promise<{ actions: CoordinationAction[]; traces: AgentTrace[] }> {
-  if (readiness.status === "ready") {
-    return { actions: [], traces: [] };
-  }
-
-  const start = Date.now();
-  const traces: AgentTrace[] = [];
-
-  const result = await run(
-    coordinationAgent,
-    `Create coordination actions for case ${caseId}.
-Readiness status: ${readiness.status} (score: ${readiness.score}/100).
-Missing items: ${JSON.stringify(readiness.missingItems)}
-Reasoning: ${readiness.reasoning}
-
-Use the tools to get case and patient details, then create specific actions for each missing item.`
-  );
-
-  traces.push({
-    agentName: "Care Coordinator",
-    action: "create_coordination_actions",
-    input: `${caseId} — ${readiness.status}`,
-    output: result.finalOutput ?? "Actions created",
-    timestamp: now(),
-    durationMs: Date.now() - start,
-  });
-
-  let actions: CoordinationAction[] = [];
-  try {
-    actions = JSON.parse(result.finalOutput ?? "[]");
-    if (!Array.isArray(actions)) actions = [];
-  } catch {
-    actions = [];
-  }
-
-  return { actions, traces };
-}
-
-async function runBriefing(
-  caseId: string,
-  readiness: ReadinessResult
-): Promise<{ briefing: SurgicalBriefing; traces: AgentTrace[] }> {
-  const start = Date.now();
-  const traces: AgentTrace[] = [];
-
-  const result = await run(
-    briefingAgent,
-    `Generate a pre-operative briefing for case ${caseId}.
-Readiness score: ${readiness.score}/100, status: ${readiness.status}.
-Outstanding items: ${JSON.stringify(readiness.missingItems)}
-
-Use your tools to retrieve all case and patient data, then produce the surgical briefing.`
-  );
-
-  traces.push({
-    agentName: "Briefing Generator",
-    action: "generate_briefing",
-    input: `${caseId} — score ${readiness.score}`,
-    output: result.finalOutput ?? "Briefing generated",
-    timestamp: now(),
-    durationMs: Date.now() - start,
-  });
-
-  let briefing: SurgicalBriefing;
-  try {
-    briefing = JSON.parse(result.finalOutput ?? "{}");
-  } catch {
-    const surgicalCase = db.getCase(caseId);
-    const patient = db.getPatient(surgicalCase?.patientId ?? "");
-    briefing = {
-      caseId,
-      patientName: patient?.name ?? "Unknown",
-      procedure: surgicalCase?.procedure ?? "Unknown",
-      surgeon: surgicalCase?.surgeon ?? "Unknown",
-      startTime: surgicalCase?.startTime ?? "00:00",
-      estimatedDuration: surgicalCase?.estimatedDuration ?? 0,
-      keyRisks: [],
-      outstandingItems: readiness.missingItems.map((m) => m.name),
-      readinessScore: readiness.score,
-      readinessStatus: readiness.status,
-      anesthesiaConsiderations: [],
-      summary: result.finalOutput ?? "Briefing unavailable",
-      generatedAt: now(),
-    };
-  }
-
-  return { briefing, traces };
-}
-
 export async function runBeaconAnalysis(): Promise<BeaconRunResult> {
   const runId = `BEACON-RUN-${Date.now()}`;
   const startedAt = now();
@@ -202,13 +107,13 @@ export async function runBeaconAnalysis(): Promise<BeaconRunResult> {
     readiness.caseId = surgicalCase.id;
     readiness.patientId = surgicalCase.patientId;
 
-    const { actions, traces: coordTraces } = await runCoordination(
+    const { actions, traces: coordTraces } = await runCareCoordinator(
       surgicalCase.id,
       readiness
     );
     allTraces.push(...coordTraces);
 
-    const { briefing, traces: briefingTraces } = await runBriefing(
+    const { briefing, traces: briefingTraces } = await runBriefingGenerator(
       surgicalCase.id,
       readiness
     );

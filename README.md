@@ -68,6 +68,31 @@ Four scripted cases demonstrate Beacon's full capabilities:
 
 ---
 
+## Agent API Routes
+
+Beacon exposes the full pipeline through `/api/run-beacon`, and individual agent routes for clear team ownership:
+
+| Agent | Owner | Route | Purpose |
+|---|---|---|---|
+| Care Coordinator | Kat | `POST /api/agents/coordinator` | Turns readiness gaps into escalations, reminders, tickets, and team messages |
+| Briefing Generator | Kat | `POST /api/agents/briefing-generator` | Produces the clinical pre-op briefing for a surgical case |
+
+Example request:
+
+```bash
+curl -s -X POST http://localhost:3000/api/agents/coordinator \
+  -H "Content-Type: application/json" \
+  -d '{"caseId":"CASE-003"}'
+
+curl -s -X POST http://localhost:3000/api/agents/briefing-generator \
+  -H "Content-Type: application/json" \
+  -d '{"caseId":"CASE-003"}'
+```
+
+If `readiness` is omitted, the routes use the demo readiness result for that case. To test custom readiness scenarios, include a `readiness` object in the request body.
+
+---
+
 ## Technical Stack
 
 | Layer | Technology |
