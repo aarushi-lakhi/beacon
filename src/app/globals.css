@@ -34,7 +34,7 @@
     @apply bg-beacon-600 text-white shadow-glow-sm;
   }
   .nav-item-inactive {
-    @apply text-gray-400 hover:text-white hover:bg-white/8;
+    @apply text-gray-400 hover:text-white hover:bg-white/10;
   }
 
   /* Cards */
