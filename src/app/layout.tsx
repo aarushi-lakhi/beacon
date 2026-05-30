@@ -3,7 +3,7 @@ import "./globals.css";
 import Navigation from "@/components/Navigation";
 
 export const metadata: Metadata = {
-  title: "Beacon — Surgical Operations AI Platform",
+  title: "Beacon — Surgical Operations Platform",
   description: "AI-powered surgical readiness monitoring, coordination, and briefing generation",
 };
 

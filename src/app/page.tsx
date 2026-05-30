@@ -4,21 +4,21 @@ import Link from "next/link";
 import {
   Calendar, Clock, Play, Loader2, ChevronRight,
   CheckCircle, AlertTriangle, XCircle, Sparkles,
-  ArrowUpRight, Timer, Zap,
+  ArrowUpRight, Zap,
 } from "lucide-react";
 import StatusBadge from "@/components/StatusBadge";
 import ReadinessScore from "@/components/ReadinessScore";
-import { SurgicalCase, Patient, BeaconRunResult } from "@/lib/types";
+import { SurgicalCase, Patient, BeaconRunResult, ScheduleConflict } from "@/lib/types";
 import { formatDate, formatTime, formatDuration, getTomorrowDate } from "@/lib/utils";
 import demoResults from "@/data/demo-results.json";
 
 interface EnrichedCase extends SurgicalCase { patient: Patient; }
 
 const AGENTS = [
-  { name: "Schedule Monitor",   color: "bg-blue-500",   label: "Scheduling" },
-  { name: "Readiness Reviewer", color: "bg-purple-500", label: "Readiness" },
-  { name: "Care Coordinator",   color: "bg-orange-500", label: "Coordination" },
-  { name: "Briefing Generator", color: "bg-teal-500",   label: "Briefing" },
+  { label: "Schedule" },
+  { label: "Readiness" },
+  { label: "Coordination" },
+  { label: "Briefing" },
 ];
 
 function useCountUp(target: number, duration = 800, trigger = true) {
@@ -39,15 +39,19 @@ function useCountUp(target: number, duration = 800, trigger = true) {
 
 export default function ORSchedulePage() {
   const [cases, setCases] = useState<EnrichedCase[]>([]);
+  const [conflicts, setConflicts] = useState<ScheduleConflict[]>([]);
   const [results, setResults] = useState<BeaconRunResult | null>(null);
   const [running, setRunning] = useState(false);
-  const [ran, setRan] = useState(true); // show demo results by default
+  const [ran, setRan] = useState(true);
   const [activeAgent, setActiveAgent] = useState(-1);
   const [runTime, setRunTime] = useState(47.3);
   const timerRef = useRef<NodeJS.Timeout | null>(null);
 
   useEffect(() => {
-    fetch("/api/schedule").then(r => r.json()).then(d => setCases(d.cases));
+    fetch("/api/schedule").then(r => r.json()).then(d => {
+      setCases(d.cases ?? d.surgeryCalendar ?? []);
+      setConflicts(d.conflicts ?? []);
+    });
     setResults(demoResults as unknown as BeaconRunResult);
   }, []);
 
@@ -76,150 +80,166 @@ export default function ORSchedulePage() {
     setRunning(false);
   }, []);
 
-  const source = results ?? (demoResults as unknown as BeaconRunResult);
-  const readyCount = source?.readyCases ?? 0;
+  const source      = results ?? (demoResults as unknown as BeaconRunResult);
+  const readyCount  = source?.readyCases  ?? 0;
   const atRiskCount = source?.atRiskCases ?? 0;
-  const blockedCount = source?.blockedCases ?? 0;
-  const totalCount = cases.length || 15;
+  const blockedCount= source?.blockedCases ?? 0;
+  const totalCount  = cases.length || 15;
 
-  const readyPct  = useCountUp(ran ? Math.round((readyCount / totalCount) * 100) : 0, 800, ran);
-  const atRiskPct = useCountUp(ran ? Math.round((atRiskCount / totalCount) * 100) : 0, 900, ran);
-  const blockedPct= useCountUp(ran ? Math.round((blockedCount / totalCount) * 100) : 0, 1000, ran);
+  const readyPct   = useCountUp(ran ? Math.round((readyCount  / totalCount) * 100) : 0, 800,  ran);
+  const atRiskPct  = useCountUp(ran ? Math.round((atRiskCount / totalCount) * 100) : 0, 900,  ran);
+  const blockedPct = useCountUp(ran ? Math.round((blockedCount/ totalCount) * 100) : 0, 1000, ran);
 
   const tomorrow = getTomorrowDate();
 
   return (
-    <div className="min-h-screen bg-surface-50 bg-mesh">
-      {/* Top command bar */}
-      <div className="sticky top-0 z-30 bg-white/90 backdrop-blur border-b border-surface-200 px-8 py-3">
+    <div className="min-h-screen bg-surface-50">
+      {/* ── Top bar ──────────────────────────────────────── */}
+      <div className="topbar px-8 py-3.5">
         <div className="flex items-center justify-between">
-          <div className="flex items-center gap-6">
+          <div className="flex items-center gap-5">
             <div>
-              <div className="text-xs text-gray-400 uppercase tracking-wider font-medium">Operating Room Schedule</div>
-              <div className="font-semibold text-gray-900 flex items-center gap-2">
+              <div className="text-xs text-gray-400 uppercase tracking-widest font-semibold">OR Schedule</div>
+              <div className="font-semibold text-gray-900 flex items-center gap-2 mt-0.5">
                 <Calendar className="w-4 h-4 text-beacon-600" />
                 {formatDate(tomorrow)}
               </div>
             </div>
             <div className="h-8 w-px bg-surface-200" />
-            <div className="flex items-center gap-4 text-sm">
-              <span className="text-gray-500">{totalCount} cases scheduled</span>
-              {ran && (
-                <span className="flex items-center gap-1.5 text-green-600 font-medium">
-                  <CheckCircle className="w-3.5 h-3.5" />
-                  Analysis complete · {runTime.toFixed(1)}s
-                </span>
-              )}
-            </div>
+            <span className="text-sm text-gray-400">{totalCount} cases</span>
+            {ran && (
+              <span className="flex items-center gap-1.5 text-emerald-600 text-sm font-semibold">
+                <CheckCircle className="w-3.5 h-3.5" />
+                Analysis complete · {runTime.toFixed(1)}s
+              </span>
+            )}
           </div>
           <button onClick={runBeacon} disabled={running} className="btn-beacon">
-            {running ? (
-              <><Loader2 className="w-4 h-4 animate-spin" />Running agents…</>
-            ) : (
-              <><Sparkles className="w-4 h-4" />Run Beacon Analysis</>
-            )}
+            {running
+              ? <><Loader2 className="w-4 h-4 animate-spin" />Running agents…</>
+              : <><Sparkles className="w-4 h-4" />Run Beacon</>
+            }
           </button>
         </div>
       </div>
 
-      <div className="px-8 py-6">
-        {/* Agent pipeline strip (visible when running) */}
+      <div className="px-8 py-7">
+
+        {/* ── Agent progress strip (running state) ──────── */}
         {running && (
-          <div className="card p-4 mb-6 animate-fade-in border-beacon-100 bg-gradient-to-r from-blue-50 to-indigo-50">
-            <div className="flex items-center gap-2 mb-3">
-              <Zap className="w-4 h-4 text-beacon-600" />
-              <span className="text-sm font-semibold text-beacon-700">Beacon agents processing {totalCount} cases…</span>
-              <span className="ml-auto text-sm font-mono text-beacon-600 tabular-nums">{runTime.toFixed(1)}s</span>
+          <div className="card p-4 mb-6 border-l-4 border-beacon-600 animate-fade-in">
+            <div className="flex items-center gap-3 mb-2.5">
+              <Zap className="w-4 h-4 text-beacon-600 animate-pulse" />
+              <span className="text-sm font-semibold text-gray-800">
+                Beacon agents processing {totalCount} cases
+              </span>
+              <span className="ml-auto font-mono text-sm text-beacon-600 tabular-nums">
+                {runTime.toFixed(1)}s
+              </span>
             </div>
-            <div className="flex items-center gap-2">
+            <div className="flex gap-1.5">
               {AGENTS.map((a, i) => (
-                <div key={a.name} className="flex items-center gap-2 flex-1">
-                  <div className={`flex-1 rounded-lg border-2 p-2.5 text-center transition-all duration-300 ${
-                    i < activeAgent ? "border-green-400 bg-green-50" :
-                    i === activeAgent ? "agent-card-active bg-blue-50 animate-pulse" :
-                    "border-surface-200 bg-white opacity-50"
-                  }`}>
-                    <div className={`w-5 h-5 rounded-full mx-auto mb-1 ${a.color} ${i === activeAgent ? "animate-spin" : ""} flex items-center justify-center`}>
-                      {i < activeAgent && <CheckCircle className="w-3 h-3 text-white" />}
-                    </div>
-                    <div className={`text-[10px] font-semibold ${i === activeAgent ? "text-beacon-700" : i < activeAgent ? "text-green-700" : "text-gray-400"}`}>
-                      {a.label}
-                    </div>
-                  </div>
-                  {i < AGENTS.length - 1 && (
-                    <div className={`flex-shrink-0 h-0.5 w-4 rounded ${i < activeAgent ? "bg-green-400" : "bg-surface-200"}`} />
-                  )}
+                <div key={a.label} className="flex-1">
+                  <div className={`h-1.5 rounded-full transition-all duration-700 ${
+                    i < activeAgent  ? "bg-emerald-500" :
+                    i === activeAgent ? "bg-beacon-500 animate-pulse-soft" : "bg-surface-200"
+                  }`} />
+                  <div className={`text-[10px] mt-1 font-semibold transition-colors ${
+                    i < activeAgent  ? "text-emerald-600" :
+                    i === activeAgent ? "text-beacon-600" : "text-gray-300"
+                  }`}>{a.label}</div>
                 </div>
               ))}
             </div>
           </div>
         )}
 
-        {/* KPI strip */}
-        <div className="grid grid-cols-4 gap-4 mb-6">
-          {[
-            { label: "Total Cases", val: totalCount, sub: "Tomorrow's OR", color: "text-beacon-600", bg: "bg-beacon-50", icon: Calendar },
-            { label: "Ready to Proceed", val: readyCount, pct: readyPct, sub: `${readyPct}% of schedule`, color: "text-status-ready", bg: "bg-status-ready-bg", icon: CheckCircle },
-            { label: "At Risk", val: atRiskCount, pct: atRiskPct, sub: `${atRiskPct}% — action taken`, color: "text-status-risk", bg: "bg-status-risk-bg", icon: AlertTriangle },
-            { label: "Blocked", val: blockedCount, pct: blockedPct, sub: `${blockedPct}% — cannot proceed`, color: "text-status-blocked", bg: "bg-status-blocked-bg", icon: XCircle },
-          ].map(({ label, val, sub, color, bg, icon: Icon }, i) => (
-            <div key={label} className={`card p-5 animate-fade-up stagger-${i + 1}`} style={{ animationFillMode: "both" }}>
-              <div className="flex items-start justify-between mb-2">
-                <div className={`w-9 h-9 rounded-lg ${bg} flex items-center justify-center`}>
-                  <Icon className={`w-4.5 h-4.5 ${color}`} style={{ width: 18, height: 18 }} />
-                </div>
-                {i > 0 && ran && (
-                  <span className={`text-xs font-bold ${color} tabular-nums`}>{
-                    i === 1 ? readyPct : i === 2 ? atRiskPct : blockedPct
-                  }%</span>
-                )}
-              </div>
-              <div className={`text-3xl font-bold ${color} tabular-nums`}>{val}</div>
-              <div className="text-sm text-gray-500 font-medium mt-0.5">{label}</div>
-              <div className="text-xs text-gray-400 mt-0.5">{sub}</div>
-              {i > 0 && ran && (
-                <div className="progress-bar mt-3">
-                  <div
-                    className={`progress-fill ${i === 1 ? "bg-status-ready" : i === 2 ? "bg-status-risk" : "bg-status-blocked"}`}
-                    style={{ width: `${i === 1 ? readyPct : i === 2 ? atRiskPct : blockedPct}%`, transition: "width 1.2s ease-out" }}
-                  />
-                </div>
-              )}
-            </div>
-          ))}
+        {/* ── KPI strip ─────────────────────────────────── */}
+        <div className="grid grid-cols-4 gap-4 mb-7">
+          {/* Total */}
+          <div className={`card p-5 animate-fade-up stagger-1`} style={{ animationFillMode: "both" }}>
+            <div className="text-xs text-gray-400 uppercase tracking-widest font-semibold mb-2">Total Cases</div>
+            <div className="text-5xl font-display font-bold text-gray-900 tabular-nums">{totalCount}</div>
+            <div className="text-sm text-gray-400 mt-1.5">Tomorrow's OR</div>
+          </div>
+          {/* Ready */}
+          <div className={`card p-5 border-l-4 border-emerald-500 animate-fade-up stagger-2`} style={{ animationFillMode: "both" }}>
+            <div className="text-xs text-gray-400 uppercase tracking-widest font-semibold mb-2">Ready</div>
+            <div className="text-5xl font-display font-bold text-emerald-600 tabular-nums">{readyCount}</div>
+            <div className="text-sm text-gray-400 mt-1.5">{readyPct}% of schedule</div>
+          </div>
+          {/* At Risk */}
+          <div className={`card p-5 border-l-4 border-amber-500 animate-fade-up stagger-3`} style={{ animationFillMode: "both" }}>
+            <div className="text-xs text-gray-400 uppercase tracking-widest font-semibold mb-2">At Risk</div>
+            <div className="text-5xl font-display font-bold text-amber-600 tabular-nums">{atRiskCount}</div>
+            <div className="text-sm text-gray-400 mt-1.5">{atRiskPct}% — action taken</div>
+          </div>
+          {/* Blocked */}
+          <div className={`card p-5 border-l-4 border-red-500 animate-fade-up stagger-4`} style={{ animationFillMode: "both" }}>
+            <div className="text-xs text-gray-400 uppercase tracking-widest font-semibold mb-2">Blocked</div>
+            <div className="text-5xl font-display font-bold text-red-600 tabular-nums">{blockedCount}</div>
+            <div className="text-sm text-gray-400 mt-1.5">{blockedPct}% — cannot proceed</div>
+          </div>
         </div>
 
-        {/* OR Timeline */}
+        {/* ── Schedule Conflicts ────────────────────────── */}
+        {conflicts.length > 0 && (
+          <div className="card p-5 mb-7 border-l-4 border-amber-500 animate-fade-in">
+            <div className="flex items-center gap-2 mb-3">
+              <AlertTriangle className="w-4 h-4 text-amber-600" />
+              <h3 className="font-display font-bold text-gray-900">Schedule Conflicts</h3>
+              <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full ml-1 ${
+                conflicts.some(c => c.severity === "critical")
+                  ? "bg-red-600 text-white"
+                  : "bg-amber-500 text-white"
+              }`}>
+                {conflicts.length} detected
+              </span>
+            </div>
+            <div className="space-y-2">
+              {conflicts.map(conflict => (
+                <div key={conflict.id} className="flex items-start gap-2.5">
+                  <div className={`w-1.5 h-1.5 rounded-full mt-1.5 flex-shrink-0 ${
+                    conflict.severity === "critical" ? "bg-red-500" : "bg-amber-500"
+                  }`} />
+                  <span className={`text-sm ${
+                    conflict.severity === "critical" ? "text-red-700 font-medium" : "text-amber-700"
+                  }`}>
+                    {conflict.message}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* ── OR Day Timeline ────────────────────────────── */}
         {cases.length > 0 && (
-          <div className="card p-5 mb-6">
+          <div className="card p-5 mb-7">
             <div className="flex items-center justify-between mb-4">
               <div>
-                <div className="font-semibold text-gray-900 flex items-center gap-2">
-                  <Timer className="w-4 h-4 text-beacon-600" />
-                  OR Day Timeline
-                </div>
+                <h2 className="font-display font-bold text-gray-900 text-lg">OR Day Timeline</h2>
                 <div className="text-xs text-gray-400 mt-0.5">07:30 — 18:00 · 8 operating rooms</div>
               </div>
             </div>
             <div className="relative">
-              {/* Room labels */}
-              {["OR-1","OR-2","OR-3","OR-4","OR-5","OR-6","OR-7","OR-8"].map((room, ri) => {
+              {["OR-1","OR-2","OR-3","OR-4","OR-5","OR-6","OR-7","OR-8"].map(room => {
                 const roomCases = cases.filter(c => c.orRoom.startsWith(room));
                 return (
                   <div key={room} className="flex items-center gap-3 mb-1.5">
-                    <div className="text-xs font-medium text-gray-400 w-14 flex-shrink-0 text-right">{room}</div>
-                    <div className="flex-1 h-7 bg-surface-100 rounded-md relative overflow-hidden">
+                    <div className="text-xs font-semibold text-gray-400 w-14 flex-shrink-0 text-right">{room}</div>
+                    <div className="flex-1 h-7 bg-surface-100 rounded-lg relative overflow-hidden">
                       {roomCases.map(c => {
                         const startH = parseInt(c.startTime.split(":")[0]);
                         const startM = parseInt(c.startTime.split(":")[1]);
                         const totalMins = (startH * 60 + startM) - 7 * 60 - 30;
-                        const dayMins = 10.5 * 60;
-                        const left = (totalMins / dayMins) * 100;
+                        const dayMins   = 10.5 * 60;
+                        const left  = (totalMins / dayMins) * 100;
                         const width = (c.estimatedDuration / dayMins) * 100;
                         const r = source?.results?.[c.id]?.readiness;
-                        const color = !r ? "bg-gray-300" :
-                          r.status === "ready" ? "bg-status-ready" :
-                          r.status === "at-risk" ? "bg-status-risk" : "bg-status-blocked";
+                        const color = !r ? "bg-surface-300" :
+                          r.status === "ready"   ? "bg-emerald-500" :
+                          r.status === "at-risk" ? "bg-amber-500" : "bg-red-500";
                         return (
                           <Link key={c.id} href={`/case/${c.id}`}>
                             <div
@@ -236,35 +256,41 @@ export default function ORSchedulePage() {
                   </div>
                 );
               })}
-              {/* Time labels */}
               <div className="flex mt-2 ml-[68px]">
                 {["7:30","9:00","10:30","12:00","13:30","15:00","16:30","18:00"].map(t => (
                   <div key={t} className="flex-1 text-[10px] text-gray-400 tabular-nums">{t}</div>
                 ))}
               </div>
             </div>
-            <div className="flex items-center gap-4 mt-3 pt-3 border-t border-surface-100">
-              {[["Ready","bg-status-ready"],["At Risk","bg-status-risk"],["Blocked","bg-status-blocked"],["Pending","bg-gray-300"]].map(([l,c]) => (
+            <div className="flex items-center gap-5 mt-3 pt-3 border-t border-surface-100">
+              {[
+                ["Ready",   "bg-emerald-500"],
+                ["At Risk", "bg-amber-500"],
+                ["Blocked", "bg-red-500"],
+                ["Pending", "bg-surface-300"],
+              ].map(([l, c]) => (
                 <div key={l} className="flex items-center gap-1.5">
                   <div className={`w-3 h-3 rounded-sm ${c}`} />
-                  <span className="text-xs text-gray-500">{l}</span>
+                  <span className="text-xs text-gray-500 font-medium">{l}</span>
                 </div>
               ))}
             </div>
           </div>
         )}
 
-        {/* Case table */}
+        {/* ── Case table ────────────────────────────────── */}
         <div className="card overflow-hidden">
           <div className="px-6 py-4 border-b border-surface-100 flex items-center justify-between">
             <div>
-              <h2 className="font-semibold text-gray-900">Scheduled Cases</h2>
-              <div className="text-xs text-gray-400 mt-0.5">Sorted by start time · Click any row for full case detail</div>
+              <h2 className="font-display font-bold text-gray-900 text-lg">Scheduled Cases</h2>
+              <div className="text-xs text-gray-400 mt-0.5">
+                Sorted by start time · click any row for full case detail
+              </div>
             </div>
             {ran && (
-              <div className="flex items-center gap-2 text-xs text-beacon-600 font-medium bg-beacon-50 px-3 py-1.5 rounded-full">
-                <Sparkles className="w-3 h-3" />
-                Beacon analysis complete
+              <div className="flex items-center gap-1.5 text-xs text-emerald-700 font-semibold bg-emerald-50 px-3 py-1.5 rounded-full border border-emerald-200">
+                <CheckCircle className="w-3 h-3" />
+                Beacon complete
               </div>
             )}
           </div>
@@ -285,8 +311,9 @@ export default function ORSchedulePage() {
               <tbody>
                 {cases.map((c, idx) => {
                   const r = source?.results?.[c.id]?.readiness;
-                  const rowBg = r?.status === "blocked" ? "bg-red-50/40" :
-                                r?.status === "at-risk" ? "bg-amber-50/30" : "";
+                  const rowBg =
+                    r?.status === "blocked"  ? "bg-red-50/30" :
+                    r?.status === "at-risk"  ? "bg-amber-50/25" : "";
                   return (
                     <tr
                       key={c.id}
@@ -295,45 +322,40 @@ export default function ORSchedulePage() {
                     >
                       <td>
                         <div className="flex items-center gap-1.5 font-semibold text-gray-900 tabular-nums">
-                          <Clock className="w-3.5 h-3.5 text-gray-400 flex-shrink-0" />
+                          <Clock className="w-3.5 h-3.5 text-gray-300 flex-shrink-0" />
                           {formatTime(c.startTime)}
                         </div>
                         <div className="text-xs text-gray-400 mt-0.5 font-medium">{c.orRoom}</div>
                       </td>
                       <td>
-                        <div className="font-medium text-gray-900">{c.patient?.name}</div>
-                        <div className="text-xs text-gray-400 font-mono">{c.patient?.mrn}</div>
-                        {c.demoHighlight && (
-                          <span className="inline-flex items-center gap-1 text-[10px] text-beacon-600 font-semibold bg-beacon-50 px-1.5 py-0.5 rounded mt-1">
-                            <Sparkles className="w-2.5 h-2.5" />
-                            Demo
-                          </span>
-                        )}
+                        <div className="font-semibold text-gray-900">{c.patient?.name}</div>
+                        <div className="text-xs text-gray-400 font-mono mt-0.5">{c.patient?.mrn}</div>
                       </td>
                       <td>
                         <div className="text-gray-800 max-w-[200px] truncate font-medium">{c.procedure}</div>
-                        <div className="text-xs text-gray-400 capitalize">{c.anesthesiaType} · {c.priority}</div>
+                        <div className="text-xs text-gray-400 capitalize mt-0.5">{c.anesthesiaType} · {c.priority}</div>
                       </td>
                       <td>
-                        <div className="text-gray-700 text-sm">{c.surgeon}</div>
+                        <div className="text-gray-600 text-sm">{c.surgeon}</div>
                       </td>
                       <td>
-                        <div className="font-medium text-gray-700 tabular-nums">{formatDuration(c.estimatedDuration)}</div>
+                        <div className="font-semibold text-gray-700 tabular-nums">{formatDuration(c.estimatedDuration)}</div>
                       </td>
                       <td>
-                        {r ? <StatusBadge status={r.status} /> : (
-                          <span className="text-xs text-gray-300 italic">Pending</span>
-                        )}
+                        {r
+                          ? <StatusBadge status={r.status} />
+                          : <span className="text-xs text-gray-300 italic">Pending</span>
+                        }
                       </td>
                       <td className="text-center">
-                        {r ? (
-                          <ReadinessScore score={r.score} size={40} showLabel={false} />
-                        ) : (
-                          <span className="text-gray-300">—</span>
-                        )}
+                        {r
+                          ? <ReadinessScore score={r.score} size={40} showLabel={false} />
+                          : <span className="text-gray-300">—</span>
+                        }
                       </td>
                       <td>
-                        <Link href={`/case/${c.id}`}
+                        <Link
+                          href={`/case/${c.id}`}
                           className="flex items-center gap-1 text-xs text-beacon-600 hover:text-beacon-700 font-semibold group"
                         >
                           View

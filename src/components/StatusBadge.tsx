@@ -8,15 +8,15 @@ interface Props {
 }
 
 const icons = {
-  ready: CheckCircle,
-  "at-risk": AlertTriangle,
-  blocked: XCircle,
+  ready:    CheckCircle,
+  "at-risk":AlertTriangle,
+  blocked:  XCircle,
 };
 
-const classes = {
-  ready: "badge-ready",
-  "at-risk": "badge-risk",
-  blocked: "badge-blocked",
+const classes: Record<ReadinessStatus, string> = {
+  ready:    "badge badge-ready",
+  "at-risk":"badge badge-risk",
+  blocked:  "badge badge-blocked",
 };
 
 export default function StatusBadge({ status, size = "md" }: Props) {
