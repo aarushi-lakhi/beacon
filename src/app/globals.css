@@ -1,51 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --font-mono: "JetBrains Mono", "Fira Code", monospace;
+  --sidebar-width: 240px;
+  --topbar-height: 0px;
+  --beacon-blue: #2563eb;
+  --beacon-glow: rgba(37, 99, 235, 0.35);
 }
 
 @layer base {
-  * {
-    box-sizing: border-box;
-  }
+  * { box-sizing: border-box; }
+  html { font-feature-settings: "cv02", "cv03", "cv04", "cv11"; }
   body {
-    @apply bg-gray-50 text-gray-900 antialiased;
+    @apply bg-surface-50 text-gray-900 antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
   }
 }
 
 @layer components {
-  .sidebar-link {
-    @apply flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-all duration-150;
+  /* Sidebar */
+  .sidebar {
+    background: linear-gradient(180deg, #0c1220 0%, #111827 60%, #0f172a 100%);
+    border-right: 1px solid rgba(255,255,255,0.06);
   }
-  .sidebar-link-active {
-    @apply bg-beacon-blue text-white;
+
+  .nav-item {
+    @apply flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-all duration-200 cursor-pointer;
   }
-  .sidebar-link-inactive {
-    @apply text-gray-400 hover:bg-white/10 hover:text-white;
+  .nav-item-active {
+    @apply bg-beacon-600 text-white shadow-glow-sm;
   }
+  .nav-item-inactive {
+    @apply text-gray-400 hover:text-white hover:bg-white/10;
+  }
+
+  /* Cards */
   .card {
-    @apply bg-white rounded-xl border border-gray-200 shadow-sm;
+    @apply bg-white rounded-xl border border-surface-200 shadow-card;
   }
-  .badge-ready {
-    @apply inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold bg-status-ready-bg text-status-ready-text;
+  .card-hover {
+    @apply hover:shadow-card-hover hover:border-surface-300 transition-all duration-200;
   }
-  .badge-risk {
-    @apply inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold bg-status-risk-bg text-status-risk-text;
+  .card-glass {
+    background: rgba(255,255,255,0.85);
+    backdrop-filter: blur(12px);
+    @apply border border-white/60 rounded-xl shadow-card;
   }
-  .badge-blocked {
-    @apply inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold bg-status-blocked-bg text-status-blocked-text;
+
+  /* Status badges */
+  .badge {
+    @apply inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold;
+  }
+  .badge-ready   { @apply bg-status-ready-bg   text-status-ready-text   ring-1 ring-status-ready-ring/40; }
+  .badge-risk    { @apply bg-status-risk-bg    text-status-risk-text    ring-1 ring-status-risk-ring/40; }
+  .badge-blocked { @apply bg-status-blocked-bg text-status-blocked-text ring-1 ring-status-blocked-ring/40; }
+
+  /* Priority pill */
+  .priority-critical { @apply bg-red-100   text-red-700   text-xs font-semibold px-2 py-0.5 rounded-full; }
+  .priority-high     { @apply bg-amber-100 text-amber-700 text-xs font-semibold px-2 py-0.5 rounded-full; }
+  .priority-medium   { @apply bg-blue-100  text-blue-700  text-xs font-semibold px-2 py-0.5 rounded-full; }
+
+  /* Agent badge colors */
+  .agent-schedule  { @apply bg-blue-100   text-blue-800; }
+  .agent-readiness { @apply bg-purple-100 text-purple-800; }
+  .agent-coord     { @apply bg-orange-100 text-orange-800; }
+  .agent-briefing  { @apply bg-teal-100   text-teal-800; }
+
+  /* Metric card */
+  .metric-card {
+    @apply card p-5 flex flex-col gap-1;
+  }
+  .metric-value {
+    @apply text-3xl font-bold tracking-tight;
+  }
+  .metric-label {
+    @apply text-sm text-gray-500 font-medium;
+  }
+
+  /* Section header */
+  .section-header {
+    @apply text-xs font-semibold uppercase tracking-widest text-gray-400 mb-3;
+  }
+
+  /* Table */
+  .data-table {
+    @apply w-full border-collapse;
+  }
+  .data-table th {
+    @apply text-left px-4 py-3 text-xs font-semibold text-gray-500 uppercase tracking-wide bg-surface-50 border-b border-surface-200;
+  }
+  .data-table td {
+    @apply px-4 py-3.5 border-b border-surface-100 text-sm;
+  }
+  .data-table tr:hover td {
+    @apply bg-surface-50;
+  }
+  .data-table tr:last-child td {
+    @apply border-b-0;
+  }
+
+  /* Progress bar */
+  .progress-bar {
+    @apply h-1.5 rounded-full bg-surface-200 overflow-hidden;
+  }
+  .progress-fill {
+    @apply h-full rounded-full transition-all duration-1000 ease-out;
+  }
+
+  /* Beacon button */
+  .btn-beacon {
+    @apply flex items-center gap-2 px-5 py-2.5 bg-beacon-600 text-white rounded-lg font-semibold text-sm
+           hover:bg-beacon-700 active:scale-[0.98] transition-all duration-150 shadow-sm
+           disabled:opacity-60 disabled:cursor-not-allowed;
+  }
+  .btn-secondary {
+    @apply flex items-center gap-2 px-4 py-2 bg-white text-gray-700 rounded-lg font-medium text-sm
+           border border-surface-200 hover:bg-surface-50 hover:border-surface-300
+           active:scale-[0.98] transition-all duration-150 shadow-card;
+  }
+
+  /* Live dot */
+  .live-dot {
+    @apply relative flex h-2 w-2;
+  }
+  .live-dot-ping {
+    @apply animate-ping absolute inline-flex h-full w-full rounded-full opacity-75;
+  }
+
+  /* OR Timeline bar */
+  .timeline-bar {
+    @apply absolute top-0 h-full rounded-sm flex items-center px-1.5 overflow-hidden text-white text-xs font-medium;
+    min-width: 4px;
   }
 }
 
-.scrollbar-thin::-webkit-scrollbar {
-  width: 4px;
+@layer utilities {
+  .text-gradient {
+    background: linear-gradient(135deg, #2563eb, #0891b2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .text-gradient-gold {
+    background: linear-gradient(135deg, #d97706, #f59e0b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .bg-mesh {
+    background-image:
+      radial-gradient(at 40% 20%, rgba(37, 99, 235, 0.08) 0px, transparent 50%),
+      radial-gradient(at 80% 0%, rgba(8, 145, 178, 0.05) 0px, transparent 50%),
+      radial-gradient(at 0% 50%, rgba(37, 99, 235, 0.05) 0px, transparent 50%);
+  }
+  .scrollbar-thin::-webkit-scrollbar { width: 4px; height: 4px; }
+  .scrollbar-thin::-webkit-scrollbar-track { background: transparent; }
+  .scrollbar-thin::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 2px; }
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+  .hover\:bg-white\/8:hover { background-color: rgba(255,255,255,0.08); }
+  .stagger-1 { animation-delay: 0.05s; }
+  .stagger-2 { animation-delay: 0.10s; }
+  .stagger-3 { animation-delay: 0.15s; }
+  .stagger-4 { animation-delay: 0.20s; }
 }
-.scrollbar-thin::-webkit-scrollbar-track {
-  background: transparent;
+
+/* Glassmorphism panel */
+.panel-glass {
+  background: linear-gradient(135deg, rgba(255,255,255,0.9) 0%, rgba(248,250,252,0.95) 100%);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255,255,255,0.8);
+  box-shadow: 0 4px 24px rgba(0,0,0,0.06), inset 0 1px 0 rgba(255,255,255,0.8);
 }
-.scrollbar-thin::-webkit-scrollbar-thumb {
-  background: #d1d5db;
-  border-radius: 2px;
+
+/* Beacon status bar gradient */
+.status-bar-ready   { background: linear-gradient(90deg, #059669, #34d399); }
+.status-bar-risk    { background: linear-gradient(90deg, #d97706, #fbbf24); }
+.status-bar-blocked { background: linear-gradient(90deg, #dc2626, #f87171); }
+
+/* Agent card active state */
+.agent-card-active {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 1px rgba(59, 130, 246, 0.3), 0 4px 12px rgba(59, 130, 246, 0.15);
 }
+
+/* Readiness risk bar */
+.risk-bar-track { background: linear-gradient(90deg, #059669 0%, #d97706 50%, #dc2626 100%); }

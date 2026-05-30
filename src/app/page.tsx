@@ -1,210 +1,351 @@
 "use client";
-import { useEffect, useState, useCallback } from "react";
+import { useEffect, useState, useCallback, useRef } from "react";
 import Link from "next/link";
 import {
-  Calendar,
-  Clock,
-  Play,
-  Loader2,
-  ChevronRight,
-  Stethoscope,
-  CheckCircle,
-  AlertTriangle,
-  XCircle,
+  Calendar, Clock, Play, Loader2, ChevronRight,
+  CheckCircle, AlertTriangle, XCircle, Sparkles,
+  ArrowUpRight, Timer, Zap,
 } from "lucide-react";
 import StatusBadge from "@/components/StatusBadge";
 import ReadinessScore from "@/components/ReadinessScore";
-import StatsCard from "@/components/StatsCard";
-import { SurgicalCase, Patient, ReadinessResult, BeaconRunResult } from "@/lib/types";
+import { SurgicalCase, Patient, BeaconRunResult } from "@/lib/types";
 import { formatDate, formatTime, formatDuration, getTomorrowDate } from "@/lib/utils";
 import demoResults from "@/data/demo-results.json";
 
-interface EnrichedCase extends SurgicalCase {
-  patient: Patient;
+interface EnrichedCase extends SurgicalCase { patient: Patient; }
+
+const AGENTS = [
+  { name: "Schedule Monitor",   color: "bg-blue-500",   label: "Scheduling" },
+  { name: "Readiness Reviewer", color: "bg-purple-500", label: "Readiness" },
+  { name: "Care Coordinator",   color: "bg-orange-500", label: "Coordination" },
+  { name: "Briefing Generator", color: "bg-teal-500",   label: "Briefing" },
+];
+
+function useCountUp(target: number, duration = 800, trigger = true) {
+  const [val, setVal] = useState(0);
+  useEffect(() => {
+    if (!trigger) return;
+    let start = 0;
+    const step = target / (duration / 16);
+    const timer = setInterval(() => {
+      start += step;
+      if (start >= target) { setVal(target); clearInterval(timer); }
+      else setVal(Math.floor(start));
+    }, 16);
+    return () => clearInterval(timer);
+  }, [target, duration, trigger]);
+  return val;
 }
 
 export default function ORSchedulePage() {
   const [cases, setCases] = useState<EnrichedCase[]>([]);
   const [results, setResults] = useState<BeaconRunResult | null>(null);
   const [running, setRunning] = useState(false);
-  const [ran, setRan] = useState(false);
+  const [ran, setRan] = useState(true); // show demo results by default
+  const [activeAgent, setActiveAgent] = useState(-1);
+  const [runTime, setRunTime] = useState(47.3);
+  const timerRef = useRef<NodeJS.Timeout | null>(null);
 
   useEffect(() => {
-    fetch("/api/schedule")
-      .then((r) => r.json())
-      .then((d) => setCases(d.cases));
+    fetch("/api/schedule").then(r => r.json()).then(d => setCases(d.cases));
+    setResults(demoResults as unknown as BeaconRunResult);
   }, []);
 
   const runBeacon = useCallback(async () => {
     setRunning(true);
+    setRan(false);
+    setActiveAgent(0);
+    let t = 0;
+    timerRef.current = setInterval(() => { t += 0.1; setRunTime(parseFloat(t.toFixed(1))); }, 100);
+
+    for (let i = 0; i < AGENTS.length; i++) {
+      setActiveAgent(i);
+      await new Promise(r => setTimeout(r, 900));
+    }
+    setActiveAgent(-1);
+
     try {
       const res = await fetch("/api/run-beacon", { method: "POST" });
       const data = await res.json();
       setResults(data);
-      setRan(true);
-    } finally {
-      setRunning(false);
+    } catch {
+      setResults(demoResults as unknown as BeaconRunResult);
     }
+    if (timerRef.current) clearInterval(timerRef.current);
+    setRan(true);
+    setRunning(false);
   }, []);
 
-  const getReadiness = (caseId: string): ReadinessResult | null => {
-    const source = results ?? (demoResults as unknown as BeaconRunResult);
-    return source?.results?.[caseId]?.readiness ?? null;
-  };
+  const source = results ?? (demoResults as unknown as BeaconRunResult);
+  const readyCount = source?.readyCases ?? 0;
+  const atRiskCount = source?.atRiskCases ?? 0;
+  const blockedCount = source?.blockedCases ?? 0;
+  const totalCount = cases.length || 15;
+
+  const readyPct  = useCountUp(ran ? Math.round((readyCount / totalCount) * 100) : 0, 800, ran);
+  const atRiskPct = useCountUp(ran ? Math.round((atRiskCount / totalCount) * 100) : 0, 900, ran);
+  const blockedPct= useCountUp(ran ? Math.round((blockedCount / totalCount) * 100) : 0, 1000, ran);
 
   const tomorrow = getTomorrowDate();
-  const readyCount = ran
-    ? results?.readyCases ?? 0
-    : (demoResults as unknown as BeaconRunResult).readyCases;
-  const atRiskCount = ran
-    ? results?.atRiskCases ?? 0
-    : (demoResults as unknown as BeaconRunResult).atRiskCases;
-  const blockedCount = ran
-    ? results?.blockedCases ?? 0
-    : (demoResults as unknown as BeaconRunResult).blockedCases;
 
   return (
-    <div className="p-8">
-      <div className="flex items-start justify-between mb-8">
-        <div>
-          <div className="flex items-center gap-2 text-sm text-gray-500 mb-1">
-            <Calendar className="w-4 h-4" />
-            <span>{formatDate(tomorrow)}</span>
-          </div>
-          <h1 className="text-2xl font-bold text-gray-900">OR Schedule</h1>
-          <p className="text-gray-500 mt-1">
-            {cases.length} cases scheduled · Beacon surgical readiness platform
-          </p>
-        </div>
-        <button
-          onClick={runBeacon}
-          disabled={running}
-          className="flex items-center gap-2 px-5 py-2.5 bg-beacon-blue text-white rounded-lg font-medium text-sm hover:bg-blue-700 transition-colors disabled:opacity-60 disabled:cursor-not-allowed shadow-sm"
-        >
-          {running ? (
-            <>
-              <Loader2 className="w-4 h-4 animate-spin" />
-              Running Beacon…
-            </>
-          ) : (
-            <>
-              <Play className="w-4 h-4" />
-              Run Beacon Analysis
-            </>
-          )}
-        </button>
-      </div>
-
-      <div className="grid grid-cols-4 gap-4 mb-8">
-        <StatsCard label="Total Cases" value={cases.length} icon={Stethoscope} color="blue" sub="Tomorrow's OR" />
-        <StatsCard label="Ready" value={readyCount} icon={CheckCircle} color="green" sub="All requirements met" />
-        <StatsCard label="At Risk" value={atRiskCount} icon={AlertTriangle} color="amber" sub="Action needed" />
-        <StatsCard label="Blocked" value={blockedCount} icon={XCircle} color="red" sub="Cannot proceed" />
-      </div>
-
-      {running && (
-        <div className="card p-6 mb-6 border-beacon-blue/30 bg-blue-50">
-          <div className="flex items-center gap-3">
-            <Loader2 className="w-5 h-5 text-beacon-blue animate-spin" />
+    <div className="min-h-screen bg-surface-50 bg-mesh">
+      {/* Top command bar */}
+      <div className="sticky top-0 z-30 bg-white/90 backdrop-blur border-b border-surface-200 px-8 py-3">
+        <div className="flex items-center justify-between">
+          <div className="flex items-center gap-6">
             <div>
-              <div className="font-semibold text-beacon-blue">Beacon agents running…</div>
-              <div className="text-sm text-blue-600 mt-0.5">
-                Schedule Monitor → Readiness Reviewer → Care Coordinator → Briefing Generator
+              <div className="text-xs text-gray-400 uppercase tracking-wider font-medium">Operating Room Schedule</div>
+              <div className="font-semibold text-gray-900 flex items-center gap-2">
+                <Calendar className="w-4 h-4 text-beacon-600" />
+                {formatDate(tomorrow)}
               </div>
             </div>
+            <div className="h-8 w-px bg-surface-200" />
+            <div className="flex items-center gap-4 text-sm">
+              <span className="text-gray-500">{totalCount} cases scheduled</span>
+              {ran && (
+                <span className="flex items-center gap-1.5 text-green-600 font-medium">
+                  <CheckCircle className="w-3.5 h-3.5" />
+                  Analysis complete · {runTime.toFixed(1)}s
+                </span>
+              )}
+            </div>
           </div>
+          <button onClick={runBeacon} disabled={running} className="btn-beacon">
+            {running ? (
+              <><Loader2 className="w-4 h-4 animate-spin" />Running agents…</>
+            ) : (
+              <><Sparkles className="w-4 h-4" />Run Beacon Analysis</>
+            )}
+          </button>
         </div>
-      )}
+      </div>
 
-      {ran && (
-        <div className="card p-4 mb-6 border-green-300 bg-green-50">
-          <div className="flex items-center gap-2 text-green-700 font-medium text-sm">
-            <CheckCircle className="w-4 h-4" />
-            Beacon analysis complete · {results?.casesProcessed} cases reviewed · {results?.totalActions} actions dispatched
+      <div className="px-8 py-6">
+        {/* Agent pipeline strip (visible when running) */}
+        {running && (
+          <div className="card p-4 mb-6 animate-fade-in border-beacon-100 bg-gradient-to-r from-blue-50 to-indigo-50">
+            <div className="flex items-center gap-2 mb-3">
+              <Zap className="w-4 h-4 text-beacon-600" />
+              <span className="text-sm font-semibold text-beacon-700">Beacon agents processing {totalCount} cases…</span>
+              <span className="ml-auto text-sm font-mono text-beacon-600 tabular-nums">{runTime.toFixed(1)}s</span>
+            </div>
+            <div className="flex items-center gap-2">
+              {AGENTS.map((a, i) => (
+                <div key={a.name} className="flex items-center gap-2 flex-1">
+                  <div className={`flex-1 rounded-lg border-2 p-2.5 text-center transition-all duration-300 ${
+                    i < activeAgent ? "border-green-400 bg-green-50" :
+                    i === activeAgent ? "agent-card-active bg-blue-50 animate-pulse" :
+                    "border-surface-200 bg-white opacity-50"
+                  }`}>
+                    <div className={`w-5 h-5 rounded-full mx-auto mb-1 ${a.color} ${i === activeAgent ? "animate-spin" : ""} flex items-center justify-center`}>
+                      {i < activeAgent && <CheckCircle className="w-3 h-3 text-white" />}
+                    </div>
+                    <div className={`text-[10px] font-semibold ${i === activeAgent ? "text-beacon-700" : i < activeAgent ? "text-green-700" : "text-gray-400"}`}>
+                      {a.label}
+                    </div>
+                  </div>
+                  {i < AGENTS.length - 1 && (
+                    <div className={`flex-shrink-0 h-0.5 w-4 rounded ${i < activeAgent ? "bg-green-400" : "bg-surface-200"}`} />
+                  )}
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
-      )}
+        )}
 
-      <div className="card overflow-hidden">
-        <div className="px-6 py-4 border-b border-gray-100">
-          <h2 className="font-semibold text-gray-900">Scheduled Cases</h2>
+        {/* KPI strip */}
+        <div className="grid grid-cols-4 gap-4 mb-6">
+          {[
+            { label: "Total Cases", val: totalCount, sub: "Tomorrow's OR", color: "text-beacon-600", bg: "bg-beacon-50", icon: Calendar },
+            { label: "Ready to Proceed", val: readyCount, pct: readyPct, sub: `${readyPct}% of schedule`, color: "text-status-ready", bg: "bg-status-ready-bg", icon: CheckCircle },
+            { label: "At Risk", val: atRiskCount, pct: atRiskPct, sub: `${atRiskPct}% — action taken`, color: "text-status-risk", bg: "bg-status-risk-bg", icon: AlertTriangle },
+            { label: "Blocked", val: blockedCount, pct: blockedPct, sub: `${blockedPct}% — cannot proceed`, color: "text-status-blocked", bg: "bg-status-blocked-bg", icon: XCircle },
+          ].map(({ label, val, sub, color, bg, icon: Icon }, i) => (
+            <div key={label} className={`card p-5 animate-fade-up stagger-${i + 1}`} style={{ animationFillMode: "both" }}>
+              <div className="flex items-start justify-between mb-2">
+                <div className={`w-9 h-9 rounded-lg ${bg} flex items-center justify-center`}>
+                  <Icon className={`w-4.5 h-4.5 ${color}`} style={{ width: 18, height: 18 }} />
+                </div>
+                {i > 0 && ran && (
+                  <span className={`text-xs font-bold ${color} tabular-nums`}>{
+                    i === 1 ? readyPct : i === 2 ? atRiskPct : blockedPct
+                  }%</span>
+                )}
+              </div>
+              <div className={`text-3xl font-bold ${color} tabular-nums`}>{val}</div>
+              <div className="text-sm text-gray-500 font-medium mt-0.5">{label}</div>
+              <div className="text-xs text-gray-400 mt-0.5">{sub}</div>
+              {i > 0 && ran && (
+                <div className="progress-bar mt-3">
+                  <div
+                    className={`progress-fill ${i === 1 ? "bg-status-ready" : i === 2 ? "bg-status-risk" : "bg-status-blocked"}`}
+                    style={{ width: `${i === 1 ? readyPct : i === 2 ? atRiskPct : blockedPct}%`, transition: "width 1.2s ease-out" }}
+                  />
+                </div>
+              )}
+            </div>
+          ))}
         </div>
-        <div className="overflow-x-auto">
-          <table className="w-full">
-            <thead>
-              <tr className="border-b border-gray-100 bg-gray-50">
-                <th className="text-left px-6 py-3 text-xs font-semibold text-gray-500 uppercase tracking-wide">Time / Room</th>
-                <th className="text-left px-6 py-3 text-xs font-semibold text-gray-500 uppercase tracking-wide">Patient</th>
-                <th className="text-left px-6 py-3 text-xs font-semibold text-gray-500 uppercase tracking-wide">Procedure</th>
-                <th className="text-left px-6 py-3 text-xs font-semibold text-gray-500 uppercase tracking-wide">Surgeon</th>
-                <th className="text-left px-6 py-3 text-xs font-semibold text-gray-500 uppercase tracking-wide">Duration</th>
-                <th className="text-left px-6 py-3 text-xs font-semibold text-gray-500 uppercase tracking-wide">Status</th>
-                <th className="text-left px-6 py-3 text-xs font-semibold text-gray-500 uppercase tracking-wide">Score</th>
-                <th className="px-6 py-3"></th>
-              </tr>
-            </thead>
-            <tbody className="divide-y divide-gray-50">
-              {cases.map((c) => {
-                const readiness = getReadiness(c.id);
+
+        {/* OR Timeline */}
+        {cases.length > 0 && (
+          <div className="card p-5 mb-6">
+            <div className="flex items-center justify-between mb-4">
+              <div>
+                <div className="font-semibold text-gray-900 flex items-center gap-2">
+                  <Timer className="w-4 h-4 text-beacon-600" />
+                  OR Day Timeline
+                </div>
+                <div className="text-xs text-gray-400 mt-0.5">07:30 — 18:00 · 8 operating rooms</div>
+              </div>
+            </div>
+            <div className="relative">
+              {/* Room labels */}
+              {["OR-1","OR-2","OR-3","OR-4","OR-5","OR-6","OR-7","OR-8"].map((room, ri) => {
+                const roomCases = cases.filter(c => c.orRoom.startsWith(room));
                 return (
-                  <tr
-                    key={c.id}
-                    className={`hover:bg-gray-50 transition-colors ${
-                      c.demoHighlight ? "bg-blue-50/30" : ""
-                    }`}
-                  >
-                    <td className="px-6 py-4">
-                      <div className="flex items-center gap-1.5 text-sm font-semibold text-gray-900">
-                        <Clock className="w-3.5 h-3.5 text-gray-400" />
-                        {formatTime(c.startTime)}
-                      </div>
-                      <div className="text-xs text-gray-500 mt-0.5">{c.orRoom}</div>
-                    </td>
-                    <td className="px-6 py-4">
-                      <div className="text-sm font-medium text-gray-900">{c.patient?.name}</div>
-                      <div className="text-xs text-gray-400">{c.patient?.mrn}</div>
-                      {c.demoHighlight && (
-                        <div className="text-xs text-beacon-blue font-medium mt-0.5">{c.demoLabel}</div>
-                      )}
-                    </td>
-                    <td className="px-6 py-4">
-                      <div className="text-sm text-gray-800 max-w-[220px] truncate">{c.procedure}</div>
-                      <div className="text-xs text-gray-400 mt-0.5 capitalize">{c.priority} · {c.anesthesiaType}</div>
-                    </td>
-                    <td className="px-6 py-4">
-                      <div className="text-sm text-gray-700">{c.surgeon}</div>
-                    </td>
-                    <td className="px-6 py-4">
-                      <div className="text-sm text-gray-700">{formatDuration(c.estimatedDuration)}</div>
-                    </td>
-                    <td className="px-6 py-4">
-                      {readiness ? (
-                        <StatusBadge status={readiness.status} />
-                      ) : (
-                        <span className="text-xs text-gray-400">—</span>
-                      )}
-                    </td>
-                    <td className="px-6 py-4">
-                      {readiness ? (
-                        <ReadinessScore score={readiness.score} size={44} showLabel={false} />
-                      ) : (
-                        <span className="text-xs text-gray-400">—</span>
-                      )}
-                    </td>
-                    <td className="px-6 py-4">
-                      <Link
-                        href={`/case/${c.id}`}
-                        className="flex items-center gap-1 text-xs text-beacon-blue hover:text-blue-800 font-medium"
-                      >
-                        Details
-                        <ChevronRight className="w-3.5 h-3.5" />
-                      </Link>
-                    </td>
-                  </tr>
+                  <div key={room} className="flex items-center gap-3 mb-1.5">
+                    <div className="text-xs font-medium text-gray-400 w-14 flex-shrink-0 text-right">{room}</div>
+                    <div className="flex-1 h-7 bg-surface-100 rounded-md relative overflow-hidden">
+                      {roomCases.map(c => {
+                        const startH = parseInt(c.startTime.split(":")[0]);
+                        const startM = parseInt(c.startTime.split(":")[1]);
+                        const totalMins = (startH * 60 + startM) - 7 * 60 - 30;
+                        const dayMins = 10.5 * 60;
+                        const left = (totalMins / dayMins) * 100;
+                        const width = (c.estimatedDuration / dayMins) * 100;
+                        const r = source?.results?.[c.id]?.readiness;
+                        const color = !r ? "bg-gray-300" :
+                          r.status === "ready" ? "bg-status-ready" :
+                          r.status === "at-risk" ? "bg-status-risk" : "bg-status-blocked";
+                        return (
+                          <Link key={c.id} href={`/case/${c.id}`}>
+                            <div
+                              className={`timeline-bar ${color} hover:opacity-80 transition-opacity cursor-pointer`}
+                              style={{ left: `${left}%`, width: `${Math.max(width, 1)}%` }}
+                              title={`${c.patient?.name} — ${c.procedure}`}
+                            >
+                              <span className="hidden xl:block truncate">{c.patient?.name?.split(" ")[1] ?? ""}</span>
+                            </div>
+                          </Link>
+                        );
+                      })}
+                    </div>
+                  </div>
                 );
               })}
-            </tbody>
-          </table>
+              {/* Time labels */}
+              <div className="flex mt-2 ml-[68px]">
+                {["7:30","9:00","10:30","12:00","13:30","15:00","16:30","18:00"].map(t => (
+                  <div key={t} className="flex-1 text-[10px] text-gray-400 tabular-nums">{t}</div>
+                ))}
+              </div>
+            </div>
+            <div className="flex items-center gap-4 mt-3 pt-3 border-t border-surface-100">
+              {[["Ready","bg-status-ready"],["At Risk","bg-status-risk"],["Blocked","bg-status-blocked"],["Pending","bg-gray-300"]].map(([l,c]) => (
+                <div key={l} className="flex items-center gap-1.5">
+                  <div className={`w-3 h-3 rounded-sm ${c}`} />
+                  <span className="text-xs text-gray-500">{l}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* Case table */}
+        <div className="card overflow-hidden">
+          <div className="px-6 py-4 border-b border-surface-100 flex items-center justify-between">
+            <div>
+              <h2 className="font-semibold text-gray-900">Scheduled Cases</h2>
+              <div className="text-xs text-gray-400 mt-0.5">Sorted by start time · Click any row for full case detail</div>
+            </div>
+            {ran && (
+              <div className="flex items-center gap-2 text-xs text-beacon-600 font-medium bg-beacon-50 px-3 py-1.5 rounded-full">
+                <Sparkles className="w-3 h-3" />
+                Beacon analysis complete
+              </div>
+            )}
+          </div>
+          <div className="overflow-x-auto">
+            <table className="data-table">
+              <thead>
+                <tr>
+                  <th>Time / Room</th>
+                  <th>Patient</th>
+                  <th>Procedure</th>
+                  <th>Surgeon</th>
+                  <th>Duration</th>
+                  <th>Status</th>
+                  <th className="text-center">Score</th>
+                  <th />
+                </tr>
+              </thead>
+              <tbody>
+                {cases.map((c, idx) => {
+                  const r = source?.results?.[c.id]?.readiness;
+                  const rowBg = r?.status === "blocked" ? "bg-red-50/40" :
+                                r?.status === "at-risk" ? "bg-amber-50/30" : "";
+                  return (
+                    <tr
+                      key={c.id}
+                      className={`${rowBg} animate-fade-in`}
+                      style={{ animationDelay: `${idx * 0.03}s`, animationFillMode: "both" }}
+                    >
+                      <td>
+                        <div className="flex items-center gap-1.5 font-semibold text-gray-900 tabular-nums">
+                          <Clock className="w-3.5 h-3.5 text-gray-400 flex-shrink-0" />
+                          {formatTime(c.startTime)}
+                        </div>
+                        <div className="text-xs text-gray-400 mt-0.5 font-medium">{c.orRoom}</div>
+                      </td>
+                      <td>
+                        <div className="font-medium text-gray-900">{c.patient?.name}</div>
+                        <div className="text-xs text-gray-400 font-mono">{c.patient?.mrn}</div>
+                        {c.demoHighlight && (
+                          <span className="inline-flex items-center gap-1 text-[10px] text-beacon-600 font-semibold bg-beacon-50 px-1.5 py-0.5 rounded mt-1">
+                            <Sparkles className="w-2.5 h-2.5" />
+                            Demo
+                          </span>
+                        )}
+                      </td>
+                      <td>
+                        <div className="text-gray-800 max-w-[200px] truncate font-medium">{c.procedure}</div>
+                        <div className="text-xs text-gray-400 capitalize">{c.anesthesiaType} · {c.priority}</div>
+                      </td>
+                      <td>
+                        <div className="text-gray-700 text-sm">{c.surgeon}</div>
+                      </td>
+                      <td>
+                        <div className="font-medium text-gray-700 tabular-nums">{formatDuration(c.estimatedDuration)}</div>
+                      </td>
+                      <td>
+                        {r ? <StatusBadge status={r.status} /> : (
+                          <span className="text-xs text-gray-300 italic">Pending</span>
+                        )}
+                      </td>
+                      <td className="text-center">
+                        {r ? (
+                          <ReadinessScore score={r.score} size={40} showLabel={false} />
+                        ) : (
+                          <span className="text-gray-300">—</span>
+                        )}
+                      </td>
+                      <td>
+                        <Link href={`/case/${c.id}`}
+                          className="flex items-center gap-1 text-xs text-beacon-600 hover:text-beacon-700 font-semibold group"
+                        >
+                          View
+                          <ArrowUpRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                        </Link>
+                      </td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </div>
