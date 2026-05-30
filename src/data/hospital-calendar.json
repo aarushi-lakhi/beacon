@@ -1,0 +1,46 @@
+[
+  {
+    "id": "HCE-001",
+    "title": "OR-5 Laminar Flow Maintenance",
+    "date": "TOMORROW",
+    "startTime": "08:30",
+    "endTime": "11:00",
+    "category": "maintenance",
+    "orRoom": "OR-5",
+    "status": "active",
+    "notes": "Engineering ticket ENG-4421"
+  },
+  {
+    "id": "HCE-002",
+    "title": "Hybrid OR Imaging Calibration",
+    "date": "TOMORROW",
+    "startTime": "12:45",
+    "endTime": "15:30",
+    "category": "equipment",
+    "orRoom": "OR-1 (Hybrid)",
+    "status": "active",
+    "notes": "Fluoroscopy calibration window"
+  },
+  {
+    "id": "HCE-003",
+    "title": "Morning Safety Huddle",
+    "date": "TOMORROW",
+    "startTime": "06:45",
+    "endTime": "07:15",
+    "category": "staffing",
+    "orRoom": null,
+    "status": "planned",
+    "notes": "No OR block; informational only"
+  },
+  {
+    "id": "HCE-004",
+    "title": "OR-8 Sterile Processing Delay",
+    "date": "TOMORROW",
+    "startTime": "10:00",
+    "endTime": "11:15",
+    "category": "or_block",
+    "orRoom": "OR-8",
+    "status": "active",
+    "notes": "Instrument tray turnaround delay"
+  }
+]

@@ -27,6 +27,52 @@ export interface SurgicalCase {
   demoLabel?: string;
 }
 
+export interface EnrichedSurgicalCase extends SurgicalCase {
+  patient: Patient | null;
+}
+
+export type HospitalCalendarCategory =
+  | "or_block"
+  | "maintenance"
+  | "equipment"
+  | "staffing"
+  | "operations";
+
+export interface HospitalCalendarEvent {
+  id: string;
+  title: string;
+  date: string;
+  startTime: string;
+  endTime: string;
+  category: HospitalCalendarCategory;
+  orRoom: string | null;
+  status: "active" | "planned";
+  notes: string;
+}
+
+export type ScheduleConflictType =
+  | "or_room_unavailable"
+  | "surgeon_overlap"
+  | "anesthesiologist_overlap";
+
+export interface ScheduleConflict {
+  id: string;
+  type: ScheduleConflictType;
+  severity: "warning" | "critical";
+  message: string;
+  caseIds: string[];
+  relatedEventId: string | null;
+}
+
+export interface ScheduleApiResponse {
+  date: string;
+  surgeryCalendar: EnrichedSurgicalCase[];
+  hospitalCalendar: HospitalCalendarEvent[];
+  conflicts: ScheduleConflict[];
+  // Backward-compatible alias for existing frontend code.
+  cases: EnrichedSurgicalCase[];
+}
+
 export interface LabResult {
   id: string;
   patientId: string;

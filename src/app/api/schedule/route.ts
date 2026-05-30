@@ -1,15 +1,9 @@
 import { NextResponse } from "next/server";
-import { db } from "@/lib/db";
-import { getTomorrowDate } from "@/lib/utils";
+import { getScheduleSnapshot } from "@/lib/scheduler";
 
-export async function GET() {
-  const cases = db.getTomorrowSchedule();
-  const date = getTomorrowDate();
-
-  const enriched = cases.map((c) => {
-    const patient = db.getPatient(c.patientId);
-    return { ...c, date, patient };
-  });
-
-  return NextResponse.json({ date, cases: enriched });
+export async function GET(request: Request) {
+  const { searchParams } = new URL(request.url);
+  const date = searchParams.get("date");
+  const schedule = getScheduleSnapshot(date);
+  return NextResponse.json(schedule);
 }
