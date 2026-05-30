@@ -1,0 +1,292 @@
+{
+  "runId": "BEACON-RUN-DEMO-001",
+  "startedAt": "2026-05-31T05:45:00.000Z",
+  "completedAt": "2026-05-31T05:45:47.312Z",
+  "casesProcessed": 15,
+  "readyCases": 9,
+  "atRiskCases": 4,
+  "blockedCases": 2,
+  "totalActions": 14,
+  "results": {
+    "CASE-001": {
+      "readiness": {
+        "caseId": "CASE-001",
+        "patientId": "PT-001",
+        "status": "ready",
+        "score": 97,
+        "reasoning": "All required pre-operative labs completed within 30 days (CBC, BMP, PT/INR, Type & Screen). CT Abdomen/Pelvis confirms operative indication and laparoscopic approach feasibility. Surgical and anesthesia consent both signed. Gastroenterology clearance received. Patient medically optimized with well-controlled hypertension. No critical missing items. Minor deduction for single comorbidity management note.",
+        "missingItems": [],
+        "checkedAt": "2026-05-31T05:45:03.001Z"
+      },
+      "actions": [],
+      "briefing": {
+        "caseId": "CASE-001",
+        "patientName": "Margaret Chen",
+        "procedure": "Laparoscopic Colectomy",
+        "surgeon": "Dr. Sarah Chen",
+        "startTime": "07:30",
+        "estimatedDuration": 180,
+        "keyRisks": ["Prior hypertension — BP management intraoperatively", "Age 67 — standard elderly care protocols"],
+        "outstandingItems": [],
+        "readinessScore": 97,
+        "readinessStatus": "ready",
+        "anesthesiaConsiderations": ["General anesthesia, standard intubation", "Sulfa allergy documented — avoid trimethoprim-sulfamethoxazole", "Intraoperative BP monitoring — target MAP >65"],
+        "summary": "Margaret Chen is a 67-year-old female presenting for elective laparoscopic colectomy for sigmoid colon adenocarcinoma. All pre-operative requirements are complete. Patient is medically optimized with well-controlled hypertension on amlodipine. CT confirms laparoscopic approach is feasible with no distant metastases. Expected OR time: 3 hours. Prognosis for same-day recovery per protocol.",
+        "generatedAt": "2026-05-31T05:45:08.441Z"
+      },
+      "traces": [
+        { "agentName": "Schedule Agent", "action": "load_case", "input": "CASE-001", "output": "Case loaded: Margaret Chen, Laparoscopic Colectomy, 07:30 OR-3", "timestamp": "2026-05-31T05:45:00.100Z", "durationMs": 42 },
+        { "agentName": "Readiness Agent", "action": "check_labs", "input": "PT-001 labs", "output": "CBC ✓ | BMP ✓ | PT/INR ✓ | Type & Screen ✓ — all within validity period", "timestamp": "2026-05-31T05:45:01.200Z", "durationMs": 380 },
+        { "agentName": "Readiness Agent", "action": "check_imaging", "input": "PT-001 imaging", "output": "CT Abdomen/Pelvis ✓ | Chest X-Ray ✓ — both current", "timestamp": "2026-05-31T05:45:01.800Z", "durationMs": 210 },
+        { "agentName": "Readiness Agent", "action": "check_consent", "input": "PT-001 consent", "output": "Surgical ✓ | Anesthesia ✓ — signed 2026-05-20", "timestamp": "2026-05-31T05:45:02.200Z", "durationMs": 95 },
+        { "agentName": "Readiness Agent", "action": "check_clearances", "input": "PT-001 clearances", "output": "Gastroenterology ✓ cleared", "timestamp": "2026-05-31T05:45:02.500Z", "durationMs": 88 },
+        { "agentName": "Readiness Agent", "action": "score_readiness", "input": "All checks passed", "output": "Score: 97/100 — READY. No missing items identified.", "timestamp": "2026-05-31T05:45:03.000Z", "durationMs": 412 },
+        { "agentName": "Briefing Agent", "action": "generate_briefing", "input": "CASE-001 full data", "output": "Briefing generated for Margaret Chen — Laparoscopic Colectomy", "timestamp": "2026-05-31T05:45:08.000Z", "durationMs": 1840 }
+      ]
+    },
+    "CASE-002": {
+      "readiness": {
+        "caseId": "CASE-002",
+        "patientId": "PT-002",
+        "status": "at-risk",
+        "score": 62,
+        "reasoning": "Patient Robert Martinez has known Coronary Artery Disease (CAD) requiring cardiology clearance prior to major orthopedic surgery under spinal anesthesia. Cardiology clearance was requested 3 days ago (2026-05-27) but has NOT been received. All labs are within validity (CBC, BMP, PT/INR, HbA1c, Type & Screen). Hip X-Ray and EKG are current. Anesthesia and surgical consent are signed. Endocrinology clearance received with perioperative glucose protocol in place. HbA1c of 7.4% is acceptable. Case can proceed ONLY if cardiology clearance is obtained before 06:00 tomorrow. Coordination actions have been dispatched.",
+        "missingItems": [
+          {
+            "type": "clearance",
+            "name": "Cardiology Clearance",
+            "severity": "critical",
+            "description": "Patient has CAD requiring cardiac evaluation. Clearance requested 2026-05-27 from Dr. Pham — not yet received. Stress test results pending."
+          }
+        ],
+        "checkedAt": "2026-05-31T05:45:10.442Z"
+      },
+      "actions": [
+        {
+          "id": "ACT-002-1",
+          "caseId": "CASE-002",
+          "type": "escalate",
+          "target": "Dr. Pham (Cardiology)",
+          "message": "URGENT: Cardiology clearance required for Robert Martinez (MRN-100202) prior to 06:00 tomorrow for Total Hip Arthroplasty. Clearance was requested 3 days ago. Please expedite stress test review and submit clearance. Contact: Dr. Michael Torres (surgeon) at ext. 4821.",
+          "priority": "critical",
+          "status": "sent",
+          "createdAt": "2026-05-31T05:45:11.000Z"
+        },
+        {
+          "id": "ACT-002-2",
+          "caseId": "CASE-002",
+          "type": "notify_surgeon",
+          "target": "Dr. Michael Torres",
+          "message": "ALERT: Cardiology clearance for Robert Martinez (CASE-002, THA, 09:00 OR-5) is still pending. Beacon has escalated to Dr. Pham. If clearance not received by 06:00, case may need to be rescheduled. Please confirm contingency plan.",
+          "priority": "high",
+          "status": "sent",
+          "createdAt": "2026-05-31T05:45:11.500Z"
+        },
+        {
+          "id": "ACT-002-3",
+          "caseId": "CASE-002",
+          "type": "notify_nurse",
+          "target": "Pre-Op Nursing Team",
+          "message": "CASE-002 (Robert Martinez, THA 09:00): Cardiology clearance pending. Patient may arrive without clearance. Prepare hold protocol. Do not proceed to OR without confirmed clearance in chart.",
+          "priority": "high",
+          "status": "sent",
+          "createdAt": "2026-05-31T05:45:12.000Z"
+        }
+      ],
+      "briefing": {
+        "caseId": "CASE-002",
+        "patientName": "Robert Martinez",
+        "procedure": "Total Hip Arthroplasty",
+        "surgeon": "Dr. Michael Torres",
+        "startTime": "09:00",
+        "estimatedDuration": 150,
+        "keyRisks": ["CAD — cardiology clearance PENDING (critical)", "Type 2 Diabetes — HbA1c 7.4%, glucose protocol active", "Obesity BMI 31.2 — positioning and DVT risk", "Hypertension — intraoperative BP monitoring"],
+        "outstandingItems": ["Cardiology clearance from Dr. Pham — CRITICAL, required before 06:00"],
+        "readinessScore": 62,
+        "readinessStatus": "at-risk",
+        "anesthesiaConsiderations": ["Spinal anesthesia planned — monitor cardiac status", "Penicillin allergy — avoid beta-lactam antibiotics, use vancomycin prophylaxis", "Continue antihypertensives day of surgery except ACE inhibitor", "Glucose target 140-180 mg/dL intraoperatively"],
+        "summary": "Robert Martinez is a 71-year-old male with CAD, T2DM, and hypertension presenting for elective right total hip arthroplasty. All labs are complete and consent is signed. CRITICAL ISSUE: Cardiology clearance is pending — required due to active CAD. Beacon has escalated to the cardiology team. Case can only proceed if clearance is received by 06:00. Endocrinology has cleared with glucose management protocol in place.",
+        "generatedAt": "2026-05-31T05:45:16.881Z"
+      },
+      "traces": [
+        { "agentName": "Schedule Agent", "action": "load_case", "input": "CASE-002", "output": "Case loaded: Robert Martinez, Total Hip Arthroplasty, 09:00 OR-5", "timestamp": "2026-05-31T05:45:09.100Z", "durationMs": 38 },
+        { "agentName": "Readiness Agent", "action": "check_labs", "input": "PT-002 labs", "output": "CBC ✓ | BMP ✓ | PT/INR ✓ | HbA1c ✓ | Type & Screen ✓", "timestamp": "2026-05-31T05:45:09.500Z", "durationMs": 290 },
+        { "agentName": "Readiness Agent", "action": "check_imaging", "input": "PT-002 imaging", "output": "Hip X-Ray ✓ | Chest X-Ray ✓ | EKG ✓", "timestamp": "2026-05-31T05:45:09.900Z", "durationMs": 185 },
+        { "agentName": "Readiness Agent", "action": "check_consent", "input": "PT-002 consent", "output": "Surgical ✓ | Anesthesia ✓", "timestamp": "2026-05-31T05:45:10.100Z", "durationMs": 91 },
+        { "agentName": "Readiness Agent", "action": "check_clearances", "input": "PT-002 clearances", "output": "⚠ Cardiology PENDING — requested 2026-05-27, not received | Endocrinology ✓ cleared", "timestamp": "2026-05-31T05:45:10.400Z", "durationMs": 201 },
+        { "agentName": "Readiness Agent", "action": "score_readiness", "input": "1 critical missing item", "output": "Score: 62/100 — AT RISK. Missing cardiology clearance for CAD patient.", "timestamp": "2026-05-31T05:45:10.900Z", "durationMs": 389 },
+        { "agentName": "Coordination Agent", "action": "create_actions", "input": "AT RISK — missing cardiology clearance", "output": "Created 3 actions: escalate to cardiology, notify surgeon, notify pre-op nursing", "timestamp": "2026-05-31T05:45:11.800Z", "durationMs": 1240 },
+        { "agentName": "Briefing Agent", "action": "generate_briefing", "input": "CASE-002 full data", "output": "Briefing generated — AT RISK flag included", "timestamp": "2026-05-31T05:45:16.000Z", "durationMs": 2180 }
+      ]
+    },
+    "CASE-003": {
+      "readiness": {
+        "caseId": "CASE-003",
+        "patientId": "PT-003",
+        "status": "blocked",
+        "score": 23,
+        "reasoning": "CASE BLOCKED: Patricia Williams has 2 critical missing requirements. (1) CBC has never been ordered — required within 30 days for major gynecologic surgery, especially with documented anemia. This is a hard stop. (2) Both surgical and anesthesia consent forms are unsigned — patient has not been seen in pre-op clinic. Without these, surgery CANNOT proceed under any circumstance. Beacon has issued critical alerts to the surgical team and pre-op scheduling.",
+        "missingItems": [
+          {
+            "type": "lab",
+            "name": "CBC (Complete Blood Count)",
+            "severity": "critical",
+            "description": "CBC never ordered. Required within 30 days for major surgery. Patient has documented anemia — current hemoglobin status unknown. Hard stop."
+          },
+          {
+            "type": "consent",
+            "name": "Surgical Consent Form",
+            "severity": "critical",
+            "description": "Surgical consent form unsigned. Patient has not completed pre-operative consent visit. Cannot proceed to OR without signed consent."
+          },
+          {
+            "type": "consent",
+            "name": "Anesthesia Consent Form",
+            "severity": "critical",
+            "description": "Anesthesia consent form unsigned. Required before general anesthesia administration."
+          },
+          {
+            "type": "lab",
+            "name": "Coagulation Panel (PT/PTT/INR)",
+            "severity": "critical",
+            "description": "Coagulation panel not ordered. Required for major gynecologic oncology surgery with bleeding risk."
+          }
+        ],
+        "checkedAt": "2026-05-31T05:45:22.119Z"
+      },
+      "actions": [
+        {
+          "id": "ACT-003-1",
+          "caseId": "CASE-003",
+          "type": "escalate",
+          "target": "Dr. Elena Patel (Surgeon) — URGENT",
+          "message": "CASE BLOCKED: Patricia Williams (MRN-100203, Robotic Hysterectomy, 11:00 OR-2) CANNOT proceed tomorrow. CRITICAL ISSUES: (1) CBC never ordered — patient has anemia, current status unknown. (2) Coagulation panel missing. (3) BOTH surgical and anesthesia consent forms are unsigned. Please contact patient immediately to arrange emergency pre-op visit and order stat labs. Case must be postponed unless all items resolved by 05:00 tomorrow.",
+          "priority": "critical",
+          "status": "sent",
+          "createdAt": "2026-05-31T05:45:22.500Z"
+        },
+        {
+          "id": "ACT-003-2",
+          "caseId": "CASE-003",
+          "type": "notify_nurse",
+          "target": "Pre-Op Coordinator",
+          "message": "BLOCKED CASE: Patricia Williams (CASE-003, 11:00 OR-2) requires emergency pre-op visit for consent signing. Contact patient at home: schedule ASAP. Also coordinate stat CBC and coagulation draw if patient comes in. Do NOT schedule case into OR workflow until clearance received.",
+          "priority": "critical",
+          "status": "sent",
+          "createdAt": "2026-05-31T05:45:23.000Z"
+        },
+        {
+          "id": "ACT-003-3",
+          "caseId": "CASE-003",
+          "type": "create_ticket",
+          "target": "OR Scheduling",
+          "message": "HOLD CASE-003: Patricia Williams robotic hysterectomy (11:00 OR-2) is BLOCKED. Missing CBC, coagulation panel, and both consent forms. OR-2 slot may become available — prepare contingency case if not resolved by 05:00.",
+          "priority": "critical",
+          "status": "sent",
+          "createdAt": "2026-05-31T05:45:23.500Z"
+        }
+      ],
+      "briefing": {
+        "caseId": "CASE-003",
+        "patientName": "Patricia Williams",
+        "procedure": "Robotic Hysterectomy",
+        "surgeon": "Dr. Elena Patel",
+        "startTime": "11:00",
+        "estimatedDuration": 210,
+        "keyRisks": ["BLOCKED — consent unsigned (critical)", "BLOCKED — CBC and coagulation panel missing (critical)", "Known anemia — hemoglobin unknown", "Latex allergy — latex-free OR environment required", "Codeine allergy — avoid opioid derivatives", "Uterine cancer with possible bleeding risk"],
+        "outstandingItems": ["CBC — STAT ORDER NEEDED", "Coagulation Panel — STAT ORDER NEEDED", "Surgical Consent — MUST BE SIGNED BEFORE CASE", "Anesthesia Consent — MUST BE SIGNED BEFORE CASE"],
+        "readinessScore": 23,
+        "readinessStatus": "blocked",
+        "anesthesiaConsiderations": ["General anesthesia planned but CONSENT NOT SIGNED", "Latex allergy — ensure latex-free environment throughout", "Codeine allergy — document clearly, avoid tramadol", "Anemia status unknown — transfusion threshold unknown without CBC"],
+        "summary": "CASE BLOCKED: Patricia Williams is a 58-year-old female with uterine cancer scheduled for robotic hysterectomy. This case CANNOT proceed tomorrow. Critical deficiencies: (1) CBC has never been ordered despite documented anemia. (2) Coagulation panel not ordered for a major oncologic surgery. (3) Both surgical and anesthesia consent forms are unsigned — patient has not visited pre-op clinic. Beacon has issued critical escalations to the surgical team and OR scheduling. Immediate patient contact required.",
+        "generatedAt": "2026-05-31T05:45:27.203Z"
+      },
+      "traces": [
+        { "agentName": "Schedule Agent", "action": "load_case", "input": "CASE-003", "output": "Case loaded: Patricia Williams, Robotic Hysterectomy, 11:00 OR-2", "timestamp": "2026-05-31T05:45:18.100Z", "durationMs": 41 },
+        { "agentName": "Readiness Agent", "action": "check_labs", "input": "PT-003 labs", "output": "⛔ CBC MISSING — never ordered | BMP ✓ | ⛔ Coagulation Panel MISSING | Type & Screen ✓", "timestamp": "2026-05-31T05:45:18.600Z", "durationMs": 312 },
+        { "agentName": "Readiness Agent", "action": "check_imaging", "input": "PT-003 imaging", "output": "MRI Pelvis ✓ — confirms operative indication", "timestamp": "2026-05-31T05:45:19.000Z", "durationMs": 178 },
+        { "agentName": "Readiness Agent", "action": "check_consent", "input": "PT-003 consent", "output": "⛔ Surgical consent MISSING | ⛔ Anesthesia consent MISSING — patient never completed pre-op visit", "timestamp": "2026-05-31T05:45:19.300Z", "durationMs": 98 },
+        { "agentName": "Readiness Agent", "action": "check_clearances", "input": "PT-003 clearances", "output": "No specialist clearances required for this case", "timestamp": "2026-05-31T05:45:19.500Z", "durationMs": 72 },
+        { "agentName": "Readiness Agent", "action": "score_readiness", "input": "4 critical missing items", "output": "Score: 23/100 — BLOCKED. Cannot proceed. Missing CBC, coagulation panel, surgical consent, anesthesia consent.", "timestamp": "2026-05-31T05:45:20.000Z", "durationMs": 520 },
+        { "agentName": "Coordination Agent", "action": "create_actions", "input": "BLOCKED — 4 critical items missing", "output": "Created 3 critical actions: escalate to surgeon, notify pre-op coordinator, hold OR slot", "timestamp": "2026-05-31T05:45:21.500Z", "durationMs": 1810 },
+        { "agentName": "Briefing Agent", "action": "generate_briefing", "input": "CASE-003 full data — BLOCKED", "output": "Briefing generated with BLOCKED status and all missing items highlighted", "timestamp": "2026-05-31T05:45:27.000Z", "durationMs": 2640 }
+      ]
+    },
+    "CASE-004": {
+      "readiness": {
+        "caseId": "CASE-004",
+        "patientId": "PT-004",
+        "status": "at-risk",
+        "score": 51,
+        "reasoning": "James Thompson has severe multi-system disease (AS, CHF, CKD, AF) scheduled for TAVR. Most requirements are met: all labs current, Echo and CTA complete, consent signed, and both cardiology and nephrology clearances received. CRITICAL ISSUE: The cardiac catheterization report is 122 days old. TAVR institutional protocol requires catheterization within 90 days due to potential for interval coronary status changes in high-risk patients with CAD. Attending cardiologist has recommended repeat or reconfirmation. New cath or formal waiver by attending cardiologist must be obtained. Beacon has contacted the cardiovascular team.",
+        "missingItems": [
+          {
+            "type": "imaging",
+            "name": "Cardiac Catheterization (Current)",
+            "severity": "critical",
+            "description": "Cardiac cath completed 2026-01-28 — 122 days ago. TAVR protocol requires <90 days for patients with known CAD. Report is EXPIRED. New catheterization or formal attending cardiologist waiver required before proceeding."
+          }
+        ],
+        "checkedAt": "2026-05-31T05:45:33.774Z"
+      },
+      "actions": [
+        {
+          "id": "ACT-004-1",
+          "caseId": "CASE-004",
+          "type": "escalate",
+          "target": "Dr. James Wilson (Surgeon) + Cardiology Team",
+          "message": "URGENT — CASE-004 AT RISK: James Thompson (MRN-100204, TAVR, 13:30 OR-1 Hybrid). Cardiac catheterization is EXPIRED — completed 2026-01-28 (122 days ago). Institutional TAVR protocol requires <90 days for CAD patients. Options: (1) Emergency repeat cath today if hemodynamically stable. (2) Formal written waiver from attending cardiologist confirming current coronary anatomy sufficient. Please respond by 07:00 tomorrow.",
+          "priority": "critical",
+          "status": "sent",
+          "createdAt": "2026-05-31T05:45:34.200Z"
+        },
+        {
+          "id": "ACT-004-2",
+          "caseId": "CASE-004",
+          "type": "notify_anesthesia",
+          "target": "Dr. Marcus Webb (Anesthesiologist)",
+          "message": "CASE-004 AT RISK: James Thompson TAVR — cardiac cath expired. If case proceeds, note: LVEF 32%, severe AS, moderate MR, elevated BNP 387. CKD Stage 3 — limit contrast if new cath ordered. Please review current echo and confirm anesthesia plan contingency.",
+          "priority": "high",
+          "status": "sent",
+          "createdAt": "2026-05-31T05:45:34.800Z"
+        }
+      ],
+      "briefing": {
+        "caseId": "CASE-004",
+        "patientName": "James Thompson",
+        "procedure": "TAVR (Transcatheter Aortic Valve Replacement)",
+        "surgeon": "Dr. James Wilson",
+        "startTime": "13:30",
+        "estimatedDuration": 240,
+        "keyRisks": ["Cardiac cath EXPIRED — 122 days old, TAVR protocol requires <90 days (critical)", "Severe aortic stenosis — LVEF 32%, hemodynamic instability risk", "CHF — elevated BNP 387, volume management critical", "CKD Stage 3 — contrast nephropathy risk, limit iodinated contrast", "Atrial fibrillation — anticoagulation management perioperatively"],
+        "outstandingItems": ["Cardiac catheterization update OR attending cardiologist waiver — REQUIRED BEFORE CASE"],
+        "readinessScore": 51,
+        "readinessStatus": "at-risk",
+        "anesthesiaConsiderations": ["General anesthesia — TEE monitoring required for TAVR", "Hemodynamic instability anticipated — vasopressor support at ready", "Pacer/defibrillator immediately available", "CKD — minimize contrast, consider CO2 angiography supplement", "Atrial fibrillation — heparin bridging per protocol", "BNP 387 — aggressive volume management"],
+        "summary": "James Thompson is a 74-year-old male with severe multi-system disease presenting for TAVR. Most pre-operative requirements are complete including current echo, CTA aortic root, all labs, consent, and both cardiology/nephrology clearances. AT RISK: Cardiac catheterization is expired (122 days, protocol requires <90 days for CAD patients). Cardiology team has been contacted for urgent waiver or repeat cath. Case should proceed ONLY after cardiologist confirms coronary status is acceptable.",
+        "generatedAt": "2026-05-31T05:45:40.512Z"
+      },
+      "traces": [
+        { "agentName": "Schedule Agent", "action": "load_case", "input": "CASE-004", "output": "Case loaded: James Thompson, TAVR, 13:30 OR-1 Hybrid — HIGH COMPLEXITY flag", "timestamp": "2026-05-31T05:45:28.100Z", "durationMs": 44 },
+        { "agentName": "Readiness Agent", "action": "check_labs", "input": "PT-004 labs", "output": "CBC ✓ | BMP ✓ (Cr 1.8 — CKD noted) | Coagulation ✓ | BNP ✓ (387 — elevated) | Type & Screen ✓", "timestamp": "2026-05-31T05:45:28.700Z", "durationMs": 385 },
+        { "agentName": "Readiness Agent", "action": "check_imaging", "input": "PT-004 imaging", "output": "⚠ Cardiac Cath EXPIRED — 2026-01-28 (122 days, limit 90 days for TAVR protocol) | Echo ✓ (current) | CTA Aortic Root ✓ (current)", "timestamp": "2026-05-31T05:45:29.400Z", "durationMs": 428 },
+        { "agentName": "Readiness Agent", "action": "check_consent", "input": "PT-004 consent", "output": "Surgical ✓ | Anesthesia ✓ — signed with healthcare proxy", "timestamp": "2026-05-31T05:45:29.900Z", "durationMs": 102 },
+        { "agentName": "Readiness Agent", "action": "check_clearances", "input": "PT-004 clearances", "output": "Cardiology ✓ (note: recommends updated cath) | Nephrology ✓ (hydration protocol ordered)", "timestamp": "2026-05-31T05:45:30.200Z", "durationMs": 198 },
+        { "agentName": "Readiness Agent", "action": "score_readiness", "input": "1 critical imaging expired", "output": "Score: 51/100 — AT RISK. Expired cardiac cath blocks TAVR protocol compliance.", "timestamp": "2026-05-31T05:45:30.800Z", "durationMs": 510 },
+        { "agentName": "Coordination Agent", "action": "create_actions", "input": "AT RISK — expired cardiac imaging for high-risk TAVR", "output": "Created 2 critical actions: escalate to surgeon/cardiology, notify anesthesiologist", "timestamp": "2026-05-31T05:45:32.500Z", "durationMs": 1640 },
+        { "agentName": "Briefing Agent", "action": "generate_briefing", "input": "CASE-004 full data — complex multi-system", "output": "Briefing generated — AT RISK, high-complexity TAVR case", "timestamp": "2026-05-31T05:45:40.000Z", "durationMs": 3180 }
+      ]
+    },
+    "CASE-005": { "readiness": { "caseId": "CASE-005", "patientId": "PT-005", "status": "ready", "score": 95, "reasoning": "David Park is a healthy 46-year-old with no significant comorbidities. All required labs (CBC, BMP, Type & Screen) completed and current. Abdominal ultrasound confirms cholelithiasis without cholecystitis — laparoscopic approach appropriate. Both consent forms signed. No specialist clearances required. Patient medically optimized.", "missingItems": [], "checkedAt": "2026-05-31T05:45:03.500Z" }, "actions": [], "briefing": { "caseId": "CASE-005", "patientName": "David Park", "procedure": "Laparoscopic Cholecystectomy", "surgeon": "Dr. Lisa Anderson", "startTime": "07:30", "estimatedDuration": 90, "keyRisks": ["No significant risk factors identified"], "outstandingItems": [], "readinessScore": 95, "readinessStatus": "ready", "anesthesiaConsiderations": ["General anesthesia, standard protocol", "No documented allergies"], "summary": "David Park is a healthy 46-year-old male presenting for elective laparoscopic cholecystectomy. All requirements complete. Straightforward case, estimated 90 minutes.", "generatedAt": "2026-05-31T05:45:06.001Z" }, "traces": [] },
+    "CASE-006": { "readiness": { "caseId": "CASE-006", "patientId": "PT-006", "status": "ready", "score": 91, "reasoning": "Susan Mitchell is a 64-year-old with well-controlled osteoarthritis and hypertension. Labs current, imaging adequate, consent signed. NSAIDs allergy noted — requires alternative analgesic protocol. Minor deduction for elevated BMI 30.1 adding thrombosis risk requiring additional DVT prophylaxis planning.", "missingItems": [], "checkedAt": "2026-05-31T05:45:04.200Z" }, "actions": [], "briefing": { "caseId": "CASE-006", "patientName": "Susan Mitchell", "procedure": "Total Knee Arthroplasty", "surgeon": "Dr. Michael Torres", "startTime": "08:00", "estimatedDuration": 120, "keyRisks": ["NSAID allergy — avoid ketorolac, use alternative pain protocol", "Obesity BMI 30.1 — DVT prophylaxis essential", "Hypertension — intraoperative monitoring"], "outstandingItems": [], "readinessScore": 91, "readinessStatus": "ready", "anesthesiaConsiderations": ["Spinal anesthesia planned", "NSAID allergy — use acetaminophen IV + opioid for pain management", "DVT prophylaxis: compression devices + anticoagulation post-op"], "summary": "Susan Mitchell is a 64-year-old female presenting for total knee arthroplasty. All requirements complete. NSAIDs allergy requires modified pain protocol. DVT prophylaxis plan confirmed.", "generatedAt": "2026-05-31T05:45:07.444Z" }, "traces": [] },
+    "CASE-007": { "readiness": { "caseId": "CASE-007", "patientId": "PT-007", "status": "ready", "score": 99, "reasoning": "Carlos Rivera is a healthy 39-year-old with no comorbidities or allergies. All labs current, imaging confirms hernia anatomy, consent signed. No clearances needed. Ideal surgical candidate.", "missingItems": [], "checkedAt": "2026-05-31T05:45:04.800Z" }, "actions": [], "briefing": { "caseId": "CASE-007", "patientName": "Carlos Rivera", "procedure": "Inguinal Hernia Repair", "surgeon": "Dr. Lisa Anderson", "startTime": "08:30", "estimatedDuration": 75, "keyRisks": ["No significant risk factors"], "outstandingItems": [], "readinessScore": 99, "readinessStatus": "ready", "anesthesiaConsiderations": ["General anesthesia, minimal risk", "No allergies documented"], "summary": "Carlos Rivera is a healthy 39-year-old male presenting for elective inguinal hernia repair. All requirements complete. Excellent surgical candidate. Expected 75-minute case.", "generatedAt": "2026-05-31T05:45:07.990Z" }, "traces": [] },
+    "CASE-008": { "readiness": { "caseId": "CASE-008", "patientId": "PT-008", "status": "at-risk", "score": 74, "reasoning": "Jennifer Lee is scheduled for thyroidectomy for papillary carcinoma. Labs and imaging are complete. Endocrinology clearance received. Consent signed. AT RISK: Iodine allergy noted — requires confirmed latex-free and iodine-free protocol including surgical prep substitution (avoid Betadine/povidone-iodine). Anesthesia team needs specific awareness for modified prep.", "missingItems": [{ "type": "clearance", "name": "Iodine Allergy Protocol Confirmation", "severity": "warning", "description": "Patient has documented iodine allergy. Surgical prep must avoid povidone-iodine. Confirm ChloraPrep (chlorhexidine) is available and anesthesia is aware." }], "checkedAt": "2026-05-31T05:45:13.100Z" }, "actions": [{ "id": "ACT-008-1", "caseId": "CASE-008", "type": "notify_nurse", "target": "OR-3 Circulating Nurse", "message": "CASE-008 Jennifer Lee (Thyroidectomy 09:00 OR-3): Iodine allergy — DO NOT use Betadine/povidone-iodine for skin prep. Use ChloraPrep (chlorhexidine-alcohol) instead. Confirm availability before case start.", "priority": "high", "status": "sent", "createdAt": "2026-05-31T05:45:13.500Z" }], "briefing": { "caseId": "CASE-008", "patientName": "Jennifer Lee", "procedure": "Thyroidectomy", "surgeon": "Dr. Angela Foster", "startTime": "09:00", "estimatedDuration": 120, "keyRisks": ["Iodine allergy — ChloraPrep required for skin prep (not Betadine)", "Papillary thyroid carcinoma — recurrent laryngeal nerve at risk"], "outstandingItems": ["Confirm ChloraPrep availability for iodine-free prep"], "readinessScore": 74, "readinessStatus": "at-risk", "anesthesiaConsiderations": ["General anesthesia with LMA or ETT", "Iodine allergy — avoid iodinated contrast and povidone-iodine", "Plan for possible recurrent laryngeal nerve monitoring"], "summary": "Jennifer Lee is a 59-year-old female with papillary thyroid carcinoma scheduled for thyroidectomy. Most requirements complete. AT RISK: Iodine allergy requires modified surgical prep — ChloraPrep must be confirmed available. Coordination alert sent to OR-3 nursing team.", "generatedAt": "2026-05-31T05:45:17.332Z" }, "traces": [] },
+    "CASE-009": { "readiness": { "caseId": "CASE-009", "patientId": "PT-009", "status": "ready", "score": 88, "reasoning": "Thomas Harris is a 55-year-old with cervical radiculopathy and controlled hypertension. All labs current, cervical MRI confirms surgical indication, consent signed, neurology clearance received with SSEP/MEP monitoring planned. Minor deduction for hypertension requiring intraoperative attention.", "missingItems": [], "checkedAt": "2026-05-31T05:45:05.400Z" }, "actions": [], "briefing": { "caseId": "CASE-009", "patientName": "Thomas Harris", "procedure": "Anterior Cervical Discectomy & Fusion", "surgeon": "Dr. Robert Kim", "startTime": "09:30", "estimatedDuration": 135, "keyRisks": ["Hypertension — MAP management critical for spinal cord perfusion", "Neurologic monitoring: SSEP/MEP required intraoperatively"], "outstandingItems": [], "readinessScore": 88, "readinessStatus": "ready", "anesthesiaConsiderations": ["General anesthesia with fiber-optic intubation consideration", "SSEP/MEP monitoring — coordinate with neurophysiology team", "Target MAP >80 for spinal cord perfusion"], "summary": "Thomas Harris is a 55-year-old male presenting for ACDF at C5-C6 for cervical radiculopathy with cord compression. All requirements complete. Neurophysiology monitoring planned. Good candidate for surgery.", "generatedAt": "2026-05-31T05:45:09.220Z" }, "traces": [] },
+    "CASE-010": { "readiness": { "caseId": "CASE-010", "patientId": "PT-010", "status": "ready", "score": 93, "reasoning": "Nancy Clark is a 67-year-old with BRCA1+ breast cancer scheduled for bilateral mastectomy with reconstruction. All labs, imaging, and consent complete. No specialist clearances required. Morphine allergy documented — alternative analgesic plan required. Minor hemoglobin 11.8 noted — monitor for intraoperative transfusion threshold.", "missingItems": [], "checkedAt": "2026-05-31T05:45:05.900Z" }, "actions": [], "briefing": { "caseId": "CASE-010", "patientName": "Nancy Clark", "procedure": "Bilateral Mastectomy with Reconstruction", "surgeon": "Dr. Angela Foster", "startTime": "10:00", "estimatedDuration": 300, "keyRisks": ["Morphine allergy — use hydromorphone or fentanyl for pain management", "Borderline anemia (Hgb 11.8) — transfusion threshold 8.0 g/dL", "Long case 5 hours — DVT risk, compression devices"], "outstandingItems": [], "readinessScore": 93, "readinessStatus": "ready", "anesthesiaConsiderations": ["General anesthesia", "Morphine allergy — fentanyl preferred opioid", "Multimodal analgesia: acetaminophen, local blocks, ketamine low-dose", "Warm patient throughout — 5-hour case"], "summary": "Nancy Clark is a 67-year-old female with BRCA1+ breast cancer scheduled for bilateral mastectomy with reconstruction. All requirements complete. Morphine allergy requires alternative analgesic protocol. Long case (5 hours) requires DVT prophylaxis and temperature management.", "generatedAt": "2026-05-31T05:45:10.811Z" }, "traces": [] },
+    "CASE-011": { "readiness": { "caseId": "CASE-011", "patientId": "PT-011", "status": "at-risk", "score": 67, "reasoning": "Michael Brown is a 72-year-old with prostate cancer, DM, and hypertension scheduled for robotic prostatectomy. Most requirements met. AT RISK: Cardiology clearance (stress echo) is pending — requested 5 days ago, not yet received. HbA1c 8.1% — elevated, endocrinology has cleared with insulin infusion protocol. Penicillin allergy requires vancomycin prophylaxis.", "missingItems": [{ "type": "clearance", "name": "Cardiology Clearance (Stress Echo)", "severity": "critical", "description": "Stress echocardiogram ordered due to age and elevated HbA1c. Cardiology clearance pending — requested 2026-05-25, not received." }], "checkedAt": "2026-05-31T05:45:15.600Z" }, "actions": [{ "id": "ACT-011-1", "caseId": "CASE-011", "type": "escalate", "target": "Cardiology Department", "message": "URGENT: Cardiology clearance (stress echo) for Michael Brown (MRN-100211, Robotic Prostatectomy, 10:30 OR-8) not received. Requested 2026-05-25. Please expedite review and submit clearance or denial immediately.", "priority": "high", "status": "sent", "createdAt": "2026-05-31T05:45:16.000Z" }], "briefing": { "caseId": "CASE-011", "patientName": "Michael Brown", "procedure": "Robotic-Assisted Prostatectomy", "surgeon": "Dr. David Nguyen", "startTime": "10:30", "estimatedDuration": 240, "keyRisks": ["Cardiology clearance PENDING — stress echo not reviewed (critical)", "HbA1c 8.1% — insulin infusion protocol required", "Penicillin allergy — vancomycin prophylaxis", "Creatinine 1.3 — monitor renal function"], "outstandingItems": ["Cardiology clearance from stress echo — PENDING"], "readinessScore": 67, "readinessStatus": "at-risk", "anesthesiaConsiderations": ["General anesthesia, steep Trendelenburg positioning", "Penicillin allergy — vancomycin 1g IV prophylaxis", "Glucose target 140-180 mg/dL, insulin infusion ready", "Padding for prolonged Trendelenburg — eye and shoulder protection"], "summary": "Michael Brown is a 72-year-old male with prostate cancer scheduled for robotic prostatectomy. AT RISK: Cardiology clearance pending (stress echo not reviewed). Escalation sent. Endocrinology cleared with glucose management protocol. Case can proceed only after cardiology clearance received.", "generatedAt": "2026-05-31T05:45:20.551Z" }, "traces": [] },
+    "CASE-012": { "readiness": { "caseId": "CASE-012", "patientId": "PT-012", "status": "blocked", "score": 18, "reasoning": "CASE BLOCKED: Linda Johnson is a 62-year-old with Crohn's disease, bowel obstruction, severe anemia (Hgb 9.2), hypoalbuminemia (2.4), and hyponatremia (Na 131). While this is an urgent case with labs completed today, Type & Screen is MISSING — required for a high-bleeding-risk surgery in a severely anemic patient. Surgery without pre-typed blood products is unacceptable for this case.", "missingItems": [{ "type": "lab", "name": "Type & Screen", "severity": "critical", "description": "Type & Screen not ordered. Patient has Hgb 9.2 and is high risk for intraoperative transfusion. Blood products cannot be prepared without completed Type & Screen. STAT order required immediately." }], "checkedAt": "2026-05-31T05:45:24.320Z" }, "actions": [{ "id": "ACT-012-1", "caseId": "CASE-012", "type": "escalate", "target": "Dr. Sarah Chen (Surgeon) + Blood Bank", "message": "BLOCKED: Linda Johnson (MRN-100212, Bowel Resection 11:30 OR-4). CRITICAL: Type & Screen NOT ordered. Patient has Hgb 9.2 — STAT Type & Screen required NOW. Contact Blood Bank to hold 4 units pRBC upon completion. Case cannot begin without blood product availability. Also: Na 131 and Albumin 2.4 — anesthesia must be aware.", "priority": "critical", "status": "sent", "createdAt": "2026-05-31T05:45:24.800Z" }, { "id": "ACT-012-2", "caseId": "CASE-012", "type": "create_ticket", "target": "Laboratory — STAT", "message": "STAT Type & Screen order for Linda Johnson MRN-100212. Urgent bowel resection scheduled 11:30. Results required by 09:00 for blood bank preparation.", "priority": "critical", "status": "sent", "createdAt": "2026-05-31T05:45:25.100Z" }], "briefing": { "caseId": "CASE-012", "patientName": "Linda Johnson", "procedure": "Bowel Resection with Ileostomy", "surgeon": "Dr. Sarah Chen", "startTime": "11:30", "estimatedDuration": 210, "keyRisks": ["Type & Screen MISSING — BLOCKED, blood products unavailable (critical)", "Severe anemia Hgb 9.2 — transfusion highly likely", "Hypoalbuminemia 2.4 — anastomotic leak risk, healing impaired", "Hyponatremia Na 131 — correct cautiously pre-op", "Sulfa + Aspirin allergies — avoid related drugs", "Crohn's disease — steroid considerations"], "outstandingItems": ["STAT Type & Screen — required immediately"], "readinessScore": 18, "readinessStatus": "blocked", "anesthesiaConsiderations": ["General anesthesia", "Arterial line for beat-to-beat BP — hemodynamic instability likely", "Central line consideration for vasopressors", "Avoid sulfa drugs and aspirin-containing products", "Preop correction of hyponatremia if possible (target Na >130 before induction)"], "summary": "Linda Johnson is a 62-year-old with Crohn's disease and bowel obstruction requiring urgent resection. BLOCKED: Type & Screen is missing — cannot prepare blood products for a patient with Hgb 9.2. STAT order has been escalated. Significant metabolic derangements (hyponatremia, hypoalbuminemia) add to anesthetic risk.", "generatedAt": "2026-05-31T05:45:29.774Z" }, "traces": [] },
+    "CASE-013": { "readiness": { "caseId": "CASE-013", "patientId": "PT-013", "status": "ready", "score": 85, "reasoning": "William Davis is a 75-year-old with recent TIA and severe right carotid stenosis scheduled for urgent CEA. All labs, imaging (duplex, CTA), EKG, consent, and both cardiology/neurology clearances are complete. Minor deductions for age, complexity, and anticoagulation management considerations for the perioperative period.", "missingItems": [], "checkedAt": "2026-05-31T05:45:06.500Z" }, "actions": [], "briefing": { "caseId": "CASE-013", "patientName": "William Davis", "procedure": "Carotid Endarterectomy", "surgeon": "Dr. James Wilson", "startTime": "12:00", "estimatedDuration": 120, "keyRisks": ["Recent TIA — neurological monitoring essential", "Bilateral carotid disease — contralateral 40% stenosis", "Age 75 — cardiovascular reserve limited", "Anticoagulation bridge management"], "outstandingItems": [], "readinessScore": 85, "readinessStatus": "ready", "anesthesiaConsiderations": ["Regional (cervical block) anesthesia planned — awake patient for neurological monitoring", "Maintain MAP 80-100 intraoperatively to ensure cerebral perfusion", "Shunting decision based on EEG/stump pressure", "Anti-platelet therapy continued to day of surgery per protocol"], "summary": "William Davis is a 75-year-old male with recent TIA and severe right ICA stenosis scheduled for urgent carotid endarterectomy. All requirements complete. Regional anesthesia under cervical block planned for neurological assessment during surgery.", "generatedAt": "2026-05-31T05:45:11.440Z" }, "traces": [] },
+    "CASE-014": { "readiness": { "caseId": "CASE-014", "patientId": "PT-014", "status": "at-risk", "score": 58, "reasoning": "Barbara Wilson is scheduled for nephrectomy for renal cell carcinoma. Labs, imaging, and consent complete. AT RISK: Contrast dye allergy documented — CT imaging has been done (using contrast per radiology note). If intraoperative contrast is planned, pre-medication protocol (steroids + antihistamine) must be confirmed and documented before case starts. Current chart lacks confirmation this protocol has been ordered.", "missingItems": [{ "type": "clearance", "name": "Contrast Allergy Pre-Medication Protocol", "severity": "warning", "description": "Patient has documented contrast dye allergy. CT with contrast was completed — verify pre-medication was given. For intraoperative contrast use, confirm steroid pre-medication protocol is ordered and documented." }], "checkedAt": "2026-05-31T05:45:17.900Z" }, "actions": [{ "id": "ACT-014-1", "caseId": "CASE-014", "type": "notify_surgeon", "target": "Dr. David Nguyen + Anesthesia Team", "message": "CASE-014 Barbara Wilson (Nephrectomy 13:00 OR-6): Contrast dye allergy documented. Please confirm: (1) Was pre-medication protocol used for pre-op CT? (2) Is intraoperative contrast planned? If yes, order steroid pre-medication protocol (methylprednisolone 32mg PO q12h x2 doses + diphenhydramine) and document in pre-op orders.", "priority": "high", "status": "sent", "createdAt": "2026-05-31T05:45:18.300Z" }], "briefing": { "caseId": "CASE-014", "patientName": "Barbara Wilson", "procedure": "Laparoscopic Nephrectomy", "surgeon": "Dr. David Nguyen", "startTime": "13:00", "estimatedDuration": 180, "keyRisks": ["Contrast dye allergy — pre-medication protocol must be confirmed (warning)", "Renal cell carcinoma — vascular control planning", "Hypertension — blood pressure management"], "outstandingItems": ["Confirm contrast allergy pre-medication protocol documentation"], "readinessScore": 58, "readinessStatus": "at-risk", "anesthesiaConsiderations": ["General anesthesia", "Contrast allergy — confirm pre-medication if intraoperative contrast used", "Arterial line for hemodynamic monitoring during renal hilar control"], "summary": "Barbara Wilson is a 61-year-old female with renal cell carcinoma scheduled for laparoscopic nephrectomy. AT RISK: Contrast dye allergy requires pre-medication protocol confirmation. Alert sent to surgical and anesthesia teams.", "generatedAt": "2026-05-31T05:45:22.108Z" }, "traces": [] },
+    "CASE-015": { "readiness": { "caseId": "CASE-015", "patientId": "PT-015", "status": "ready", "score": 92, "reasoning": "Joseph Martinez is a 68-year-old with lumbar spinal stenosis and spondylolisthesis scheduled for lumbar spinal fusion. All labs current, MRI confirms surgical indication, consent signed, neurology clearance received. Hypertension and DM controlled. Minor deductions for age and comorbidities requiring perioperative attention.", "missingItems": [], "checkedAt": "2026-05-31T05:45:07.100Z" }, "actions": [], "briefing": { "caseId": "CASE-015", "patientName": "Joseph Martinez", "procedure": "Lumbar Spinal Fusion (L4-L5)", "surgeon": "Dr. Robert Kim", "startTime": "14:00", "estimatedDuration": 240, "keyRisks": ["Hypertension — MAP >80 for spinal cord perfusion", "Type 2 Diabetes — glucose management", "Long case 4 hours — DVT and positioning pressure"], "outstandingItems": [], "readinessScore": 92, "readinessStatus": "ready", "anesthesiaConsiderations": ["General anesthesia, prone positioning", "Neuromonitoring: SSEP/MEP", "Controlled hypotension during instrumentation (MAP 65-80)", "Glucose target 140-180 intraoperatively", "Eye protection and padding in prone position"], "summary": "Joseph Martinez is a 68-year-old male with L4-L5 stenosis and spondylolisthesis scheduled for spinal fusion. All requirements complete. Neuromonitoring planned. Good surgical candidate with controlled comorbidities.", "generatedAt": "2026-05-31T05:45:12.893Z" }, "traces": [] }
+  }
+}

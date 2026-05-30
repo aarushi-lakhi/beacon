@@ -1,0 +1,25 @@
+[
+  { "id": "CLR-001-1", "patientId": "PT-001", "specialty": "Gastroenterology", "status": "cleared", "requestedDate": "2026-05-05", "receivedDate": "2026-05-08", "notes": "Cleared for elective colectomy. No additional workup needed." },
+
+  { "id": "CLR-002-1", "patientId": "PT-002", "specialty": "Cardiology", "status": "pending", "requestedDate": "2026-05-27", "receivedDate": null, "notes": "Cardiac clearance requested for patient with CAD and DM. Stress test ordered. Awaiting report from Dr. Pham." },
+  { "id": "CLR-002-2", "patientId": "PT-002", "specialty": "Endocrinology", "status": "cleared", "requestedDate": "2026-05-15", "receivedDate": "2026-05-18", "notes": "HbA1c 7.4%. Perioperative glucose management protocol in place. Cleared for surgery." },
+
+  { "id": "CLR-004-1", "patientId": "PT-004", "specialty": "Cardiology", "status": "cleared", "requestedDate": "2026-05-12", "receivedDate": "2026-05-20", "notes": "Cleared for TAVR. Multidisciplinary heart team reviewed. Recommend updated cath to confirm current coronary anatomy prior to valve replacement." },
+  { "id": "CLR-004-2", "patientId": "PT-004", "specialty": "Nephrology", "status": "cleared", "requestedDate": "2026-05-15", "receivedDate": "2026-05-19", "notes": "CKD Stage 3. Creatinine 1.8. IV contrast protocol with pre/post hydration. Cleared for procedure." },
+
+  { "id": "CLR-008-1", "patientId": "PT-008", "specialty": "Endocrinology", "status": "cleared", "requestedDate": "2026-05-10", "receivedDate": "2026-05-14", "notes": "TSH within normal limits. Thyroid function adequate. Cleared for thyroidectomy. No pre-op iodide therapy needed." },
+
+  { "id": "CLR-009-1", "patientId": "PT-009", "specialty": "Neurology", "status": "cleared", "requestedDate": "2026-05-12", "receivedDate": "2026-05-16", "notes": "Neurologic status stable. SSEP/MEP monitoring planned intraoperatively. Cleared for ACDF." },
+
+  { "id": "CLR-011-1", "patientId": "PT-011", "specialty": "Cardiology", "status": "pending", "requestedDate": "2026-05-25", "receivedDate": null, "notes": "Stress echo ordered due to high HbA1c and age. Results pending. Case may need to be delayed if not received by tomorrow." },
+  { "id": "CLR-011-2", "patientId": "PT-011", "specialty": "Endocrinology", "status": "cleared", "requestedDate": "2026-05-18", "receivedDate": "2026-05-22", "notes": "HbA1c 8.1%. Insulin infusion protocol planned. Cleared with perioperative glucose management." },
+
+  { "id": "CLR-012-1", "patientId": "PT-012", "specialty": "Gastroenterology", "status": "cleared", "requestedDate": "2026-05-28", "receivedDate": "2026-05-28", "notes": "Urgent case. Nutritional status poor. Recommend TPN consideration post-op. Cleared for emergent bowel resection." },
+
+  { "id": "CLR-013-1", "patientId": "PT-013", "specialty": "Neurology", "status": "cleared", "requestedDate": "2026-05-22", "receivedDate": "2026-05-25", "notes": "Recent TIA, high-risk. Urgent carotid endarterectomy appropriate. Cleared." },
+  { "id": "CLR-013-2", "patientId": "PT-013", "specialty": "Cardiology", "status": "cleared", "requestedDate": "2026-05-22", "receivedDate": "2026-05-26", "notes": "Risk-benefit review completed. Acceptable cardiac risk for CEA under regional anesthesia. Cleared." },
+
+  { "id": "CLR-014-1", "patientId": "PT-014", "specialty": "Urology", "status": "cleared", "requestedDate": "2026-05-20", "receivedDate": "2026-05-23", "notes": "Renal mass suitable for partial vs radical nephrectomy. Final approach per intraoperative finding. Cleared." },
+
+  { "id": "CLR-015-1", "patientId": "PT-015", "specialty": "Neurology", "status": "cleared", "requestedDate": "2026-05-20", "receivedDate": "2026-05-24", "notes": "Neurological deficits well-documented. Surgical intervention appropriate. Neuromonitoring recommended. Cleared." }
+]
