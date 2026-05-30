@@ -16,7 +16,7 @@ npm run dev
 Open [http://localhost:3000](http://localhost:3000)
 
 ---
-
+   
 ## The Platform
 
 Beacon acts like a lighthouse for surgical teams — it continuously watches upcoming surgeries, identifies readiness risks, coordinates follow-up actions, and generates concise surgical briefings.
