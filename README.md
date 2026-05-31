@@ -164,4 +164,4 @@ python3 scripts/build_glis_imaging_dataset.py \
 
 ---
 
-*Built with OpenAI Agents SDK for the Beacon hackathon.*
+*Built with OpenAI Agents SDK for the OpenAI Business Hackathon (w/ The AI Collective).*
