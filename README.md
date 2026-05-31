@@ -165,3 +165,4 @@ python3 scripts/build_glis_imaging_dataset.py \
 ---
 
 *Built with OpenAI Agents SDK for the OpenAI Business Hackathon (w/ The AI Collective).*
+*Technical Track Winner. Team: Philippine Chauvet, Aarushi Lakhi, Chhavi Sharma, Shuhua Fang*
